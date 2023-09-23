@@ -3,12 +3,20 @@ using UnityEngine;
 public class SwipeManager : MonoBehaviour
 {
     public static bool tap, swipeLeft, swipeRight, swipeUp, swipeDown;
+    public static bool isEnabled = true;
+
     private bool isDraging = false;
     private Vector2 startTouch, swipeDelta;
 
     private void Update()
     {
         tap = swipeDown = swipeUp = swipeLeft = swipeRight = false;
+
+        if (!isEnabled)
+        {
+            return;
+        }    
+
         #region Standalone Inputs
         if (Input.GetMouseButtonDown(0))
         {
