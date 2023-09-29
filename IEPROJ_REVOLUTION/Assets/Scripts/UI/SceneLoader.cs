@@ -8,7 +8,7 @@ public class SceneLoader : MonoBehaviour
     public void LoadGameScene()
     {
         // Load the "GameScene" when the button is pressed
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("SampleScene");
     }
     public void Quit()
     {
