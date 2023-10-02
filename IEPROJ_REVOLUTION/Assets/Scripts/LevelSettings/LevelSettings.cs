@@ -26,6 +26,7 @@ public class LevelSettings : MonoBehaviour
     public string PathToFile;
     public GameObject GroundPrefab;
     public GameObject ObstaclePrefab;
+    public GameObject ObjectivePrefab;
     public List<int> dataList;
     public List<GameObject> objectList;
     
@@ -89,6 +90,14 @@ public class LevelSettings : MonoBehaviour
                 GameObject clone = Instantiate(ObstaclePrefab, position, Quaternion.identity, this.transform);
                 objectList.Add(clone);
                 
+            }
+            else if (dataList[i] == 2)
+            {
+                //Create Obstacle at Row, Col
+                Vector3 position = new Vector3(row, 1, col);
+                //PrefabUtility.InstantiatePrefab(ObstaclePrefab, position);
+                GameObject clone = Instantiate(ObjectivePrefab, position, Quaternion.identity, this.transform);
+                objectList.Add(clone);
             }
 
             row++;
