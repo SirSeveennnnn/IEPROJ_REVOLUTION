@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     {
         GameManager.GameStart += PlayMusic;
     }
+
     public void PlayMusic()
     {
         audioSource.Play();

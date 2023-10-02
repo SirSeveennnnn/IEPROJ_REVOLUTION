@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.034622565, g: 0.008564189, b: 0.057074387, a: 1}
+  m_IndirectSpecularColor: {r: 0.034622647, g: 0.008564203, b: 0.057074524, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3464,6 +3464,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1259403752 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1566339538501138897, guid: 32117ff933f72544a867f263554da7aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1566339537809536097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259403746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2936dbbcfbef6f4469083448e0a0892f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1290350210
 GameObject:
   m_ObjectHideFlags: 0
@@ -5085,7 +5097,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1949873171}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259403752}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: BacktoMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1949873170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5450,5 +5474,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1566339538501138897, guid: 32117ff933f72544a867f263554da7aa,
+        type: 3}
+      propertyPath: GameOverPanel
+      value: 
+      objectReference: {fileID: 1949873167}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32117ff933f72544a867f263554da7aa, type: 3}

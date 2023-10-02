@@ -92,9 +92,9 @@ public class PlayerMovement : MonoBehaviour
             GameOverPanel.SetActive(true);
         }
     }
-    void BacktoMainMenu() 
+    public void BacktoMainMenu() 
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 
