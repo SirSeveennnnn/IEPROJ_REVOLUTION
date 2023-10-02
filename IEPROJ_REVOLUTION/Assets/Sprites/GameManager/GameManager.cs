@@ -23,6 +23,11 @@ public class GameManager : MonoBehaviour
     }
 
 
+    public bool IsGameStarted
+    {
+        get { return isGameStarted; }
+        private set { isGameStarted = value; }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -40,5 +45,11 @@ public class GameManager : MonoBehaviour
             //audioManager.PlayMusic();
             //Destroy(startingText);
         }
+    }
+
+    public void StartGame()
+    {
+        isGameStarted = true;
+        GameStart?.Invoke();
     }
 }
