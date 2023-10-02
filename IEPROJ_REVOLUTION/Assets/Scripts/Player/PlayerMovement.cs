@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -18,9 +19,13 @@ public class PlayerMovement : MonoBehaviour
     private float startXPos;
     private float endXPos;
 
+    //UIPanels
+    public GameObject GameOverPanel;
+
     // Start is called before the first frame update
     void Start()
     {
+        GameOverPanel.SetActive(false);
         playerSpeed = LevelSettings.Instance.beatsPerMinute / bpmMultiplier;
         GameManager.GameStart += StartPlayer;
     }
@@ -66,10 +71,32 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + (playerSpeed * Time.deltaTime));
         transform.Rotate(new Vector3(playerSpeed * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
+
+       
     }
 
     private void StartPlayer()
     {
         playerStart = true;
     }
+
+
+    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            PlayerManager.isCollided = true;
+            Debug.Log("TUMAMA");
+            Time.timeScale = 0;
+            GameOverPanel.SetActive(true);
+        }
+    }
+    void BacktoMainMenu() 
+    {
+
+    }
+
+
+    
 }
