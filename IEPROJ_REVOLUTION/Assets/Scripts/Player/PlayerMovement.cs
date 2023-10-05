@@ -92,6 +92,18 @@ public class PlayerMovement : MonoBehaviour
             GameOverPanel.SetActive(true);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Obstacle")
+        {
+            PlayerManager.isCollided = true;
+            Debug.Log("TUMAMA");
+            Time.timeScale = 0;
+            GameOverPanel.SetActive(true);
+        }
+    }
+
     public void BacktoMainMenu() 
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
