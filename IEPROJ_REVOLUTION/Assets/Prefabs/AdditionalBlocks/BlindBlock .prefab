@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4965509267027414334}
   m_Layer: 0
   m_Name: 'BlindBlock '
-  m_TagString: Untagged
+  m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 223a27486c0f6104a877b5594990cc6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: 1
+  isVisible: 1
+  effectDuration: 4
   origSkybox: {fileID: 2100000, guid: acaa7a514c8023a44b59eafd0b4dfcd0, type: 2}
   blackSkybox: {fileID: 2100000, guid: db0b07b79ba4f9b4184c6cfa245d6fdf, type: 2}
   uiObjects: []

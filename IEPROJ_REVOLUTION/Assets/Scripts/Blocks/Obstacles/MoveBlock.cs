@@ -26,7 +26,7 @@ public class MoveBlock : MonoBehaviour
 
     private void Update()
     {
-        if (!isMovementTriggered && Vector3.Distance(transform.position, playerObj.transform.position) <= laneDistance * triggerDistanceByBlock)
+        if (!isMovementTriggered && (transform.position.z - playerObj.transform.position.z) <= laneDistance * triggerDistanceByBlock)
         {
             isMovementTriggered = true;
 
