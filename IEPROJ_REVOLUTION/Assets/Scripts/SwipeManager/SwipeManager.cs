@@ -27,6 +27,7 @@ public class SwipeManager : MonoBehaviour
         else if (Input.GetMouseButtonUp(0))
         {
             isDraging = false;
+            StartCoroutine(CameraShake.instance.Shake());
             Reset();
         }
         #endregion
