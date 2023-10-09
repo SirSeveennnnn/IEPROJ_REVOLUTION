@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    public static bool isCollided;
+   
     public GameObject gameOverPanel;
     // Start is called before the first frame update
     void Start()
     {
-        isCollided = false;
+         
+        gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isCollided == true)
+        if (PlayerMovement.isCollided)
         {
-            Time.timeScale = 0;
+            gameObject.SetActive(true);
         }
+        
     }
     
 }

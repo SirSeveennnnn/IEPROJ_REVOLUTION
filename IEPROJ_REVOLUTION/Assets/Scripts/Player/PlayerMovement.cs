@@ -20,12 +20,13 @@ public class PlayerMovement : MonoBehaviour
     private float endXPos;
 
     //UIPanels
-    public GameObject GameOverPanel;
+    public static bool isCollided = false;
+    public GameObject gameoverPanel;
 
     // Start is called before the first frame update
     void Start()
     {
-        GameOverPanel.SetActive(false);
+      gameoverPanel.SetActive(false);   
         playerSpeed = LevelSettings.Instance.beatsPerMinute / bpmMultiplier;
         GameManager.GameStart += StartPlayer;
     }
@@ -81,33 +82,20 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Obstacle")
-        {
-            PlayerManager.isCollided = true;
-            Debug.Log("TUMAMA");
-            Time.timeScale = 0;
-            GameOverPanel.SetActive(true);
-        }
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Obstacle")
         {
-            PlayerManager.isCollided = true;
+            isCollided= true;
             Debug.Log("TUMAMA");
             Time.timeScale = 0;
-            GameOverPanel.SetActive(true);
+            gameoverPanel.SetActive(true);
+
         }
     }
 
-    public void BacktoMainMenu() 
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+   
 
 
     
