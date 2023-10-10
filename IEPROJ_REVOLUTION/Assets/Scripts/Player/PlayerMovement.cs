@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float playerSpeed = 0;
     [SerializeField] private float rotationSpeedMultiplier = 0;
     [SerializeField] private int bpmMultiplier;
+    [SerializeField] private bool isPlayerDead = false;
 
     [Header("Jump Settings")]
     [SerializeField] private AnimationCurve jumpCurve;
@@ -31,13 +33,13 @@ public class PlayerMovement : MonoBehaviour
     private float startXPos;
     private float endXPos;
 
-    //UIPanels
-    public GameObject GameOverPanel;
+    //Events
+    public static event Action PlayerDeath;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        GameOverPanel.SetActive(false);
         playerSpeed = LevelSettings.Instance.beatsPerMinute / bpmMultiplier;
   
 
@@ -51,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!playerStart)
+        if (!playerStart || isPlayerDead)
         {
             return;
         }
@@ -132,10 +134,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle")
         {
-            //PlayerManager.isCollided = true;
-            Debug.Log("TUMAMA");
-            Time.timeScale = 0;
-            //GameOverPanel.SetActive(true);
+            PlayerDeath?.Invoke();
+            isPlayerDead = true;
+            sparkEffect.Stop();
+
         }
     }
 

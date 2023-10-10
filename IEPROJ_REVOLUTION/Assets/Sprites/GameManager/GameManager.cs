@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
     public static event Action GameStart;
 
     [SerializeField] private GameObject playerObj;
+
+    [SerializeField] private GameObject gameOverPanel;
 
 
     private void Awake()
@@ -38,6 +41,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        PlayerMovement.PlayerDeath += OpenPanel;
         isGameStarted = false;
     }
 
@@ -47,8 +51,6 @@ public class GameManager : MonoBehaviour
         {
             isGameStarted = true;
             GameStart?.Invoke();
-            //audioManager.PlayMusic();
-            //Destroy(startingText);
         }
     }
 
@@ -56,5 +58,15 @@ public class GameManager : MonoBehaviour
     {
         isGameStarted = true;
         GameStart?.Invoke();
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void OpenPanel()
+    {
+        gameOverPanel.SetActive(true);
     }
 }
