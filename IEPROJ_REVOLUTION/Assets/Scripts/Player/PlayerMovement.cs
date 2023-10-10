@@ -14,13 +14,12 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Jump Settings")]
     [SerializeField] private AnimationCurve jumpCurve;
-    [SerializeField] private int jumpDistance = 3;
-    [SerializeField]private float jumpDistanceInSeconds;
-    private float jumpTime;
+    [SerializeField] private int jumpDistance = 2;
 
     [Header("OtherGOs")]
-    [SerializeField] private GameObject playerModel;
+    //[SerializeField] private GameObject playerModel;
     [SerializeField] private ParticleSystem sparkEffect;
+    private PlayerAnimation playerAnim;
 
 
     [Space(10)]
@@ -40,7 +39,10 @@ public class PlayerMovement : MonoBehaviour
     {
         GameOverPanel.SetActive(false);
         playerSpeed = LevelSettings.Instance.beatsPerMinute / bpmMultiplier;
-        jumpDistanceInSeconds = jumpDistance * AudioManager.Instance.GetSecondsPerBeat();
+  
+
+        playerAnim = GetComponent<PlayerAnimation>();
+
         GameManager.GameStart += StartPlayer;
 
         Debug.Log(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
@@ -73,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
         else if (SwipeManager.swipeUp)
         {
             Debug.Log("Jump");
-            StartCoroutine(Jump(jumpDistanceInSeconds));
+            StartCoroutine(Jump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat()));
         }
 
         if (isLaneChanging && elapsedTime < laneChangeDuration)
@@ -92,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
 
-        playerModel.transform.Rotate(new Vector3(playerSpeed * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
+        //playerModel.transform.Rotate(new Vector3(playerSpeed * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
 
        
     }
@@ -104,6 +106,9 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator Jump(float duration)
     {
+        playerAnim.ToggleRoll();
+        
+
         float elapsedTime = 0f;
         float startingYPos = transform.position.y;
         while (elapsedTime < duration)
@@ -115,7 +120,10 @@ public class PlayerMovement : MonoBehaviour
 
             yield return null;
         }
+
         transform.position = new Vector3(transform.position.x, startingYPos, transform.position.z);
+
+        playerAnim.ToggleRoll();
     }
 
 

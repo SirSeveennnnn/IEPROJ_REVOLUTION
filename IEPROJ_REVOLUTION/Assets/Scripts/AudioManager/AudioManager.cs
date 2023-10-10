@@ -16,6 +16,8 @@ public class AudioManager : MonoBehaviour
         {
             Instance = this;
         }
+
+     
     }
 
     public AudioSource audioSource;
@@ -36,14 +38,15 @@ public class AudioManager : MonoBehaviour
 
     bool isMusicPlayed = false;
 
+    
     public void Start()
     {
-        GameManager.GameStart += PlayMusic;
-        //Calculate the number of seconds in each beat
         secPerBeat = 60f / LevelSettings.Instance.beatsPerMinute;
 
         totalBeats = audioSource.clip.length / secPerBeat;
-       
+
+        GameManager.GameStart += PlayMusic;
+        //Calculate the number of seconds in each beat
     }
 
     public void PlayMusic()

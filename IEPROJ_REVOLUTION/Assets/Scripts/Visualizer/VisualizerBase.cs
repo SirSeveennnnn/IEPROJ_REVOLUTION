@@ -17,9 +17,6 @@ public class VisualizerBase : MonoBehaviour
 
     public virtual void OnBeat()
     {
-        Debug.Log("Beat");
-        Debug.Log("Previous: " + previousAudioValue);
-        Debug.Log("Current" + audioValue);
         timer = 0;
         isBeat = true;
     }
