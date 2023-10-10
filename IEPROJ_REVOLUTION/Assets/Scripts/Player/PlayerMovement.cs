@@ -15,8 +15,12 @@ public class PlayerMovement : MonoBehaviour
     [Header("Jump Settings")]
     [SerializeField] private AnimationCurve jumpCurve;
     [SerializeField] private int jumpDistance = 3;
-    private float jumpDistanceInSeconds;
+    [SerializeField]private float jumpDistanceInSeconds;
     private float jumpTime;
+
+    [Header("OtherGOs")]
+    [SerializeField] private GameObject playerModel;
+    [SerializeField] private ParticleSystem sparkEffect;
 
 
     [Space(10)]
@@ -38,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
         playerSpeed = LevelSettings.Instance.beatsPerMinute / bpmMultiplier;
         jumpDistanceInSeconds = jumpDistance * AudioManager.Instance.GetSecondsPerBeat();
         GameManager.GameStart += StartPlayer;
+
+        Debug.Log(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
     }
 
     // Update is called once per frame
@@ -66,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (SwipeManager.swipeUp)
         {
+            Debug.Log("Jump");
             StartCoroutine(Jump(jumpDistanceInSeconds));
         }
 
@@ -85,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
 
-        transform.Rotate(new Vector3(playerSpeed * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
+        playerModel.transform.Rotate(new Vector3(playerSpeed * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
 
        
     }
@@ -112,28 +119,37 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    /*
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Obstacle")
         {
-            PlayerManager.isCollided = true;
+            //PlayerManager.isCollided = true;
             Debug.Log("TUMAMA");
             Time.timeScale = 0;
-            GameOverPanel.SetActive(true);
+            //GameOverPanel.SetActive(true);
         }
     }
-    */
+
 
 
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Path"))
         {
+            sparkEffect.Play();
             Debug.Log("Add Score");
         }
     }
-    
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Path"))
+        {
+            sparkEffect.Stop();
+        }
+    }
+
 
     public void BacktoMainMenu() 
     {

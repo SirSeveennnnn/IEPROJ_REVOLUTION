@@ -33,6 +33,7 @@ public class AudioManager : MonoBehaviour
 
     public float totalBeats;
 
+
     bool isMusicPlayed = false;
 
     public void Start()
@@ -65,6 +66,7 @@ public class AudioManager : MonoBehaviour
 
         //determine how many beats since the song started
         songPositionInBeats = songPosition / secPerBeat;
+
     }
 
     public float GetPositionInBeats()
