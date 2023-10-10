@@ -1,14 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    
     private bool isGameStarted = false;
-
     public static event Action GameStart;
+
+    [SerializeField] private GameObject playerObj;
+
 
     private void Awake()
     {
@@ -29,13 +30,17 @@ public class GameManager : MonoBehaviour
         private set { isGameStarted = value; }
     }
 
-    // Start is called before the first frame update
+    public GameObject Player
+    {
+        get { return playerObj; }
+        private set { playerObj = value; }
+    }
+
     void Start()
     {
         isGameStarted = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (SwipeManager.tap && !isGameStarted)
