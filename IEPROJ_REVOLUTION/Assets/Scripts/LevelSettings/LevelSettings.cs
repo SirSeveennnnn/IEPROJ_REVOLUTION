@@ -133,6 +133,23 @@ public class LevelSettings : MonoBehaviour
                 }
                 
             }
+            else if (dataList[i] == 3)
+            {
+
+                Vector3 position = new Vector3(row, neonPathY, col);
+
+                GameObject clone = Instantiate(NeonPathPrefab, position, NeonPathPrefab.transform.rotation, this.transform);
+
+                SpriteRenderer sprite = clone.GetComponent<SpriteRenderer>();
+                sprite.size = new Vector2(neonPathWidth, neonPathWidth);
+
+                BoxCollider collider = clone.AddComponent<BoxCollider>();
+                collider.isTrigger = true;
+                collider.size = new Vector3(collider.size.x, collider.size.y, 1);
+                collider.center = new Vector3(collider.center.x, collider.center.y, -0.5f);
+
+                objectList.Add(clone);
+            }
 
             row++;
             if (row >= numberOfRows)
