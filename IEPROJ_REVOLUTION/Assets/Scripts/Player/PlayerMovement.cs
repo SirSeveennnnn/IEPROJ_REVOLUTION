@@ -93,16 +93,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    
+    private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Obstacle")
+        if (other.CompareTag("Path"))
         {
-            PlayerManager.isCollided = true;
-            Debug.Log("TUMAMA");
-            Time.timeScale = 0;
-            GameOverPanel.SetActive(true);
+            Debug.Log("Add Score");
         }
     }
+    
 
     public void BacktoMainMenu() 
     {
