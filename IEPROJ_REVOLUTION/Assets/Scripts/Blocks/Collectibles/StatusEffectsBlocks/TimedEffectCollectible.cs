@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 public abstract class TimedEffectCollectible : Collectible
@@ -24,14 +25,11 @@ public abstract class TimedEffectCollectible : Collectible
         private set { effectDuration = value; }
     }
 
-    private void Start()
-    {
-        playerStatusScript = GameManager.Instance.Player.GetComponent<PlayerStatus>();
-    }
-
     protected override void OnCollect()
     {
         effectCoroutine = StartCoroutine(TriggerEffect());
+
+        playerStatusScript = playerObj.GetComponent<PlayerStatus>();
         playerStatusScript.AddEffect(this);
     }
 

@@ -11,6 +11,8 @@ public abstract class Collectible : MonoBehaviour
     private Collider c = null;
     private Rigidbody rb = null;
 
+    protected GameObject playerObj = null;
+
     protected abstract void OnCollect();
 
 
@@ -34,6 +36,7 @@ public abstract class Collectible : MonoBehaviour
         if (other.tag == "Player")
         {
             r.enabled = false;
+            playerObj = other.gameObject;
 
             OnCollect();
         }
