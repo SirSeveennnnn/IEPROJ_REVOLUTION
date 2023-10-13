@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+   
     public void LoadGameScene()
     {
         // Load the "GameScene" when the button is pressed
