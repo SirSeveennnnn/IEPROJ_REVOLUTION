@@ -26,7 +26,7 @@ public abstract class TimedEffectCollectible : Collectible
 
     private void Start()
     {
-        playerStatusScript = GameManager.Instance.Player.GetComponent<PlayerStatus>();
+        //playerStatusScript = GameManager.Instance.Player.GetComponent<PlayerStatus>();
     }
 
     protected override void OnCollect()

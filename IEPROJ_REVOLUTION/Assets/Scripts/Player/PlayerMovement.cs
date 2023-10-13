@@ -45,14 +45,12 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerSpeed = LevelSettings.Instance.beatsPerMinute / bpmMultiplier;
-  
 
         playerAnim = GetComponent<PlayerAnimation>();
 
         GameManager.GameStart += StartPlayer;
 
-        Debug.Log(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
+       
     }
 
     // Update is called once per frame

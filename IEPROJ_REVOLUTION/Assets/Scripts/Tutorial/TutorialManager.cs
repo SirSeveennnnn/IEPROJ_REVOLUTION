@@ -12,10 +12,12 @@ public class TutorialManager : MonoBehaviour
 
     private void Update()
     {
+        /*
         if (!GameManager.Instance.IsGameStarted)
         {
             GameManager.Instance.StartGame();
         }
+        */
 
         if (triggersList.Count == 0 || !triggersList[0].IsTriggered)
         {

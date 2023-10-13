@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    [SerializeField] private Animator animator;
+    [SerializeField]private Animator animator;
 
     private void Start()
     {
         GameManager.GameStart += StartAnimation;
+        animator = GetComponentInChildren<Animator>();
     }
 
     void StartAnimation()
@@ -19,6 +20,11 @@ public class PlayerAnimation : MonoBehaviour
     public void ToggleRoll()
     {
         animator.SetBool("Rolling", !animator.GetBool("Rolling"));
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.GameStart -= StartAnimation;
     }
 
 }

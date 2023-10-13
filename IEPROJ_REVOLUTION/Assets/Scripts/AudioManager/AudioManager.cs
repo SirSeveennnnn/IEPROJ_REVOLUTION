@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -8,19 +9,24 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        
         if (Instance != null && Instance != this)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         else
         {
             Instance = this;
         }
 
+        DontDestroyOnLoad(this.gameObject);
+        
      
     }
 
-    public AudioSource audioSource;
+    public AudioClip[] audioClips;
+
+    private AudioSource audioSource;
     //The number of seconds for each song beat
     public float secPerBeat;
 
@@ -35,18 +41,33 @@ public class AudioManager : MonoBehaviour
 
     public float totalBeats;
 
+    public LevelSettings currentLevel;
+
 
     bool isMusicPlayed = false;
 
     
     public void Start()
     {
-        secPerBeat = 60f / LevelSettings.Instance.beatsPerMinute;
+        SceneManager.sceneLoaded += Setup;
+        GameManager.GameStart += PlayMusic;
+
+        audioSource = GetComponent<AudioSource>();
+
+    }
+
+    void Setup(Scene scene, LoadSceneMode mode)
+    {
+
+        audioSource.Stop();
+
+        currentLevel = GameObject.FindWithTag("LevelSettings").GetComponent<LevelSettings>();
+
+        audioSource.clip = currentLevel.levelClip;
+
+        secPerBeat = 60f / currentLevel.beatsPerMinute;
 
         totalBeats = audioSource.clip.length / secPerBeat;
-
-        GameManager.GameStart += PlayMusic;
-        //Calculate the number of seconds in each beat
     }
 
     public void PlayMusic()

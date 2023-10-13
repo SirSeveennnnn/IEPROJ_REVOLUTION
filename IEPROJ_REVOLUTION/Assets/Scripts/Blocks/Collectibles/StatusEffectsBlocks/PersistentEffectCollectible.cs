@@ -17,6 +17,6 @@ public abstract class PersistentEffectCollectible : Collectible
 
     private void Start()
     {
-        playerStatusScript = GameManager.Instance.Player.GetComponent<PlayerStatus>();
+        //playerStatusScript = GameManager.Instance.Player.GetComponent<PlayerStatus>();
     }
 }

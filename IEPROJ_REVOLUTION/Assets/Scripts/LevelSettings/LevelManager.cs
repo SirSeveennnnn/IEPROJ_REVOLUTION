@@ -1,10 +1,11 @@
-using UnityEngine;
+using System.Collections;
 using System;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
-    
     private bool isGameStarted = false;
     public static event Action GameStart;
 
@@ -12,14 +13,6 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject winPanel;
-
-
-
-    private void Awake()
-    {
-
-    }
-
 
     public bool IsGameStarted
     {
@@ -67,11 +60,5 @@ public class GameManager : MonoBehaviour
     private void OpenWinPanel()
     {
         winPanel.SetActive(true);
-    }
-
-    private void OnDestroy()
-    {
-        PlayerMovement.PlayerDeath -= OpenGameOverPanel;
-        PlayerMovement.PlayerWin -= OpenWinPanel;
     }
 }
