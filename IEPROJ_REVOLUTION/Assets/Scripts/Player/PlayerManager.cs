@@ -9,16 +9,19 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isCollided = false;
+        PlayerMovement.PlayerDeath += playerDead;
+        gameOverPanel.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isCollided == true)
-        {
-            Time.timeScale = 0;
-        }
     }
-    
+
+    void playerDead() 
+    {
+        gameOverPanel.SetActive(true);
+        Time.timeScale= 0.0f;
+    }
+
 }

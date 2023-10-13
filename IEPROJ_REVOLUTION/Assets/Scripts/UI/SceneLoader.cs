@@ -9,7 +9,12 @@ public class SceneLoader : MonoBehaviour
     public void LoadGameScene()
     {
         // Load the "GameScene" when the button is pressed
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("MOKKA V2");
+    }
+    public void TutorialScene()
+    {
+        // Load the "GameScene" when the button is pressed
+        SceneManager.LoadScene("TutorialScene");
     }
     public void Quit()
     {
