@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject playerObj;
 
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject winPanel;
+
 
 
     private void Awake()
@@ -41,7 +43,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        PlayerMovement.PlayerDeath += OpenPanel;
+        PlayerMovement.PlayerDeath += OpenGameOverPanel;
+        PlayerMovement.PlayerWin += OpenWinPanel;
         isGameStarted = false;
     }
 
@@ -65,8 +68,12 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    private void OpenPanel()
+    private void OpenGameOverPanel()
     {
         gameOverPanel.SetActive(true);
+    }
+    private void OpenWinPanel()
+    {
+        winPanel.SetActive(true);
     }
 }

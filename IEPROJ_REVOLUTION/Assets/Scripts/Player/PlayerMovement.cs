@@ -35,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
 
     //Events
     public static event Action PlayerDeath;
+    public static event Action PlayerWin;
+
+    public ScoreText scoreText;
+
+
 
 
     // Start is called before the first frame update
@@ -139,6 +144,7 @@ public class PlayerMovement : MonoBehaviour
             sparkEffect.Stop();
 
         }
+        
     }
 
 
@@ -148,7 +154,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Path"))
         {
             sparkEffect.Play();
-            Debug.Log("Add Score");
+            
         }
     }
 
@@ -157,9 +163,23 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Path"))
         {
             sparkEffect.Stop();
+            scoreText.scoreMultiplier = 1.0f;
+
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "WinTrigger")
+        {
+            PlayerWin?.Invoke();
+        }
+        if (other.CompareTag("Path"))
+        {
+            scoreText.scoreMultiplier = 5.0f;
+
+        }
+    }
 
     public void BacktoMainMenu() 
     {

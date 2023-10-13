@@ -16,6 +16,11 @@ public class SceneLoader : MonoBehaviour
         // Load the "GameScene" when the button is pressed
         SceneManager.LoadScene("TutorialScene");
     }
+    public void MainMenuScene()
+    {
+        // Load the "GameScene" when the button is pressed
+        SceneManager.LoadScene("TempMainMenu");
+    }
     public void Quit()
     {
        Application.Quit();
