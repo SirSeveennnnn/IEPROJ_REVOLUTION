@@ -34,7 +34,9 @@ public class ObstacleVisualizer : VisualizerBase
     {
         Debug.Log("Pulse");
 
-        transform.localScale = startScale * pulseIntensity;
+        Vector3 temp = new Vector3(1, 1 * pulseIntensity, 1);
+        transform.localScale = temp;
+        //transform.localScale = startScale * pulseIntensity;
 
 
         isBeat = false;
