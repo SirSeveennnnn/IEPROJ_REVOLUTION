@@ -5,8 +5,7 @@ using UnityEngine;
 public class LockedBlock : MonoBehaviour
 {
     [Header("Lock And Key Properties")]
-    [SerializeField] private uint numKeyRequirements = 3;
-    [SerializeField] private List<KeyBlock> keysCollectedList = new();
+    [SerializeField] private List<KeyBlock> keyList = new();
 
     [Header("Unlock Properties")]
     [SerializeField] private Material unlockedMaterial = null;
@@ -25,22 +24,42 @@ public class LockedBlock : MonoBehaviour
         r = GetComponent<Renderer>();
     }
 
-    public void AddKey(KeyBlock key)
+    private void Start()
     {
+        foreach (var key in keyList)
+        {
+            key.OnKeyCollectedEvent += CheckToUnlock;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        foreach (var key in keyList)
+        {
+            key.OnKeyCollectedEvent -= CheckToUnlock;
+        }
+    }
+
+    private void CheckToUnlock()
+    {
+        bool isUnlocked = true;
+
+        foreach (var key in keyList)
+        {
+            isUnlocked = isUnlocked && key.HasBeenCollected;
+        }
+
+        if (!isUnlocked)
+        {
+            return;
+        }
+
         if (unlockCoroutine != null)
         {
             return;
         }
 
-        if (!keysCollectedList.Contains(key))
-        {
-            keysCollectedList.Add(key);
-        }
-
-        if (keysCollectedList.Count >= numKeyRequirements)
-        {
-            unlockCoroutine = StartCoroutine(UnlockBlock());
-        }
+        unlockCoroutine = StartCoroutine(UnlockBlock());
     }
 
     private IEnumerator UnlockBlock()

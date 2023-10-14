@@ -1,15 +1,22 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class KeyBlock : Collectible
 {
-    [SerializeField] private List<LockedBlock> lockedBlockRefList;
+    [SerializeField] private bool hasBeenCollected;
+    public event Action OnKeyCollectedEvent;
+
+
+    public bool HasBeenCollected
+    {
+        get { return hasBeenCollected; }
+        private set { hasBeenCollected = value; }
+    }
 
     protected override void OnCollect()
     {
-        foreach (var lockedBlock in lockedBlockRefList)
-        {
-            lockedBlock.AddKey(this);
-        }
+        hasBeenCollected = true;
+        OnKeyCollectedEvent.Invoke();
     }
 }
