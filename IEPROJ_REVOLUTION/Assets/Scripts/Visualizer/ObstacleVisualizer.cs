@@ -7,6 +7,7 @@ public class ObstacleVisualizer : VisualizerBase
     private Vector3 startScale;
     [SerializeField] private float pulseIntensity = 2f;
     [SerializeField] private float returnSpeed = 2f;
+    [SerializeField] private bool isText = false;
 
     private void Start()
     {
@@ -34,9 +35,15 @@ public class ObstacleVisualizer : VisualizerBase
     {
         Debug.Log("Pulse");
 
-        Vector3 temp = new Vector3(1, 1 * pulseIntensity, 1);
-        transform.localScale = temp;
-        //transform.localScale = startScale * pulseIntensity;
+        if (!isText)
+        {
+            Vector3 temp = new Vector3(1, 1 * pulseIntensity, 1);
+            transform.localScale = temp;
+        }
+        else
+        {
+            transform.localScale = startScale * pulseIntensity;
+        }
 
 
         isBeat = false;

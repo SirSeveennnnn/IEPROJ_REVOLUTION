@@ -152,8 +152,10 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Path"))
         {
             sparkEffect.Play();
+            scoreText.ticks = 0;
             
         }
+        
     }
 
     private void OnTriggerExit(Collider other)
@@ -161,7 +163,6 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Path"))
         {
             sparkEffect.Stop();
-            scoreText.scoreMultiplier = 1.0f;
 
         }
     }
@@ -172,18 +173,6 @@ public class PlayerMovement : MonoBehaviour
         {
             PlayerWin?.Invoke();
         }
-        if (other.CompareTag("Path"))
-        {
-            scoreText.scoreMultiplier = 5.0f;
 
-        }
     }
-
-    public void BacktoMainMenu() 
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-
-    
 }
