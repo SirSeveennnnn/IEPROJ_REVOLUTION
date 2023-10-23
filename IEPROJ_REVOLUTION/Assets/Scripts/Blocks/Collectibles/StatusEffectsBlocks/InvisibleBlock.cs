@@ -3,11 +3,17 @@ using UnityEngine;
 
 public class InvisibleBlock : TimedEffectCollectible
 {
+    [SerializeField] private Material invisibleMat = null;
+
+
     protected override IEnumerator TriggerEffect()
     {
         float elapsed = 0f;
+
         Renderer playerRenderer = playerObj.GetComponent<Renderer>();
-        playerRenderer.enabled = false;
+        Material origMat = playerRenderer.material;
+        playerRenderer.material = invisibleMat;
+        playerRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
 
         while (elapsed < effectDuration)
         {
@@ -15,6 +21,7 @@ public class InvisibleBlock : TimedEffectCollectible
             yield return Time.deltaTime;
         }
 
-        playerRenderer.enabled = true;
+        playerRenderer.material = origMat;
+        playerRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
     }
 }

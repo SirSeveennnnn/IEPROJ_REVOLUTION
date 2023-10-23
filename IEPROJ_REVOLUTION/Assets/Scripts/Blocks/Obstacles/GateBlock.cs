@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LockedBlock : MonoBehaviour
+public class GateBlock : MonoBehaviour
 {
     [Header("Lock And Key Properties")]
     [SerializeField] private List<KeyBlock> keyList = new();
@@ -10,6 +10,7 @@ public class LockedBlock : MonoBehaviour
     [Header("Unlock Properties")]
     [SerializeField] private float unlockDuration = 0.25f;
     [SerializeField] private float moveDistance = 2f;
+    [SerializeField] private int keysCollected = 0;
     private float startYPos;
     private float targetYPos;
 
@@ -40,26 +41,25 @@ public class LockedBlock : MonoBehaviour
 
     private void CheckToUnlock()
     {
-        bool isUnlocked = true;
+        keysCollected++;
 
-        foreach (var key in keyList)
+        if (keysCollected == keyList.Count)
         {
-            isUnlocked = isUnlocked && key.HasBeenCollected;
+            moveDistance *= 2.5f;
         }
 
-        if (!isUnlocked)
+        if (unlockCoroutine == null)
         {
-            return;
+            startYPos = transform.position.y;
+            targetYPos = startYPos - moveDistance;
+        }
+        else
+        {
+            startYPos = transform.position.y;
+            targetYPos -= moveDistance;
+            StopCoroutine(unlockCoroutine);
         }
 
-        if (unlockCoroutine != null)
-        {
-            return;
-        }
-
-        startYPos = transform.position.y;
-        targetYPos = startYPos - moveDistance;
-        
         unlockCoroutine = StartCoroutine(UnlockBlock());
     }
 

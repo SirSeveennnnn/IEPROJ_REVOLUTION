@@ -7,11 +7,18 @@ public class BlindBlock : TimedEffectCollectible
     [Header("Blind Block Properties")]
     [SerializeField] Material origSkybox = null;
     [SerializeField] Material blackSkybox = null;
+    [SerializeField] Renderer blindBoxRenderer = null;
     [SerializeField] List<GameObject> uiObjects = new();
     
     [SerializeField] float blindFadeDuration = 0.5f;
     [SerializeField] float fogDensity = 0.2f;
 
+
+    private void Start()
+    {
+        blindBoxRenderer.gameObject.SetActive(true);
+        blindBoxRenderer.enabled = false;
+    }
 
     protected override IEnumerator TriggerEffect()
     {
@@ -62,6 +69,7 @@ public class BlindBlock : TimedEffectCollectible
     {
         RenderSettings.skybox = blackSkybox;
         RenderSettings.fog = true;
+        blindBoxRenderer.enabled = true;
 
         // MAKE SOME COLLECTIBLES INVISIBLE
 
@@ -75,6 +83,7 @@ public class BlindBlock : TimedEffectCollectible
     {
         RenderSettings.skybox = origSkybox;
         RenderSettings.fog = false;
+        blindBoxRenderer.enabled = false;
 
         // REVERT INVISIBLE COLLECTIBLES
 
