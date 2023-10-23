@@ -25,6 +25,11 @@ public abstract class TimedEffectCollectible : Collectible
         private set { effectDuration = value; }
     }
 
+    private void Start()
+    {
+        //playerStatusScript = GameManager.Instance.Player.GetComponent<PlayerStatus>();
+    }
+    
     protected override void OnCollect()
     {
         effectCoroutine = StartCoroutine(TriggerEffect());

@@ -7,6 +7,8 @@ TagManager:
   - Obstacle
   - Collectible
   - Path
+  - WinTrigger
+  - LevelSettings
   layers:
   - Default
   - TransparentFX

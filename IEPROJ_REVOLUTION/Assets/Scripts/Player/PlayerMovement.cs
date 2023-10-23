@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,12 +12,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float playerSpeed = 0;
     [SerializeField] private float rotationSpeedMultiplier = 0;
     [SerializeField] private int bpmMultiplier;
+    [SerializeField] private bool isPlayerDead = false;
 
     [Header("Jump Settings")]
     [SerializeField] private AnimationCurve jumpCurve;
-    [SerializeField] private int jumpDistance = 3;
-    private float jumpDistanceInSeconds;
-    private float jumpTime;
+    [SerializeField] private int jumpDistance = 2;
+
+    [Header("OtherGOs")]
+    //[SerializeField] private GameObject playerModel;
+    [SerializeField] private ParticleSystem sparkEffect;
+    private PlayerAnimation playerAnim;
 
 
     [Space(10)]
@@ -28,23 +33,30 @@ public class PlayerMovement : MonoBehaviour
     private float startXPos;
     private float endXPos;
 
-    //UIPanels
-    public static bool isCollided = false;
-    public GameObject gameoverPanel;
+    //Events
+    public static event Action PlayerDeath;
+    public static event Action PlayerWin;
+
+    public ScoreText scoreText;
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-      gameoverPanel.SetActive(false);   
-        playerSpeed = LevelSettings.Instance.beatsPerMinute / bpmMultiplier;
-        jumpDistanceInSeconds = jumpDistance * AudioManager.Instance.GetSecondsPerBeat();
+
+        playerAnim = GetComponent<PlayerAnimation>();
+
         GameManager.GameStart += StartPlayer;
+
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!playerStart)
+        if (!playerStart || isPlayerDead)
         {
             return;
         }
@@ -67,7 +79,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (SwipeManager.swipeUp)
         {
-            StartCoroutine(Jump(jumpDistanceInSeconds));
+            Debug.Log("Jump");
+            StartCoroutine(Jump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat()));
         }
 
         if (isLaneChanging && elapsedTime < laneChangeDuration)
@@ -86,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
 
-        transform.Rotate(new Vector3(playerSpeed * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
+        //playerModel.transform.Rotate(new Vector3(playerSpeed * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
 
        
     }
@@ -98,6 +111,9 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator Jump(float duration)
     {
+        playerAnim.ToggleRoll();
+        
+
         float elapsedTime = 0f;
         float startingYPos = transform.position.y;
         while (elapsedTime < duration)
@@ -109,35 +125,54 @@ public class PlayerMovement : MonoBehaviour
 
             yield return null;
         }
+
         transform.position = new Vector3(transform.position.x, startingYPos, transform.position.z);
+
+        playerAnim.ToggleRoll();
     }
 
 
-    /*
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Obstacle")
         {
-            PlayerManager.isCollided = true;
-            Debug.Log("TUMAMA");
-            Time.timeScale = 0;
-            GameOverPanel.SetActive(true);
+            PlayerDeath?.Invoke();
+            isPlayerDead = true;
+            sparkEffect.Stop();
+
         }
+        
     }
-    */
+
 
 
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Path"))
         {
-            Debug.Log("Add Score");
+            sparkEffect.Play();
+            scoreText.ticks = 0;
+            
+        }
+        
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Path"))
+        {
+            sparkEffect.Stop();
+
         }
     }
-    
 
-   
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "WinTrigger")
+        {
+            PlayerWin?.Invoke();
+        }
 
-
-    
+    }
 }

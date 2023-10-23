@@ -6,19 +6,7 @@ using UnityEngine;
 
 public class LevelSettings : MonoBehaviour
 {
-    public static LevelSettings Instance { get; private set; }
-
-    private void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this);
-        }
-        else
-        {
-            Instance = this;
-        }
-    }
+    public AudioClip levelClip;
 
     public int beatsPerMinute;
 
@@ -30,6 +18,8 @@ public class LevelSettings : MonoBehaviour
     public string PathToFile;
     public GameObject GroundPrefab;
     public GameObject ObstaclePrefab;
+    public GameObject MoveLeftBlock;
+    public GameObject MoveRightBlock;
 
     [Header("Neon Path Settings")]
     public GameObject NeonPathPrefab;
@@ -148,6 +138,23 @@ public class LevelSettings : MonoBehaviour
                 collider.size = new Vector3(collider.size.x, collider.size.y, 1);
                 collider.center = new Vector3(collider.center.x, collider.center.y, -0.5f);
 
+                objectList.Add(clone);
+            }
+            else if (dataList[i] == 4)
+            {
+                //Create Obstacle at Row, Col
+                Vector3 position = new Vector3(row, 1, col);
+                //PrefabUtility.InstantiatePrefab(ObstaclePrefab, position);
+                GameObject clone = Instantiate(MoveLeftBlock, position, MoveLeftBlock.transform.rotation, this.transform);
+                objectList.Add(clone);
+                
+            }
+            else if (dataList[i] == 5)
+            {
+                //Create Obstacle at Row, Col
+                Vector3 position = new Vector3(row, 1, col);
+                //PrefabUtility.InstantiatePrefab(ObstaclePrefab, position);
+                GameObject clone = Instantiate(MoveRightBlock, position, MoveRightBlock.transform.rotation, this.transform);
                 objectList.Add(clone);
             }
 

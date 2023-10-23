@@ -20,8 +20,8 @@ public class MoveBlock : MonoBehaviour
         elapsedTime = 0f;
         startXPos = 0f;
         targetXPos = 0f;
-        
-        playerObj = GameManager.Instance.Player;
+
+        playerObj = GameObject.FindWithTag("Player");
     }
 
     private void Update()

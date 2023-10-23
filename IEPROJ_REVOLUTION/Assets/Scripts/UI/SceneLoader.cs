@@ -5,24 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-
-    private void Update()
+   
+    public void LoadGameScene()
     {
-        
+        // Load the "GameScene" when the button is pressed
+        SceneManager.LoadScene("MOKKA V2", LoadSceneMode.Single);
     }
-    public void LoadTutorialScene()
+    public void TutorialScene()
     {
         // Load the "GameScene" when the button is pressed
         SceneManager.LoadScene("TutorialScene");
     }
-    public void LoadGameScene()
+    public void MainMenuScene()
     {
         // Load the "GameScene" when the button is pressed
-        SceneManager.LoadScene("SpiralsScene");
-    }
-    public void MainMenu() 
-    {
-        SceneManager.LoadScene("UI");
+        SceneManager.LoadScene("TempMainMenu");
     }
     public void Quit()
     {
