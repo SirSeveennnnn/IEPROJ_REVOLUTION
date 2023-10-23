@@ -1,6 +1,4 @@
-using System.Collections;
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,7 +7,7 @@ public class LevelManager : MonoBehaviour
     private bool isGameStarted = false;
     public static event Action GameStart;
 
-    [SerializeField] private GameObject playerObj;
+    [SerializeField] private PlayerManager player;
 
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject winPanel;
@@ -20,17 +18,23 @@ public class LevelManager : MonoBehaviour
         private set { isGameStarted = value; }
     }
 
-    public GameObject Player
+    public PlayerManager Player
     {
-        get { return playerObj; }
-        private set { playerObj = value; }
+        get { return player; }
+        private set { player = value; }
     }
 
     void Start()
     {
-        PlayerMovement.PlayerDeath += OpenGameOverPanel;
-        PlayerMovement.PlayerWin += OpenWinPanel;
+        player.OnPlayerDeathEvent += OpenGameOverPanel;
+        player.OnPlayerWinEvent += OpenWinPanel;
         isGameStarted = false;
+    }
+
+    private void OnDestroy()
+    {
+        player.OnPlayerDeathEvent -= OpenGameOverPanel;
+        player.OnPlayerWinEvent -= OpenWinPanel;
     }
 
     void Update()

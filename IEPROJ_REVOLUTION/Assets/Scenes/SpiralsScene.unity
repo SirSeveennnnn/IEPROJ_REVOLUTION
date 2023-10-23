@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.034622647, g: 0.008564203, b: 0.057074524, a: 1}
+  m_IndirectSpecularColor: {r: 0.05892659, g: 0.014235898, b: 0.10000898, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4432,12 +4432,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05479dfba9a62764682f295727190c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 67315475}
+  audioClips: []
   secPerBeat: 0
   songPosition: 0
   songPositionInBeats: 0
   dspSongTime: 0
   totalBeats: 0
+  currentLevel: {fileID: 729868795}
 --- !u!1001 &75321865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26251,8 +26252,10 @@ GameObject:
   - component: {fileID: 717950382}
   - component: {fileID: 717950381}
   - component: {fileID: 717950380}
+  - component: {fileID: 717950387}
   - component: {fileID: 717950384}
   - component: {fileID: 717950385}
+  - component: {fileID: 717950386}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -26386,8 +26389,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   jumpDistance: 3
-  laneDistance: 1
-  gameoverPanel: {fileID: 1148745401}
+  currentLane: 3
+  levelSettings: {fileID: 729868795}
 --- !u!114 &717950385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26402,6 +26405,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persitentEffectsList: []
   timedEffectsList: []
+--- !u!114 &717950386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717950379}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4d4d84ae5633a41a2e1880648754fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+--- !u!114 &717950387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717950379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e8a64dcb0af6349800a646b1c47d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 1148745401}
+  winPanel: {fileID: 1148745401}
+  sparkEffect: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!4 &722232658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6052134081634802933, guid: 2be2d1646c866cd49b98c60bb1de42ec,
@@ -26659,11 +26691,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e256c92ff2d18d4095b8bee65726b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelClip: {fileID: 8300000, guid: 7542993ff9bb0894781edb9503ea9675, type: 3}
   beatsPerMinute: 240
+  laneDistance: 1
   numberOfRows: 5
   PathToFile: 
   GroundPrefab: {fileID: 0}
   ObstaclePrefab: {fileID: 0}
+  MoveLeftBlock: {fileID: 0}
+  MoveRightBlock: {fileID: 0}
   NeonPathPrefab: {fileID: 0}
   neonPathY: 0.52
   neonPathWidth: 0.7
@@ -61213,7 +61249,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe9618416d0a84468dd1b5868fcad32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerObj: {fileID: 717950379}
+  player: {fileID: 717950387}
+  gameOverPanel: {fileID: 1148745401}
+  winPanel: {fileID: 1148745401}
 --- !u!1001 &1734082804
 PrefabInstance:
   m_ObjectHideFlags: 0

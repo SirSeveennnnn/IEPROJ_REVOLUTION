@@ -1,107 +1,72 @@
 using System.Collections;
-using System;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private bool playerStart = false;
-
     [Header("Player Settings")]
     [SerializeField] private float playerSpeed = 0;
     [SerializeField] private float rotationSpeedMultiplier = 0;
     [SerializeField] private int bpmMultiplier;
-    [SerializeField] private bool isPlayerDead = false;
 
     [Header("Jump Settings")]
     [SerializeField] private AnimationCurve jumpCurve;
-    [SerializeField] private int jumpDistance = 2;
-
-    [Header("OtherGOs")]
-    //[SerializeField] private GameObject playerModel;
-    [SerializeField] private ParticleSystem sparkEffect;
-    private PlayerAnimation playerAnim;
+    [SerializeField] private int jumpDistance = 3;
 
 
-    [Space(10)]
-    //lerp stuff
-    [SerializeField] private float laneDistance = 1.8f;
-    private float elapsedTime = 0;
+    [Space(10)]   // lerp stuff
     private float laneChangeDuration = 0.03f;
-    private bool isLaneChanging = false;
     private float startXPos;
     private float endXPos;
 
-    //Events
-    public static event Action PlayerDeath;
-    public static event Action PlayerWin;
+    [Header("Other Properties")]
+    [SerializeField] private int currentLane = 3;
+    [SerializeField] private LevelSettings levelSettings;
 
-    public ScoreText scoreText;
+    private PlayerManager playerManager;
+    private PlayerAnimation playerAnimation;
+    private bool playerStart = false;
+    private bool isInAction = false;
+    private Coroutine actionCoroutine = null;
 
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
-
-        playerAnim = GetComponent<PlayerAnimation>();
-
         GameManager.GameStart += StartPlayer;
+        playerManager = GetComponent<PlayerManager>();
+        playerAnimation = GetComponent<PlayerAnimation>();
 
-       
+        playerManager.OnPlayerDeathEvent += StopPlayer;
+        playerManager.OnPlayerWinEvent += StopPlayer;
+
+        //playerSpeed = levelSettings.beatsPerMinute / bpmMultiplier;
+        //jumpDistanceInSeconds = jumpDistance * AudioManager.Instance.GetSecondsPerBeat();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (!playerStart || isPlayerDead)
+        if (!playerStart)
         {
             return;
         }
 
-        if (SwipeManager.swipeRight && !isLaneChanging)
+        if (SwipeManager.swipeRight)
         {
-            Debug.Log("Swipe Right");
-            startXPos = transform.position.x;
-            endXPos = transform.position.x + laneDistance;
-            isLaneChanging = true;
-         
+            float nextPos = transform.position.x + levelSettings.laneDistance;
+            PlayerMove(nextPos);
         }
-        else if (SwipeManager.swipeLeft && !isLaneChanging)
+        else if (SwipeManager.swipeLeft)
         {
-            Debug.Log("Swipe Right");
-            startXPos = transform.position.x;
-            endXPos = transform.position.x - laneDistance;
-            isLaneChanging = true;
-        
+            float nextPos = transform.position.x - levelSettings.laneDistance;
+            PlayerMove(nextPos);
         }
         else if (SwipeManager.swipeUp)
         {
-            Debug.Log("Jump");
-            StartCoroutine(Jump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat()));
-        }
-
-        if (isLaneChanging && elapsedTime < laneChangeDuration)
-        {
-            transform.position = new Vector3(Mathf.Lerp(startXPos, endXPos, elapsedTime / laneChangeDuration), transform.position.y, transform.position.z);
-            elapsedTime += Time.deltaTime;
-
-            if (elapsedTime >= laneChangeDuration)
-            {
-                transform.position = new Vector3(endXPos, transform.position.y, transform.position.z);
-                isLaneChanging = false;
-                elapsedTime = 0;
-         
-            }
+            PlayerJump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
         }
 
         transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
 
-        //playerModel.transform.Rotate(new Vector3(playerSpeed * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
-
-       
+        //transform.Rotate(new Vector3(Time.deltaTime * rotationSpeedMultiplier, 0, 0));
     }
 
     private void StartPlayer()
@@ -109,70 +74,89 @@ public class PlayerMovement : MonoBehaviour
         playerStart = true;
     }
 
-    IEnumerator Jump(float duration)
+    private void StopPlayer()
     {
-        playerAnim.ToggleRoll();
-        
+        playerStart = false;
+    }
 
+    public void PlayerMove(float xPos)
+    {
+        if (isInAction)
+        {
+            return;
+        }
+
+        if ((transform.position.x + (levelSettings.numberOfRows - currentLane) * levelSettings.laneDistance) < xPos || 
+            transform.position.x - (currentLane - 1) * levelSettings.laneDistance > xPos)
+        {
+            return;
+        }
+
+        startXPos = transform.position.x;
+        endXPos = xPos;
+        isInAction = true;
+
+        int laneDiff = (int)((endXPos - startXPos) / levelSettings.laneDistance);
+        currentLane += laneDiff;
+
+        actionCoroutine = StartCoroutine(PlayerMoveCoroutine(xPos));
+    }
+
+    private IEnumerator PlayerMoveCoroutine(float xPos)
+    {
+        float elapsed = 0.0f;
+
+        while (elapsed < laneChangeDuration)
+        {
+            transform.position = new Vector3(Mathf.Lerp(startXPos, endXPos, elapsed / laneChangeDuration), transform.position.y, transform.position.z);
+            elapsed += Time.deltaTime;
+
+            yield return Time.deltaTime;
+        }
+
+        transform.position = new Vector3(endXPos, transform.position.y, transform.position.z);
+        isInAction = false;
+        actionCoroutine = null;
+    }
+
+    public void PlayerJump(float duration)
+    {
+        if (isInAction)
+        {
+            return;
+        }
+
+        isInAction = true;
+        actionCoroutine = StartCoroutine(PlayerJumpCoroutine(duration));
+    }
+
+    private IEnumerator PlayerJumpCoroutine(float duration)
+    {
         float elapsedTime = 0f;
         float startingYPos = transform.position.y;
+
+        playerAnimation.ToggleRoll();
+
         while (elapsedTime < duration)
         {
-            elapsedTime = elapsedTime + Time.deltaTime;
+            elapsedTime += Time.deltaTime;
             float percent = Mathf.Clamp01(elapsedTime / duration);
-           
+
             transform.position = new Vector3(transform.position.x, startingYPos + jumpCurve.Evaluate(percent), transform.position.z);
 
             yield return null;
         }
 
+        playerAnimation.ToggleRoll();
+
         transform.position = new Vector3(transform.position.x, startingYPos, transform.position.z);
-
-        playerAnim.ToggleRoll();
+        isInAction = false;
+        actionCoroutine = null;
     }
 
-
-    
-    private void OnCollisionEnter(Collision collision)
+    public void StopPlayerActions()
     {
-        if (collision.gameObject.tag == "Obstacle")
-        {
-            PlayerDeath?.Invoke();
-            isPlayerDead = true;
-            sparkEffect.Stop();
-
-        }
-        
-    }
-
-
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Path"))
-        {
-            sparkEffect.Play();
-            scoreText.ticks = 0;
-            
-        }
-        
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Path"))
-        {
-            sparkEffect.Stop();
-
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "WinTrigger")
-        {
-            PlayerWin?.Invoke();
-        }
-
+        isInAction = false;
+        StopCoroutine(actionCoroutine);
     }
 }

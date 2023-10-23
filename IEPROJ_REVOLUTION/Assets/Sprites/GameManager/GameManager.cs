@@ -4,21 +4,38 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    
-    private bool isGameStarted = false;
-    public static event Action GameStart;
-
-    [SerializeField] private GameObject playerObj;
-
-    [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private GameObject winPanel;
-
-
+    #region Singleton
+    public static GameManager Instance;
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
 
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
+
+    private void OnDestroy()
+    {
+        if (Instance != null && Instance == this)
+        {
+            player.OnPlayerDeathEvent -= OpenGameOverPanel;
+            player.OnPlayerWinEvent -= OpenWinPanel;
+            Destroy(this.gameObject);
+        }
+    }
+    #endregion
+
+    private bool isGameStarted = false;
+    public static event Action GameStart;
+
+    [SerializeField] private PlayerManager player;
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject winPanel;
 
 
     public bool IsGameStarted
@@ -27,16 +44,16 @@ public class GameManager : MonoBehaviour
         private set { isGameStarted = value; }
     }
 
-    public GameObject Player
+    public PlayerManager Player
     {
-        get { return playerObj; }
-        private set { playerObj = value; }
+        get { return player; }
+        private set { player = value; }
     }
 
     void Start()
     {
-        PlayerMovement.PlayerDeath += OpenGameOverPanel;
-        PlayerMovement.PlayerWin += OpenWinPanel;
+        player.OnPlayerDeathEvent += OpenGameOverPanel;
+        player.OnPlayerWinEvent += OpenWinPanel;
         isGameStarted = false;
     }
 
@@ -67,11 +84,5 @@ public class GameManager : MonoBehaviour
     private void OpenWinPanel()
     {
         winPanel.SetActive(true);
-    }
-
-    private void OnDestroy()
-    {
-        PlayerMovement.PlayerDeath -= OpenGameOverPanel;
-        PlayerMovement.PlayerWin -= OpenWinPanel;
     }
 }

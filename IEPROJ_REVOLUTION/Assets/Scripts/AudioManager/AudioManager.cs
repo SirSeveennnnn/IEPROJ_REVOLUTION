@@ -54,6 +54,12 @@ public class AudioManager : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
 
+        // temp
+        audioSource.clip = currentLevel.levelClip;
+
+        secPerBeat = 60f / currentLevel.beatsPerMinute;
+
+        totalBeats = audioSource.clip.length / secPerBeat;
     }
 
     void Setup(Scene scene, LoadSceneMode mode)
@@ -61,7 +67,7 @@ public class AudioManager : MonoBehaviour
 
         audioSource.Stop();
 
-        currentLevel = GameObject.FindWithTag("LevelSettings").GetComponent<LevelSettings>();
+        //currentLevel = GameObject.FindWithTag("LevelSettings").GetComponent<LevelSettings>();
 
         audioSource.clip = currentLevel.levelClip;
 

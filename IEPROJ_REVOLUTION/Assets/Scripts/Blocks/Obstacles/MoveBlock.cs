@@ -21,7 +21,7 @@ public class MoveBlock : MonoBehaviour
         startXPos = 0f;
         targetXPos = 0f;
 
-        playerObj = GameObject.FindWithTag("Player");
+        playerObj = GameManager.Instance.Player.gameObject;
     }
 
     private void Update()

@@ -9,6 +9,7 @@ public class LevelSettings : MonoBehaviour
     public AudioClip levelClip;
 
     public int beatsPerMinute;
+    public float laneDistance;
 
     [Header("Level Creator Settings")]
     public int numberOfRows = 5;
