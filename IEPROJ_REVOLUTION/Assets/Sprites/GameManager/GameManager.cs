@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     private bool isGameStarted = false;
-    public static event Action GameStart;
+    public static event Action GameStartEvent;
 
     [SerializeField] private PlayerManager player;
     [SerializeField] private GameObject gameOverPanel;
@@ -62,14 +62,14 @@ public class GameManager : MonoBehaviour
         if (SwipeManager.tap && !isGameStarted)
         {
             isGameStarted = true;
-            GameStart?.Invoke();
+            GameStartEvent?.Invoke();
         }
     }
 
     public void StartGame()
     {
         isGameStarted = true;
-        GameStart?.Invoke();
+        GameStartEvent?.Invoke();
     }
 
     public void ResetGame()

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MoveBlock : MonoBehaviour
 {
-    [SerializeField] private float laneDistance;
+    [SerializeField] private LevelSettings levelSettings;
     [SerializeField] private int triggerDistanceByBlock;
     [SerializeField] private float moveDuration;
     [SerializeField] private bool isGoingRight;
@@ -21,17 +21,19 @@ public class MoveBlock : MonoBehaviour
         startXPos = 0f;
         targetXPos = 0f;
 
+        tag = "Obstacle";
+
         playerObj = GameManager.Instance.Player.gameObject;
     }
 
     private void Update()
     {
-        if (!isMovementTriggered && (transform.position.z - playerObj.transform.position.z) <= laneDistance * triggerDistanceByBlock)
+        if (!isMovementTriggered && (transform.position.z - playerObj.transform.position.z) <= levelSettings.laneDistance * triggerDistanceByBlock)
         {
             isMovementTriggered = true;
 
             startXPos = transform.position.x;
-            targetXPos = isGoingRight ? startXPos + laneDistance : startXPos - laneDistance;
+            targetXPos = isGoingRight ? startXPos + levelSettings.laneDistance : startXPos - levelSettings.laneDistance;
         }
 
         if (isMovementTriggered && elapsedTime < moveDuration)
@@ -45,5 +47,10 @@ public class MoveBlock : MonoBehaviour
                 this.enabled = false;
             }
         }
+    }
+
+    public void SetLevelSettings(LevelSettings levelSettings)
+    {
+        this.levelSettings = levelSettings;
     }
 }

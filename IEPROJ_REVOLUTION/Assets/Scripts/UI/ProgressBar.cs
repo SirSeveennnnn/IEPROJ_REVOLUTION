@@ -9,7 +9,7 @@ public class ProgressBar : MonoBehaviour
 
     private void Start()
     {
-        GameManager.GameStart += gamestart;
+        GameManager.GameStartEvent += gamestart;
     }
 
     private void Update()

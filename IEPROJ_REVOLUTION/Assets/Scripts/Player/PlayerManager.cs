@@ -45,7 +45,8 @@ public class PlayerManager : MonoBehaviour
 
             Time.timeScale = 0.0f;
             gameOverPanel.SetActive(true);
-            sparkEffect.Stop();
+
+            //sparkEffect.Stop();
         }
         else if (other.CompareTag("WinTrigger"))
         {
@@ -53,7 +54,7 @@ public class PlayerManager : MonoBehaviour
 
             Time.timeScale = 0.0f;
             winPanel.SetActive(true);
-            sparkEffect.Stop();
+            //sparkEffect.Stop();
         }
     }
 
@@ -62,7 +63,7 @@ public class PlayerManager : MonoBehaviour
         if (other.CompareTag("Path"))
         {
             sparkEffect.Play();
-            scoreText.ticks = 0;
+            //scoreText.ticks = 0;
             Debug.Log("Add Score");
         }
     }
@@ -71,7 +72,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.CompareTag("Path"))
         {
-            sparkEffect.Stop();
+            //sparkEffect.Stop();
         }
     }
 

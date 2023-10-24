@@ -36105,6 +36105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outPortal: {fileID: 1345153340632005165}
+  player: {fileID: 0}
 --- !u!1 &7039357464974509728
 GameObject:
   m_ObjectHideFlags: 0

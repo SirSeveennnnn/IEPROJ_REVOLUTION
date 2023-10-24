@@ -28,6 +28,8 @@ public class LockedBlock : MonoBehaviour
         {
             key.OnKeyCollectedEvent += CheckToUnlock;
         }
+
+        tag = "Obstacle";
     }
 
     private void OnDestroy()

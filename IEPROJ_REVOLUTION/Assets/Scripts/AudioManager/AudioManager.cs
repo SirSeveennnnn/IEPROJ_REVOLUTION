@@ -50,7 +50,7 @@ public class AudioManager : MonoBehaviour
     public void Start()
     {
         SceneManager.sceneLoaded += Setup;
-        GameManager.GameStart += PlayMusic;
+        GameManager.GameStartEvent += PlayMusic;
 
         audioSource = GetComponent<AudioSource>();
 

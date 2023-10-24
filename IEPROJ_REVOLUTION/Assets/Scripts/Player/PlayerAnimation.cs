@@ -8,7 +8,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Start()
     {
-        GameManager.GameStart += StartAnimation;
+        GameManager.GameStartEvent += StartAnimation;
         animator = GetComponentInChildren<Animator>();
     }
 
@@ -24,7 +24,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void OnDestroy()
     {
-        GameManager.GameStart -= StartAnimation;
+        GameManager.GameStartEvent -= StartAnimation;
     }
 
 }

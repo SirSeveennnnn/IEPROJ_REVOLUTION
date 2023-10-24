@@ -18,7 +18,7 @@ public abstract class Collectible : MonoBehaviour
 
     private void Awake()
     {
-        gameObject.tag = "Collectible";
+        tag = "Collectible";
 
         r = GetComponent<Renderer>();
         r.enabled = isVisible;

@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        GameManager.GameStart += StartPlayer;
+        GameManager.GameStartEvent += StartPlayer;
         playerManager = GetComponent<PlayerManager>();
         playerAnimation = GetComponent<PlayerAnimation>();
 
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
 
-        //transform.Rotate(new Vector3(Time.deltaTime * rotationSpeedMultiplier, 0, 0));
+        transform.Rotate(new Vector3(4 * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
     }
 
     private void StartPlayer()
@@ -86,8 +86,9 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if ((transform.position.x + (levelSettings.numberOfRows - currentLane) * levelSettings.laneDistance) < xPos || 
-            transform.position.x - (currentLane - 1) * levelSettings.laneDistance > xPos)
+        float rightLimit = transform.position.x + (levelSettings.numberOfRows - currentLane) * levelSettings.laneDistance;
+        float leftLimit = transform.position.x - (currentLane - 1) * levelSettings.laneDistance;
+        if (rightLimit < xPos || leftLimit > xPos)
         {
             return;
         }
@@ -119,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
         actionCoroutine = null;
     }
 
-    public void PlayerJump(float duration)
+    public void PlayerJump(float duration, AnimationCurve inputCurve = null)
     {
         if (isInAction)
         {
@@ -130,24 +131,31 @@ public class PlayerMovement : MonoBehaviour
         actionCoroutine = StartCoroutine(PlayerJumpCoroutine(duration));
     }
 
-    private IEnumerator PlayerJumpCoroutine(float duration)
+    private IEnumerator PlayerJumpCoroutine(float duration, AnimationCurve inputCurve = null)
     {
         float elapsedTime = 0f;
         float startingYPos = transform.position.y;
 
-        playerAnimation.ToggleRoll();
+        //playerAnimation.ToggleRoll();
 
         while (elapsedTime < duration)
         {
             elapsedTime += Time.deltaTime;
             float percent = Mathf.Clamp01(elapsedTime / duration);
 
-            transform.position = new Vector3(transform.position.x, startingYPos + jumpCurve.Evaluate(percent), transform.position.z);
+            if (inputCurve == null)
+            {
+                transform.position = new Vector3(transform.position.x, startingYPos + jumpCurve.Evaluate(percent), transform.position.z);
+            }
+            else
+            {
+                transform.position = new Vector3(transform.position.x, startingYPos + inputCurve.Evaluate(percent), transform.position.z);
+            }
 
             yield return null;
         }
 
-        playerAnimation.ToggleRoll();
+        //playerAnimation.ToggleRoll();
 
         transform.position = new Vector3(transform.position.x, startingYPos, transform.position.z);
         isInAction = false;
@@ -158,5 +166,13 @@ public class PlayerMovement : MonoBehaviour
     {
         isInAction = false;
         StopCoroutine(actionCoroutine);
+    }
+
+    public void Teleport(float xPos)
+    {
+        int laneDiff = (int)((xPos - transform.position.x) / levelSettings.laneDistance);
+        currentLane += laneDiff;
+
+        transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
     }
 }

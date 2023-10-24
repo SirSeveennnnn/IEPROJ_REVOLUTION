@@ -5,16 +5,16 @@ using UnityEngine;
 public class Portal : MonoBehaviour
 {
     [SerializeField] private Transform outPortal;
-    [SerializeField] private GameObject playerObj;
+    [SerializeField] private PlayerManager player;
 
     private void Update()
     {
-        if (playerObj != null && SwipeManager.tap)
+        if (player != null && SwipeManager.tap)
         {
-            // give player iframes
+            player.ApplyIFrames(0.5f);
 
-            Vector3 teleportPos = new Vector3(outPortal.position.x, playerObj.transform.position.y, playerObj.transform.position.z);
-            playerObj.transform.position = teleportPos;
+            PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
+            movementScript.Teleport(outPortal.position.x);
 
             this.enabled = false;
         }
@@ -24,7 +24,7 @@ public class Portal : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            playerObj = other.gameObject;
+            player = other.GetComponent<PlayerManager>();
         }
     }
 
@@ -32,7 +32,7 @@ public class Portal : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            playerObj = null;
+            player = null;
         }
     }
 }

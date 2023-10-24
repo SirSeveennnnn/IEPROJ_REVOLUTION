@@ -29,6 +29,8 @@ public class GateBlock : MonoBehaviour
         {
             key.OnKeyCollectedEvent += CheckToUnlock;
         }
+
+        tag = "Obstacle";
     }
 
     private void OnDestroy()
