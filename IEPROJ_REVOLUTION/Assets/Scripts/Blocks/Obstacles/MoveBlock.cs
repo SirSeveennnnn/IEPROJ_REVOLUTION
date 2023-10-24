@@ -7,8 +7,8 @@ public class MoveBlock : MonoBehaviour
     [SerializeField] private LevelSettings levelSettings;
     [SerializeField] private int triggerDistanceByBlock;
     [SerializeField] private float moveDuration;
-    [SerializeField][Range(-1f, 1f)] private int horizontalMovement;
-    [SerializeField][Range(-1f, 1f)] private int distalMovement;
+    [SerializeField, Range(-1f, 1f)] private int horizontalMovement;
+    [SerializeField, Range(-1f, 1f)] private int distalMovement;
 
     private bool isMovementTriggered;
     private float elapsedTime;

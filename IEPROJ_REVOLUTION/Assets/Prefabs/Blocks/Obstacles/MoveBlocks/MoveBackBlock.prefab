@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 635169683596724666}
   - component: {fileID: 4080253590985999722}
   m_Layer: 0
-  m_Name: MoveDownBlock
+  m_Name: MoveBackBlock
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

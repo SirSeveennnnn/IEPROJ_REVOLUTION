@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8718085137352028853}
   - component: {fileID: 2276698986620979733}
   m_Layer: 0
-  m_Name: 'MoveUpBlock '
+  m_Name: MoveForwardBlock
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
