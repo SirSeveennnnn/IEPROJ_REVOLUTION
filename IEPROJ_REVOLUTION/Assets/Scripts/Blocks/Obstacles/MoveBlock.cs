@@ -7,12 +7,13 @@ public class MoveBlock : MonoBehaviour
     [SerializeField] private LevelSettings levelSettings;
     [SerializeField] private int triggerDistanceByBlock;
     [SerializeField] private float moveDuration;
-    [SerializeField] private bool isGoingRight;
+    [SerializeField][Range(-1f, 1f)] private int horizontalMovement;
+    [SerializeField][Range(-1f, 1f)] private int distalMovement;
 
     private bool isMovementTriggered;
     private float elapsedTime;
-    private float startXPos;
-    private float targetXPos;
+    private Vector3 startPos;
+    private Vector3 targetPos;
 
     private GameObject playerObj;
     private Collider col;
@@ -22,8 +23,8 @@ public class MoveBlock : MonoBehaviour
     {
         isMovementTriggered = false;
         elapsedTime = 0f;
-        startXPos = 0f;
-        targetXPos = 0f;
+        startPos = Vector3.zero;
+        targetPos = Vector3.zero;
 
         tag = "Obstacle";
 
@@ -43,18 +44,21 @@ public class MoveBlock : MonoBehaviour
         {
             isMovementTriggered = true;
 
-            startXPos = transform.position.x;
-            targetXPos = isGoingRight ? startXPos + levelSettings.laneDistance : startXPos - levelSettings.laneDistance;
+            startPos = transform.position;
+            targetPos = transform.position;
+
+            targetPos.x += levelSettings.laneDistance * horizontalMovement;
+            targetPos.z += levelSettings.laneDistance * distalMovement;
         }
 
         if (isMovementTriggered && elapsedTime < moveDuration)
         {
-            transform.position = new Vector3(Mathf.Lerp(startXPos, targetXPos, elapsedTime / moveDuration), transform.position.y, transform.position.z);
+            transform.position = Vector3.Lerp(startPos, targetPos, elapsedTime / moveDuration);
             elapsedTime += Time.deltaTime;
 
             if (elapsedTime >= moveDuration)
             {
-                transform.position = new Vector3(targetXPos, transform.position.y, transform.position.z);
+                transform.position = targetPos;
                 this.enabled = false;
             }
         }
