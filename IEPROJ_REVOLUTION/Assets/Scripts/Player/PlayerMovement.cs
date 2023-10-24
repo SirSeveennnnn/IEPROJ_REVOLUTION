@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Space(10)]   // lerp stuff
     private float laneChangeDuration = 0.03f;
+    private float dropDuration = 0.05f;
+    private float defaultYPos;
     private float startXPos;
     private float endXPos;
 
@@ -39,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
         playerManager.OnPlayerWinEvent += StopPlayer;
 
         GestureManager.Instance.OnSwipeEvent += OnSwipe;
+
+        defaultYPos = transform.position.y;
 
         //playerSpeed = levelSettings.beatsPerMinute / bpmMultiplier;
         //jumpDistanceInSeconds = jumpDistance * AudioManager.Instance.GetSecondsPerBeat();
@@ -191,6 +195,37 @@ public class PlayerMovement : MonoBehaviour
         //playerAnimation.ToggleRoll();
 
         transform.position = new Vector3(transform.position.x, startingYPos, transform.position.z);
+        isInAction = false;
+        actionCoroutine = null;
+    }
+
+    public void PlayerDrop()
+    {
+        if (isInAction)
+        {
+            return;
+        }
+
+        isInAction = true;
+        actionCoroutine = StartCoroutine(PlayerDropCoroutine());
+    }
+
+    private IEnumerator PlayerDropCoroutine()
+    {
+        float elapsedTime = 0f;
+        float startingYPos = transform.position.y;
+
+        while (elapsedTime < dropDuration)
+        {
+            transform.position = new Vector3(transform.position.x, Mathf.Lerp(startingYPos, defaultYPos, elapsedTime / dropDuration), transform.position.z);
+            elapsedTime += Time.deltaTime;
+
+            yield return Time.deltaTime;
+        }
+
+        //playerAnimation.ToggleRoll();
+
+        transform.position = new Vector3(transform.position.x, defaultYPos, transform.position.z);
         isInAction = false;
         actionCoroutine = null;
     }
