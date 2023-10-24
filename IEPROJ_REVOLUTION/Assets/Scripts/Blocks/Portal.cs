@@ -7,17 +7,29 @@ public class Portal : MonoBehaviour
     [SerializeField] private Transform outPortal;
     [SerializeField] private PlayerManager player;
 
-    private void Update()
+    private void Start()
     {
-        if (player != null && SwipeManager.tap)
+        GestureManager.Instance.OnTapEvent += OnTap;
+    }
+
+    private void OnDisable()
+    {
+        GestureManager.Instance.OnTapEvent -= OnTap;
+    }
+
+    private void OnTap(object send, TapEventArgs args)
+    {
+        if (player == null)
         {
-            player.ApplyIFrames(0.5f);
-
-            PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
-            movementScript.Teleport(outPortal.position.x);
-
-            this.enabled = false;
+            return;
         }
+
+        player.ApplyIFrames(0.5f);
+
+        PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
+        movementScript.Teleport(outPortal.position.x);
+
+        this.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)

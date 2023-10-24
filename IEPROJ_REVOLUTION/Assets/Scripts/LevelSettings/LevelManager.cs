@@ -28,6 +28,9 @@ public class LevelManager : MonoBehaviour
     {
         player.OnPlayerDeathEvent += OpenGameOverPanel;
         player.OnPlayerWinEvent += OpenWinPanel;
+
+        GestureManager.Instance.OnTapEvent += OnTap;
+
         isGameStarted = false;
     }
 
@@ -35,15 +38,28 @@ public class LevelManager : MonoBehaviour
     {
         player.OnPlayerDeathEvent -= OpenGameOverPanel;
         player.OnPlayerWinEvent -= OpenWinPanel;
+
+        GestureManager.Instance.OnTapEvent -= OnTap;
     }
 
-    void Update()
+    //void Update()
+    //{
+    //    if (SwipeManager.tap && !isGameStarted)
+    //    {
+    //        isGameStarted = true;
+    //        GameStart?.Invoke();
+    //    }
+    //}
+
+    private void OnTap(object send, TapEventArgs args)
     {
-        if (SwipeManager.tap && !isGameStarted)
+        if (isGameStarted)
         {
-            isGameStarted = true;
-            GameStart?.Invoke();
+            return;
         }
+
+        isGameStarted = true;
+        GameStart?.Invoke();
     }
 
     public void StartGame()

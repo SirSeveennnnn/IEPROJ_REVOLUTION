@@ -37,7 +37,9 @@ public class TutorialTrigger : MonoBehaviour
         {
             isTriggered = true;
             textDisplay.SetActive(true);
-            SwipeManager.isEnabled = true;
+
+            GestureManager.Instance.OnEnableInputs(true);
+            //SwipeManager.isEnabled = true;
         }
     }
 }

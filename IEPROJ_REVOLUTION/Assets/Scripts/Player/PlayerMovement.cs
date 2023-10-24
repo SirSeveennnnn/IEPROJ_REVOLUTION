@@ -38,8 +38,18 @@ public class PlayerMovement : MonoBehaviour
         playerManager.OnPlayerDeathEvent += StopPlayer;
         playerManager.OnPlayerWinEvent += StopPlayer;
 
+        GestureManager.Instance.OnSwipeEvent += OnSwipe;
+
         //playerSpeed = levelSettings.beatsPerMinute / bpmMultiplier;
         //jumpDistanceInSeconds = jumpDistance * AudioManager.Instance.GetSecondsPerBeat();
+    }
+
+    private void OnDisable()
+    {
+        playerManager.OnPlayerDeathEvent -= StopPlayer;
+        playerManager.OnPlayerWinEvent -= StopPlayer;
+
+        GestureManager.Instance.OnSwipeEvent -= OnSwipe;
     }
 
     void Update()
@@ -49,20 +59,20 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (SwipeManager.swipeRight)
-        {
-            float nextPos = transform.position.x + levelSettings.laneDistance;
-            PlayerMove(nextPos);
-        }
-        else if (SwipeManager.swipeLeft)
-        {
-            float nextPos = transform.position.x - levelSettings.laneDistance;
-            PlayerMove(nextPos);
-        }
-        else if (SwipeManager.swipeUp)
-        {
-            PlayerJump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
-        }
+        //if (SwipeManager.swipeRight)
+        //{
+        //    float nextPos = transform.position.x + levelSettings.laneDistance;
+        //    PlayerMove(nextPos);
+        //}
+        //else if (SwipeManager.swipeLeft)
+        //{
+        //    float nextPos = transform.position.x - levelSettings.laneDistance;
+        //    PlayerMove(nextPos);
+        //}
+        //else if (SwipeManager.swipeUp)
+        //{
+        //    PlayerJump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
+        //}
 
         transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
 
@@ -77,6 +87,29 @@ public class PlayerMovement : MonoBehaviour
     private void StopPlayer()
     {
         playerStart = false;
+    }
+
+    private void OnSwipe(object send, SwipeEventArgs args)
+    {
+        if (!playerStart)
+        {
+            return;
+        }
+
+        if (args.SwipeDirection == SwipeEventArgs.SwipeDirections.RIGHT)
+        {
+            float nextPos = transform.position.x + levelSettings.laneDistance;
+            PlayerMove(nextPos);
+        }
+        else if (args.SwipeDirection == SwipeEventArgs.SwipeDirections.LEFT)
+        {
+            float nextPos = transform.position.x - levelSettings.laneDistance;
+            PlayerMove(nextPos);
+        }
+        else if (args.SwipeDirection == SwipeEventArgs.SwipeDirections.UP)
+        {
+            PlayerJump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
+        }
     }
 
     public void PlayerMove(float xPos)
