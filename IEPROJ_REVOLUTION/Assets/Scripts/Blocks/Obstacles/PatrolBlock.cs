@@ -1,7 +1,7 @@
-using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.Jobs;
 
+[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Rigidbody))]
 public class PatrolBlock : MonoBehaviour
 {
     [SerializeField] private float leftPos;
@@ -15,6 +15,8 @@ public class PatrolBlock : MonoBehaviour
     private float targetXPos;
 
     private GameObject playerObj;
+    private Collider col;
+    private Rigidbody rb;
 
     private void Start()
     {
@@ -29,6 +31,13 @@ public class PatrolBlock : MonoBehaviour
 
         playerObj = GameManager.Instance.Player.gameObject;
         GameManager.GameStartEvent += StartGame;
+
+        col = GetComponent<Collider>();
+        rb = GetComponent<Rigidbody>();
+
+        col.isTrigger = true;
+        rb.useGravity = false;
+        rb.isKinematic = true;
     }
 
     private void Update()

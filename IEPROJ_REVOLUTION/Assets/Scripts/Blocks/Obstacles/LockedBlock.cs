@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Rigidbody))]
 public class LockedBlock : MonoBehaviour
 {
     [Header("Lock And Key Properties")]
@@ -14,6 +16,8 @@ public class LockedBlock : MonoBehaviour
     private float targetYPos;
 
     private Renderer r;
+    private Collider col;
+    private Rigidbody rb;
     private Coroutine unlockCoroutine;
 
 
@@ -30,6 +34,13 @@ public class LockedBlock : MonoBehaviour
         }
 
         tag = "Obstacle";
+
+        col = GetComponent<Collider>();
+        rb = GetComponent<Rigidbody>();
+
+        col.isTrigger = true;
+        rb.useGravity = false;
+        rb.isKinematic = true;
     }
 
     private void OnDestroy()

@@ -1,5 +1,7 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Rigidbody))]
 public class MoveBlock : MonoBehaviour
 {
     [SerializeField] private LevelSettings levelSettings;
@@ -13,6 +15,8 @@ public class MoveBlock : MonoBehaviour
     private float targetXPos;
 
     private GameObject playerObj;
+    private Collider col;
+    private Rigidbody rb;
 
     private void Start()
     {
@@ -24,6 +28,13 @@ public class MoveBlock : MonoBehaviour
         tag = "Obstacle";
 
         playerObj = GameManager.Instance.Player.gameObject;
+
+        col = GetComponent<Collider>();
+        rb = GetComponent<Rigidbody>();
+
+        col.isTrigger = true;
+        rb.useGravity = false;
+        rb.isKinematic = true;
     }
 
     private void Update()
