@@ -83,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(new Vector3(4 * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
     }
 
+    #region Events
     private void StartPlayer()
     {
         playerStart = true;
@@ -115,8 +116,10 @@ public class PlayerMovement : MonoBehaviour
             PlayerJump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
         }
     }
+    #endregion
 
-    public void PlayerMove(float xPos)
+    #region Move
+    public void PlayerMove(float xPos, float duration = -1)
     {
         if (isInAction)
         {
@@ -137,16 +140,17 @@ public class PlayerMovement : MonoBehaviour
         int laneDiff = (int)((endXPos - startXPos) / levelSettings.laneDistance);
         currentLane += laneDiff;
 
-        actionCoroutine = StartCoroutine(PlayerMoveCoroutine(xPos));
+        actionCoroutine = StartCoroutine(PlayerMoveCoroutine(xPos, duration));
     }
 
-    private IEnumerator PlayerMoveCoroutine(float xPos)
+    private IEnumerator PlayerMoveCoroutine(float xPos, float duration)
     {
         float elapsed = 0.0f;
+        float movingDuration = duration == -1 ? laneChangeDuration : duration;
 
-        while (elapsed < laneChangeDuration)
+        while (elapsed < movingDuration)
         {
-            transform.position = new Vector3(Mathf.Lerp(startXPos, endXPos, elapsed / laneChangeDuration), transform.position.y, transform.position.z);
+            transform.position = new Vector3(Mathf.Lerp(startXPos, endXPos, elapsed / movingDuration), transform.position.y, transform.position.z);
             elapsed += Time.deltaTime;
 
             yield return Time.deltaTime;
@@ -156,7 +160,9 @@ public class PlayerMovement : MonoBehaviour
         isInAction = false;
         actionCoroutine = null;
     }
+    #endregion
 
+    #region Jump
     public void PlayerJump(float duration, AnimationCurve inputCurve = null)
     {
         if (isInAction)
@@ -198,7 +204,9 @@ public class PlayerMovement : MonoBehaviour
         isInAction = false;
         actionCoroutine = null;
     }
+    #endregion
 
+    #region Drop
     public void PlayerDrop()
     {
         if (isInAction)
@@ -229,6 +237,7 @@ public class PlayerMovement : MonoBehaviour
         isInAction = false;
         actionCoroutine = null;
     }
+    #endregion 
 
     public void StopPlayerActions()
     {
