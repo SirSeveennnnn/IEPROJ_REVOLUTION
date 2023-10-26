@@ -8,18 +8,12 @@ public class InvisibleBlock : TimedEffectCollectible
 
     protected override IEnumerator TriggerEffect()
     {
-        float elapsed = 0f;
-
         Renderer playerRenderer = playerObj.GetComponent<Renderer>();
         Material origMat = playerRenderer.material;
         playerRenderer.material = invisibleMat;
         playerRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
 
-        while (elapsed < effectDuration)
-        {
-            elapsed += Time.deltaTime;
-            yield return Time.deltaTime;
-        }
+        yield return new WaitForSeconds(effectDuration);
 
         playerRenderer.material = origMat;
         playerRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
