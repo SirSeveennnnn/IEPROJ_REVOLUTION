@@ -4,8 +4,11 @@ using UnityEngine;
 
 public abstract class TimedEffectCollectible : Collectible
 {
+    
+    [Space(10)] [Header("Timed Effect Properties")]
     [SerializeField] private EStatusEffects effect = EStatusEffects.Unknown;
-    [SerializeField] protected float effectDuration;
+    [SerializeField] protected float effectDuration = 10;
+    [SerializeField] protected float elapsed = 0;
 
     protected PlayerStatus playerStatusScript;
     protected Coroutine effectCoroutine;
@@ -24,14 +27,10 @@ public abstract class TimedEffectCollectible : Collectible
         get { return effectDuration; } 
         private set { effectDuration = value; }
     }
-
-    private void Start()
-    {
-        //playerStatusScript = GameManager.Instance.Player.GetComponent<PlayerStatus>();
-    }
     
     protected override void OnCollect()
     {
+        elapsed = 0;
         effectCoroutine = StartCoroutine(TriggerEffect());
 
         playerStatusScript = playerObj.GetComponent<PlayerStatus>();
@@ -42,5 +41,10 @@ public abstract class TimedEffectCollectible : Collectible
     {
         StopCoroutine(effectCoroutine);
         playerStatusScript.RemoveEffect(this);
+    }
+
+    public float GetTimeRemaining()
+    {
+        return effectDuration - elapsed;
     }
 }

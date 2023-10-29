@@ -1,10 +1,7 @@
 using System;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class KeyBlock : Collectible
 {
-    [SerializeField] private bool hasBeenCollected = false;
     public event Action OnKeyCollectedEvent;
 
 
@@ -16,12 +13,6 @@ public class KeyBlock : Collectible
 
     protected override void OnCollect()
     {
-        if(HasBeenCollected)
-        {
-            return;
-        }
-
-        hasBeenCollected = true;
         OnKeyCollectedEvent.Invoke();
     }
 }

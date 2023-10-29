@@ -6,6 +6,7 @@ public abstract class Collectible : MonoBehaviour
 {
     [Header("Collectible Properties")]
     [SerializeField] private bool isVisible = false;
+    [SerializeField] protected bool hasBeenCollected;
 
     private Renderer r = null;
     private Collider c = null;
@@ -33,8 +34,14 @@ public abstract class Collectible : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (hasBeenCollected)
+        {
+            //return;
+        }
+
         if (other.tag == "Player")
         {
+            hasBeenCollected = true;
             r.enabled = false;
             playerObj = other.gameObject;
 

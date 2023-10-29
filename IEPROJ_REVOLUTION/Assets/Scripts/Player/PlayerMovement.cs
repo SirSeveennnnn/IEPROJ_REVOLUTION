@@ -33,9 +33,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        GameManager.GameStartEvent += StartPlayer;
         playerManager = GetComponent<PlayerManager>();
         playerAnimation = GetComponent<PlayerAnimation>();
+
+        GameManager.GameStartEvent += StartPlayer;
 
         playerManager.OnPlayerDeathEvent += StopPlayer;
         playerManager.OnPlayerWinEvent += StopPlayer;
@@ -50,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDisable()
     {
+        GameManager.GameStartEvent -= StartPlayer;
+
         playerManager.OnPlayerDeathEvent -= StopPlayer;
         playerManager.OnPlayerWinEvent -= StopPlayer;
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BlindBlock : TimedEffectCollectible
 {
-    [Header("Blind Block Properties")]
+    [Space(10)] [Header("Blind Block Properties")]
     [SerializeField] Material origSkybox = null;
     [SerializeField] Material blackSkybox = null;
     [SerializeField] Renderer blindBoxRenderer = null;
@@ -22,7 +22,6 @@ public class BlindBlock : TimedEffectCollectible
 
     protected override IEnumerator TriggerEffect()
     {
-        float elapsed = 0f;
         float initialFogDensity = RenderSettings.fogDensity;
 
         PrepareBlindEffect();

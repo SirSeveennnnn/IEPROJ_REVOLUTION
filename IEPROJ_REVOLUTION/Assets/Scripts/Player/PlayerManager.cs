@@ -12,8 +12,13 @@ public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject winPanel;
+
+    [SerializeField] private CameraFollow playerCamera;
+
     [SerializeField] private ParticleSystem sparkEffect;
     [SerializeField] private ScoreText scoreText;
+
+    [SerializeField] private bool isInvulnerable;
 
     private Renderer r;
     private Collider col;
@@ -39,7 +44,7 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Obstacle"))
+        if (other.CompareTag("Obstacle") && !isInvulnerable)
         {
             OnPlayerDeathEvent?.Invoke();
 
@@ -88,15 +93,75 @@ public class PlayerManager : MonoBehaviour
 
     private IEnumerator ApplyIFramesCoroutine(float duration)
     {
-        float elapsed = 0.0f;
         col.enabled = false;
+
+        yield return new WaitForSeconds(duration);
+
+        col.enabled = true;
+    }
+
+    public void OnShrukenDown(bool isShrunk)
+    {
+        Vector2 offset = Vector2.zero;
+
+        if (isShrunk)
+        {
+            // player
+            transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+            transform.position = new Vector3(transform.position.x, 0.65f, transform.position.z);
+
+            // camera
+            Camera cameraComponent = playerCamera.GetComponent<Camera>();
+
+            offset = new Vector2(4.5f, -2.9f);
+            playerCamera.ChangeOffset(offset);
+            cameraComponent.fieldOfView = 55;
+            StartCoroutine(ChangeCameraOrientationCoroutine(offset, 35f));
+
+            //offset = new Vector2(1.8f, -2.8f);
+            //StartCoroutine(ChangeCameraOrientationCoroutine(offset, 0f));
+        }
+        else
+        {
+            // player
+            transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+            transform.position = new Vector3(transform.position.x, 0.85f, transform.position.z);
+
+            // camera
+            Camera cameraComponent = playerCamera.GetComponent<Camera>();
+
+            offset = new Vector2(3.775f, -4.55f);
+            playerCamera.ChangeOffset(offset);
+            cameraComponent.fieldOfView = 60;
+            StartCoroutine(ChangeCameraOrientationCoroutine(offset, 9f));
+        }
+    }
+
+    private IEnumerator ChangeCameraOrientationCoroutine(Vector2 offset, float rotation)
+    {
+        Transform cameraTransform = playerCamera.GetComponent<Transform>();
+
+        Vector3 startPos = cameraTransform.position;
+        Vector3 targetPos;
+
+        Quaternion startRot = cameraTransform.rotation;
+        Quaternion targetRot = Quaternion.Euler(new Vector3(rotation, 0, 0));
+
+        float elapsed = 0f;
+        float duration = 0.3f;
 
         while (elapsed < duration)
         {
+            targetPos = new Vector3(cameraTransform.position.x, offset.x, offset.y + transform.position.z);
+            cameraTransform.position = Vector3.Lerp(startPos, targetPos, elapsed / duration);
+            cameraTransform.rotation = Quaternion.Lerp(startRot, targetRot, elapsed / duration);
             elapsed += Time.deltaTime;
+
             yield return Time.deltaTime;
         }
 
-        col.enabled = true;
+        cameraTransform.position = new Vector3(cameraTransform.position.x, offset.x, offset.y + transform.position.z);
+        cameraTransform.rotation = Quaternion.Euler(new Vector3(rotation, 0, 0));
+
     }
 }
