@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine;
 
 
-[RequireComponent(typeof(Renderer))]
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(PlayerStatus))]
@@ -14,13 +13,13 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private GameObject winPanel;
 
     [SerializeField] private CameraFollow playerCamera;
+    [SerializeField] private Renderer[] modelRendererList;
 
     [SerializeField] private ParticleSystem sparkEffect;
     [SerializeField] private ScoreText scoreText;
 
     [SerializeField] private bool isInvulnerable;
 
-    private Renderer r;
     private Collider col;
     private PlayerMovement playerMovement;
     private PlayerStatus playerStatus;
@@ -35,7 +34,6 @@ public class PlayerManager : MonoBehaviour
         gameOverPanel.SetActive(false);
         winPanel.SetActive(false);
 
-        r = GetComponent<Renderer>();
         col = GetComponent<Collider>();
         playerMovement = GetComponent<PlayerMovement>();
         playerStatus = GetComponent<PlayerStatus>();
@@ -54,7 +52,7 @@ public class PlayerManager : MonoBehaviour
 
             Time.timeScale = 0.0f;
             //winPanel.SetActive(true);
-            //sparkEffect.Stop();
+            sparkEffect.Stop();
         }
     }
 
@@ -64,7 +62,7 @@ public class PlayerManager : MonoBehaviour
         {
             sparkEffect.Play();
             //scoreText.ticks = 0;
-            Debug.Log("Add Score");
+            //Debug.Log("Add Score");
         }
     }
 
@@ -72,8 +70,29 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.CompareTag("Path"))
         {
-            //sparkEffect.Stop();
+            sparkEffect.Stop();
         }
+    }
+
+    public void KillPlayer()
+    {
+        Debug.Log("dead");
+
+        if (isInvulnerable)
+        {
+            return;
+        }
+
+        OnPlayerDeathEvent?.Invoke();
+
+        Time.timeScale = 0.0f;
+        //gameOverPanel.SetActive(true);
+        sparkEffect.Stop();
+    }
+
+    public Renderer[] GetModelRenderer()
+    {
+        return modelRendererList;
     }
 
     #region IFrames
@@ -164,18 +183,4 @@ public class PlayerManager : MonoBehaviour
         cameraTransform.rotation = Quaternion.Euler(new Vector3(rotation, 0, 0));
     }
     #endregion
-
-    public void KillPlayer()
-    {
-        if (isInvulnerable)
-        {
-            return;
-        }
-
-        OnPlayerDeathEvent?.Invoke();
-
-        Time.timeScale = 0.0f;
-        //gameOverPanel.SetActive(true);
-        //sparkEffect.Stop();
-    }
 }

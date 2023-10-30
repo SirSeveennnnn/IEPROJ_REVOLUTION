@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
 
-        transform.Rotate(new Vector3(4 * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
+        //transform.Rotate(new Vector3(4 * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
     }
 
     #region Events
@@ -183,7 +183,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float elapsedTime = 0f;
 
-        //playerAnimation.ToggleRoll();
+        playerAnimation.ToggleRoll();
 
         while (elapsedTime < duration)
         {
@@ -202,7 +202,7 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
 
-        //playerAnimation.ToggleRoll();
+        playerAnimation.ToggleRoll();
 
         transform.position = new Vector3(transform.position.x, defaultYPos, transform.position.z);
         isInAction = false;
@@ -236,7 +236,7 @@ public class PlayerMovement : MonoBehaviour
             yield return Time.deltaTime;
         }
 
-        //playerAnimation.ToggleRoll();
+        playerAnimation.ToggleRoll();
 
         transform.position = new Vector3(transform.position.x, defaultYPos, transform.position.z);
         isInAction = false;
@@ -277,7 +277,7 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
 
-        //playerAnimation.ToggleRoll();
+        playerAnimation.ToggleRoll();
 
         transform.position = new Vector3(transform.position.x, defaultYPos, transform.position.z);
         isInAction = false;

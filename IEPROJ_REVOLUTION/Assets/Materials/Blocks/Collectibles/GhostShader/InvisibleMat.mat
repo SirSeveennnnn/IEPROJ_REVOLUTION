@@ -46,13 +46,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.3
-    - _FresnelValue: 1.4
-    - _OutlineTransparency: 0.3
+    - _Alpha: 0.4
+    - _FresnelValue: 1.25
+    - _OutlineTransparency: 0.45
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _OutlineColor: {r: 0.2, g: 0.2, b: 0.2, a: 0}
+    - _OutlineColor: {r: 0.3, g: 0.3, b: 0.3, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &8582624404819517786
 MonoBehaviour:

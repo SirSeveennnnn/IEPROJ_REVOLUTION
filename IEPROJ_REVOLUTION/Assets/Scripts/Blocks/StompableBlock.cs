@@ -40,7 +40,6 @@ public class StompableBlock : MonoBehaviour
             {
                 PlayerManager playerScript = playerObj.GetComponent<PlayerManager>();
                 playerScript.KillPlayer();
-                Debug.Log("dead");
             }
         }
 

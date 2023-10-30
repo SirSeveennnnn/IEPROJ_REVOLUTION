@@ -9,10 +9,17 @@ public class InvisibleBlock : TimedEffectCollectible
 
     protected override IEnumerator TriggerEffect()
     {
-        Renderer playerRenderer = playerObj.GetComponent<Renderer>();
-        Material origMat = playerRenderer.material;
-        playerRenderer.material = invisibleMat;
-        playerRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        Renderer[] playerRenderers = playerObj.GetComponent<PlayerManager>().GetModelRenderer();
+        Material[] origMatList = new Material[playerRenderers.Length];
+
+        for (int i = 0; i < playerRenderers.Length; i++)
+        {
+            Renderer r = playerRenderers[i];
+
+            origMatList[i] = r.material;
+            r.material = invisibleMat;
+            r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        }
 
         while (elapsed < effectDuration)
         {
@@ -22,7 +29,12 @@ public class InvisibleBlock : TimedEffectCollectible
 
         //yield return new WaitForSeconds(effectDuration);
 
-        playerRenderer.material = origMat;
-        playerRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
+        for (int i = 0; i < playerRenderers.Length; i++)
+        {
+            Renderer r = playerRenderers[i];
+
+            r.material = origMatList[i];
+            r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
+        }
     }
 }
