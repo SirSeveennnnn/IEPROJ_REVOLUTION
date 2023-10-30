@@ -36,7 +36,7 @@ public abstract class Collectible : MonoBehaviour
     {
         if (hasBeenCollected)
         {
-            //return;
+            return;
         }
 
         if (other.tag == "Player")

@@ -57,7 +57,6 @@ public class GravityBlock : MonoBehaviour
             hasSwiped = true;
 
             PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
-            movementScript.StopPlayerActions();
             movementScript.PlayerDrop();
 
             PlayerManager playerScript = player.GetComponent<PlayerManager>();

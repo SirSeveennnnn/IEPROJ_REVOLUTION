@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Jump Settings")]
     [SerializeField] private AnimationCurve jumpCurve;
     [SerializeField] private int jumpDistance = 3;
+    [SerializeField] private float stompDuration = 0.85f;
 
 
     [Space(10)]   // lerp stuff
@@ -180,7 +182,6 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator PlayerJumpCoroutine(float duration, AnimationCurve inputCurve = null)
     {
         float elapsedTime = 0f;
-        float startingYPos = transform.position.y;
 
         //playerAnimation.ToggleRoll();
 
@@ -191,11 +192,11 @@ public class PlayerMovement : MonoBehaviour
 
             if (inputCurve == null)
             {
-                transform.position = new Vector3(transform.position.x, startingYPos + jumpCurve.Evaluate(percent), transform.position.z);
+                transform.position = new Vector3(transform.position.x, defaultYPos + jumpCurve.Evaluate(percent), transform.position.z);
             }
             else
             {
-                transform.position = new Vector3(transform.position.x, startingYPos + inputCurve.Evaluate(percent), transform.position.z);
+                transform.position = new Vector3(transform.position.x, defaultYPos + inputCurve.Evaluate(percent), transform.position.z);
             }
 
             yield return null;
@@ -203,7 +204,7 @@ public class PlayerMovement : MonoBehaviour
 
         //playerAnimation.ToggleRoll();
 
-        transform.position = new Vector3(transform.position.x, startingYPos, transform.position.z);
+        transform.position = new Vector3(transform.position.x, defaultYPos, transform.position.z);
         isInAction = false;
         actionCoroutine = null;
     }
@@ -212,11 +213,12 @@ public class PlayerMovement : MonoBehaviour
     #region Drop
     public void PlayerDrop()
     {
-        if (isInAction)
+        if (!isInAction)
         {
             return;
         }
 
+        StopPlayerActions();
         isInAction = true;
         actionCoroutine = StartCoroutine(PlayerDropCoroutine());
     }
@@ -240,9 +242,50 @@ public class PlayerMovement : MonoBehaviour
         isInAction = false;
         actionCoroutine = null;
     }
-    #endregion 
+    #endregion
 
-    public void StopPlayerActions()
+    #region Stomp
+    public void PlayerStomp(AnimationCurve curve)
+    {
+        if (!isInAction || curve.keys.Length > 2)
+        {
+            return;
+        }
+
+        StopPlayerActions();
+        isInAction = true;
+        actionCoroutine = StartCoroutine(PlayerStompCoroutine(curve));
+    }
+
+    private IEnumerator PlayerStompCoroutine(AnimationCurve curve)
+    {
+        float elapsedTime = 0f;
+        float startingYPos = transform.position.y;
+
+        float Ydiff = defaultYPos - startingYPos;
+        Keyframe[] newKeys = curve.keys;
+        newKeys[1].value = Ydiff;
+        curve.keys = newKeys;
+
+        while (elapsedTime < stompDuration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            float percent = Mathf.Clamp01(elapsedTime / stompDuration);
+            transform.position = new Vector3(transform.position.x, startingYPos + curve.Evaluate(percent), transform.position.z);
+
+            yield return null;
+        }
+
+        //playerAnimation.ToggleRoll();
+
+        transform.position = new Vector3(transform.position.x, defaultYPos, transform.position.z);
+        isInAction = false;
+        actionCoroutine = null;
+    }
+    #endregion
+
+    private void StopPlayerActions()
     {
         isInAction = false;
         StopCoroutine(actionCoroutine);
@@ -254,5 +297,10 @@ public class PlayerMovement : MonoBehaviour
         currentLane += laneDiff;
 
         transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
+    }
+
+    public void UpdateDefaultYPos(float yPos)
+    {
+        defaultYPos = yPos;
     }
 }

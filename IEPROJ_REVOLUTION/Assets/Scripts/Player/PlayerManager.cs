@@ -44,21 +44,16 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Obstacle") && !isInvulnerable)
+        if (other.CompareTag("Obstacle"))
         {
-            OnPlayerDeathEvent?.Invoke();
-
-            Time.timeScale = 0.0f;
-            gameOverPanel.SetActive(true);
-
-            //sparkEffect.Stop();
+            KillPlayer();
         }
         else if (other.CompareTag("WinTrigger"))
         {
             OnPlayerWinEvent?.Invoke();
 
             Time.timeScale = 0.0f;
-            winPanel.SetActive(true);
+            //winPanel.SetActive(true);
             //sparkEffect.Stop();
         }
     }
@@ -81,6 +76,7 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    #region IFrames
     public void ApplyIFrames(float duration)
     {
         if (duration > 1.75f)
@@ -99,7 +95,9 @@ public class PlayerManager : MonoBehaviour
 
         col.enabled = true;
     }
+    #endregion
 
+    #region ShrinkPlayer
     public void OnShrukenDown(bool isShrunk)
     {
         Vector2 offset = Vector2.zero;
@@ -109,6 +107,7 @@ public class PlayerManager : MonoBehaviour
             // player
             transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
             transform.position = new Vector3(transform.position.x, 0.65f, transform.position.z);
+            playerMovement.UpdateDefaultYPos(0.65f);
 
             // camera
             Camera cameraComponent = playerCamera.GetComponent<Camera>();
@@ -126,6 +125,7 @@ public class PlayerManager : MonoBehaviour
             // player
             transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
             transform.position = new Vector3(transform.position.x, 0.85f, transform.position.z);
+            playerMovement.UpdateDefaultYPos(0.85f);
 
             // camera
             Camera cameraComponent = playerCamera.GetComponent<Camera>();
@@ -162,6 +162,20 @@ public class PlayerManager : MonoBehaviour
 
         cameraTransform.position = new Vector3(cameraTransform.position.x, offset.x, offset.y + transform.position.z);
         cameraTransform.rotation = Quaternion.Euler(new Vector3(rotation, 0, 0));
+    }
+    #endregion
 
+    public void KillPlayer()
+    {
+        if (isInvulnerable)
+        {
+            return;
+        }
+
+        OnPlayerDeathEvent?.Invoke();
+
+        Time.timeScale = 0.0f;
+        //gameOverPanel.SetActive(true);
+        //sparkEffect.Stop();
     }
 }

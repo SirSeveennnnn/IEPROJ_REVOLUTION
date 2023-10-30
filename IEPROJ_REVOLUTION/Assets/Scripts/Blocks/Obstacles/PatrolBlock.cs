@@ -27,7 +27,10 @@ public class PatrolBlock : MonoBehaviour
         elapsedTime = isGoingRight ? Mathf.Abs(leftPos - transform.position.x) / distance : Mathf.Abs(rightPos - transform.position.x) / distance;
         elapsedTime *= moveDuration;
 
-        tag = "Obstacle";
+        if (GetComponent<StompableBlock>() == null)
+        {
+            tag = "Obstacle";
+        }
 
         playerObj = GameManager.Instance.Player.gameObject;
         GameManager.GameStartEvent += StartGame;

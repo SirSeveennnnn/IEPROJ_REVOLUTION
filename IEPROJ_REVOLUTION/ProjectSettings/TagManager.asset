@@ -9,6 +9,7 @@ TagManager:
   - Path
   - WinTrigger
   - LevelSettings
+  - Stompable
   layers:
   - Default
   - TransparentFX

@@ -26,7 +26,10 @@ public class MoveBlock : MonoBehaviour
         startPos = Vector3.zero;
         targetPos = Vector3.zero;
 
-        tag = "Obstacle";
+        if (GetComponent<StompableBlock>() == null)
+        {
+            tag = "Obstacle";
+        }
 
         playerObj = GameManager.Instance.Player.gameObject;
 

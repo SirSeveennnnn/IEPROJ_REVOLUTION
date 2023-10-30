@@ -14,6 +14,11 @@ public class VanishingInputBlock : MonoBehaviour
 
     private void Start()
     {
+        if (GetComponent<StompableBlock>() == null)
+        {
+            tag = "Obstacle";
+        }
+
         hasGameStarted = false;
 
         r = GetComponent<Renderer>();

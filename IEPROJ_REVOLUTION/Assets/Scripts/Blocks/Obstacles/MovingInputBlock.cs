@@ -22,6 +22,11 @@ public class MovingInputBlock : MonoBehaviour
 
     private void Start()
     {
+        if (GetComponent<StompableBlock>() == null)
+        {
+            tag = "Obstacle";
+        }
+
         hasGameStarted = false;
         moveDuration = 0.05f;
         moveCoroutine = null;

@@ -11,7 +11,11 @@ public class BulletBlock : MonoBehaviour
 
     private void Start()
     {
-        tag = "Obstacle";
+        if (GetComponent<StompableBlock>() == null)
+        {
+            tag = "Obstacle";
+        }
+
         bulletCoroutine = null;
 
         col = GetComponent<Collider>();
