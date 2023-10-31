@@ -184,6 +184,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   offset: 0.25
+  bonusPoints: 500
 --- !u!1 &6942372534612166334
 GameObject:
   m_ObjectHideFlags: 0

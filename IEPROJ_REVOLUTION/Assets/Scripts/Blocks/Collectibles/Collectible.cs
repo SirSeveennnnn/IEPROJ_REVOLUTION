@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
@@ -7,6 +8,7 @@ public abstract class Collectible : MonoBehaviour
     [Header("Collectible Properties")]
     [SerializeField] private bool isVisible = false;
     [SerializeField] protected bool hasBeenCollected;
+    [SerializeField] private List<Renderer> modelRenderersList;
 
     private Renderer r = null;
     private Collider c = null;
@@ -21,8 +23,10 @@ public abstract class Collectible : MonoBehaviour
     {
         tag = "Collectible";
 
-        r = GetComponent<Renderer>();
-        r.enabled = isVisible;
+        foreach (Renderer renderer in modelRenderersList)
+        {
+            renderer.enabled = isVisible;
+        }
 
         c = GetComponent<Collider>();
         c.isTrigger = true;
@@ -42,8 +46,12 @@ public abstract class Collectible : MonoBehaviour
         if (other.tag == "Player")
         {
             hasBeenCollected = true;
-            r.enabled = false;
             playerObj = other.gameObject;
+
+            foreach (Renderer renderer in modelRenderersList)
+            {
+                renderer.enabled = false;
+            }
 
             OnCollect();
         }

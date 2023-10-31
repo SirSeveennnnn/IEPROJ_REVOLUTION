@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5989955838873613610
+--- !u!1 &6106785469771813900
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,26 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 876143616502154124}
-  - component: {fileID: 1983493971060044007}
-  - component: {fileID: 3780212234281150297}
-  - component: {fileID: 493473381381925906}
-  - component: {fileID: 7569558068399292280}
-  - component: {fileID: 1170928576491711627}
+  - component: {fileID: 8416280388903017403}
+  - component: {fileID: 377360509782589464}
+  - component: {fileID: 591063538077075388}
+  - component: {fileID: 44503450587857670}
+  - component: {fileID: 1088596343235897167}
+  - component: {fileID: 1219869625785005365}
   m_Layer: 0
-  m_Name: ShrukenDownBlock
+  m_Name: InvisibleBlock2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &876143616502154124
+--- !u!4 &8416280388903017403
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5989955838873613610}
+  m_GameObject: {fileID: 6106785469771813900}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -36,21 +36,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1983493971060044007
+--- !u!33 &377360509782589464
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5989955838873613610}
+  m_GameObject: {fileID: 6106785469771813900}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &3780212234281150297
+--- !u!23 &591063538077075388
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5989955838873613610}
+  m_GameObject: {fileID: 6106785469771813900}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,13 +86,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &493473381381925906
+--- !u!65 &44503450587857670
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5989955838873613610}
+  m_GameObject: {fileID: 6106785469771813900}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -101,19 +101,19 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &7569558068399292280
+--- !u!54 &1088596343235897167
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5989955838873613610}
+  m_GameObject: {fileID: 6106785469771813900}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -134,20 +134,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1170928576491711627
+--- !u!114 &1219869625785005365
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5989955838873613610}
+  m_GameObject: {fileID: 6106785469771813900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87e93903a7dce0743ac9550afb7b8ca8, type: 3}
+  m_Script: {fileID: 11500000, guid: c704f29938665564da5fb4fda1913680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isVisible: 0
-  hasBeenCollected: 0
-  effect: 6
-  effectDuration: 10
-  elapsed: 0
+  effect: 2
+  effectDuration: 4.2
+  invisibleMat: {fileID: 2100000, guid: 259af5c731e858c4e93fe5cd438206ab, type: 2}

@@ -189,3 +189,4 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   offset: 0.35
+  bonusPoints: 500

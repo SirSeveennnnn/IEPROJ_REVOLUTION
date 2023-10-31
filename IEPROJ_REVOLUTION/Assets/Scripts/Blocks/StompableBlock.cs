@@ -6,6 +6,7 @@ public class StompableBlock : MonoBehaviour
 {
     [SerializeField] private AnimationCurve curve;
     [SerializeField] private float offset;
+    [SerializeField] private int bonusPoints;
 
     private Collider col;
     private Rigidbody rb;
@@ -33,6 +34,8 @@ public class StompableBlock : MonoBehaviour
             {
                 PlayerMovement movementScript = playerObj.GetComponent<PlayerMovement>();
                 movementScript.PlayerStomp(curve);
+
+                // Add score
 
                 this.gameObject.SetActive(false);
             }

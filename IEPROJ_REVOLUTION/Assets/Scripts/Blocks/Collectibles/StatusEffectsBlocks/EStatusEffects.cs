@@ -8,4 +8,5 @@ public enum EStatusEffects
    SecondLife,        // Have second life
    ShrunkenDown,      // Make player small
    StreakBooster,     // 
+   Quest,
 }

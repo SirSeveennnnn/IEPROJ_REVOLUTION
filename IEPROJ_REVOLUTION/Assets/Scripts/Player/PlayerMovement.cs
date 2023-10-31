@@ -5,9 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Player Settings")]
-    [SerializeField] private float playerSpeed = 0;
+    //[SerializeField] private float playerSpeed = 0;
+    //[SerializeField] private int bpmMultiplier;
     [SerializeField] private float rotationSpeedMultiplier = 0;
-    [SerializeField] private int bpmMultiplier;
+    [SerializeField] private float speedMultiplier = 1;
+    private float prevSongPos;
+    private float currentSongPos;
 
     [Header("Jump Settings")]
     [SerializeField] private AnimationCurve jumpCurve;
@@ -47,6 +50,9 @@ public class PlayerMovement : MonoBehaviour
 
         defaultYPos = transform.position.y;
 
+        prevSongPos = 0f;
+        currentSongPos = 0f;
+
         //playerSpeed = levelSettings.beatsPerMinute / bpmMultiplier;
         //jumpDistanceInSeconds = jumpDistance * AudioManager.Instance.GetSecondsPerBeat();
     }
@@ -83,7 +89,13 @@ public class PlayerMovement : MonoBehaviour
         //    PlayerJump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
         //}
 
-        transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
+        prevSongPos = currentSongPos;
+        currentSongPos = AudioManager.Instance.GetPositionInBeats();
+        float translation = (currentSongPos - prevSongPos) * speedMultiplier;
+
+        transform.Translate(new Vector3(0f, 0f, translation));
+
+        //transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
 
         //transform.Rotate(new Vector3(4 * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
     }
@@ -297,6 +309,11 @@ public class PlayerMovement : MonoBehaviour
         currentLane += laneDiff;
 
         transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
+    }
+
+    public void ChangePlayerSpeed(float newSpeed)
+    {
+        speedMultiplier = newSpeed;
     }
 
     public void UpdateDefaultYPos(float yPos)
