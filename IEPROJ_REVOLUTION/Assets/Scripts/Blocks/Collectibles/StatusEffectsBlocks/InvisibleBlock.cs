@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InvisibleBlock : TimedEffectCollectible
@@ -6,6 +7,26 @@ public class InvisibleBlock : TimedEffectCollectible
     [Space(10)] [Header("Invisible Block Properties")]
     [SerializeField] private Material invisibleMat = null;
 
+
+    protected override void OnStackEffect(List<TimedEffectCollectible> effectsList)
+    {
+        if (effectsList.Count > 1)
+        {
+            DisableEffect();
+        }
+        else
+        {
+            InvisibleBlock effectInList = effectsList[0] as InvisibleBlock;
+
+            if (effectInList.GetTimeRemaining() < this.EffectDuration)
+            {
+                effectInList.effectDuration = this.effectDuration + effectInList.elapsed;
+
+                StopEffect();
+                DisableEffect();
+            }
+        }
+    }
 
     protected override IEnumerator TriggerEffect()
     {
@@ -36,5 +57,7 @@ public class InvisibleBlock : TimedEffectCollectible
             r.material = origMatList[i];
             r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
         }
+
+        DisableEffect();
     }
 }

@@ -1,18 +1,19 @@
 using System.Collections;
-using UnityEditor;
+using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class TimedEffectCollectible : Collectible
 {
     
     [Space(10)] [Header("Timed Effect Properties")]
-    [SerializeField] private EStatusEffects effect = EStatusEffects.Unknown;
+    [SerializeField] protected EStatusEffects effect = EStatusEffects.Unknown;
     [SerializeField] protected float effectDuration = 10;
     [SerializeField] protected float elapsed = 0;
 
     protected PlayerStatus playerStatusScript;
     protected Coroutine effectCoroutine;
 
+    protected abstract void OnStackEffect(List<TimedEffectCollectible> effectsList);
     protected abstract IEnumerator TriggerEffect();
 
 
@@ -31,19 +32,43 @@ public abstract class TimedEffectCollectible : Collectible
     protected override void OnCollect()
     {
         elapsed = 0;
-        effectCoroutine = StartCoroutine(TriggerEffect());
-
         playerStatusScript = playerObj.GetComponent<PlayerStatus>();
+
+        List<TimedEffectCollectible> effectsList = playerStatusScript.GetCurrentTimedEffects(effect);
+
+        if (effectsList != null && effectsList.Count > 0)
+        {
+            OnStackEffect(effectsList);
+        }
+        else
+        {
+            StartEffect();
+        }
+    }
+
+    protected virtual void StartEffect()
+    {
+        effectCoroutine = StartCoroutine(TriggerEffect());
         playerStatusScript.AddEffect(this);
     }
 
-    public virtual void StopEffect()
+    protected virtual void StopEffect()
     {
-        StopCoroutine(effectCoroutine);
+        if (effectCoroutine != null)
+        {
+            StopCoroutine(effectCoroutine);
+        }
+
         playerStatusScript.RemoveEffect(this);
     }
 
-    public float GetTimeRemaining()
+    protected void DisableEffect()
+    {
+        this.enabled = false;
+        this.gameObject.SetActive(false);
+    }
+
+    protected float GetTimeRemaining()
     {
         return effectDuration - elapsed;
     }

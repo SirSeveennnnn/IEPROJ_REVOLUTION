@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class QuestBlock : Collectible
+public class QuestBlock : TimedEffectCollectible
 {
     [Space(10)]
     [Header("Quest Properties")]
@@ -12,14 +12,13 @@ public class QuestBlock : Collectible
 
     [Space(10)]
     [SerializeField] private List<EGestureTypes> gesturesList;
-    [SerializeField, Range(9.5f, 45)] private float questDuration;
     [SerializeField] private int bonusPoints;
     [SerializeField] private int reductionPoints;
 
-    private int currentGesture;
+    private int maxQuests;
+    private int numCorrectGestures;
     private QuestUI questUI;
     private List<Image> gesturesImageList;
-    private Coroutine countdownCoroutine;
 
 
     #region Setup
@@ -27,7 +26,8 @@ public class QuestBlock : Collectible
     {
         GestureManager.Instance.OnSwipeEvent += OnSwipe;
 
-        currentGesture = 0;
+        maxQuests = 3;
+        numCorrectGestures = 0;
         gesturesImageList = new List<Image>();
 
         CreateGestureImages();
@@ -65,18 +65,19 @@ public class QuestBlock : Collectible
 
         if (CheckGesture(args.SwipeDirection))
         {
-            gesturesImageList[currentGesture].color = Color.green;
-            currentGesture++;
+            gesturesImageList[numCorrectGestures].color = Color.green;
+            numCorrectGestures++;
 
-            if (currentGesture == gesturesList.Count)
+            if (numCorrectGestures == gesturesList.Count)
             {
-                StopCoroutine(countdownCoroutine);
-
                 // add score
                 Debug.Log("Quest: add score");
 
                 emptyQuestParent.SetActive(false);
                 this.gameObject.SetActive(false);
+
+                StopEffect();
+                DisableEffect();
             }
         }
         else
@@ -85,13 +86,13 @@ public class QuestBlock : Collectible
             {
                 image.color = Color.white;
             }
-            currentGesture = 0;
+            numCorrectGestures = 0;
         }
     }
 
     private bool CheckGesture(SwipeEventArgs.SwipeDirections inputGesture)
     {
-        EGestureTypes currentGestureToCheck = gesturesList[currentGesture];
+        EGestureTypes currentGestureToCheck = gesturesList[numCorrectGestures];
 
         bool isMatchingGesture = (inputGesture == SwipeEventArgs.SwipeDirections.LEFT && currentGestureToCheck == EGestureTypes.SwipeLeft);
         isMatchingGesture = isMatchingGesture || (inputGesture == SwipeEventArgs.SwipeDirections.RIGHT && currentGestureToCheck == EGestureTypes.SwipeRight);
@@ -103,23 +104,47 @@ public class QuestBlock : Collectible
 
     protected override void OnCollect()
     {
-        emptyQuestParent.SetActive(true);
-        countdownCoroutine = StartCoroutine(CountDownCoroutine());
+        elapsed = 0;
+        playerStatusScript = playerObj.GetComponent<PlayerStatus>();
+
+        List<TimedEffectCollectible> effectsList = playerStatusScript.GetCurrentTimedEffects(effect);
+
+        if (effectsList != null && effectsList.Count > 0)
+        {
+            OnStackEffect(effectsList);
+        }
+        else
+        {
+            emptyQuestParent.SetActive(true);
+            StartEffect();
+        }
     }
 
-    private IEnumerator CountDownCoroutine()
+    protected override void OnStackEffect(List<TimedEffectCollectible> effectsList)
     {
-        float elapsed = 0f;
+        if (effectsList.Count >= maxQuests)
+        {
+            StopEffect();
+            DisableEffect();
+        }
+        else
+        {
+            emptyQuestParent.SetActive(true);
+            StartEffect();
+        }
+    }
 
-        while (elapsed < questDuration)
+    protected override IEnumerator TriggerEffect()
+    {
+        while (elapsed < effectDuration)
         {
             elapsed += Time.deltaTime;
-            questUI.UpdateSlider(elapsed / questDuration);
+            questUI.UpdateSlider(elapsed / effectDuration);
 
             yield return Time.deltaTime;
         }
 
-        //yield return new WaitForSeconds(questDuration);
+        //yield return new WaitForSeconds(effectDuration);
 
         // reduce score
         Debug.Log("Quest: reduce score");

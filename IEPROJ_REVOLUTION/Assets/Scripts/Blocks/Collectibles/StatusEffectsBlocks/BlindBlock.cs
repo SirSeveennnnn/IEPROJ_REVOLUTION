@@ -20,6 +20,29 @@ public class BlindBlock : TimedEffectCollectible
         blindBoxRenderer.enabled = false;
     }
 
+    protected override void OnStackEffect(List<TimedEffectCollectible> effectsList)
+    {
+        if (effectsList.Count > 1)
+        {
+            DisableEffect();
+        }
+        else
+        {
+            BlindBlock effectInList = effectsList[0] as BlindBlock;
+
+            if (effectInList.GetTimeRemaining() < this.EffectDuration)
+            {
+                effectInList.StopEffect();
+                effectInList.DisableEffect();
+                StartEffect();
+            }
+            else
+            {
+                DisableEffect();
+            }
+        }
+    }
+
     protected override IEnumerator TriggerEffect()
     {
         float initialFogDensity = RenderSettings.fogDensity;
@@ -61,7 +84,7 @@ public class BlindBlock : TimedEffectCollectible
 
         RemoveBlindEffect();
         playerStatusScript.RemoveEffect(this);
-        this.enabled = false;
+        DisableEffect();
     }
 
     private void PrepareBlindEffect()

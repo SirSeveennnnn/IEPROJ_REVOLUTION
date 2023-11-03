@@ -9,4 +9,6 @@ public enum EStatusEffects
    ShrunkenDown,      // Make player small
    StreakBooster,     // 
    Quest,
+   Jackpot,
+   Jeopardy,
 }

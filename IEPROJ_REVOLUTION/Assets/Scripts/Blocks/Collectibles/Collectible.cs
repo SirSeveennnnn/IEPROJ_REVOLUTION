@@ -10,7 +10,6 @@ public abstract class Collectible : MonoBehaviour
     [SerializeField] protected bool hasBeenCollected;
     [SerializeField] private List<Renderer> modelRenderersList;
 
-    private Renderer r = null;
     private Collider c = null;
     private Rigidbody rb = null;
 

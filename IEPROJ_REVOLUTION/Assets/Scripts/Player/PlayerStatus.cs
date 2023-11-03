@@ -11,25 +11,7 @@ public class PlayerStatus : MonoBehaviour
     {
         if (effect is TimedEffectCollectible)
         {
-            TimedEffectCollectible newTimedEffect = effect as TimedEffectCollectible;
-            TimedEffectCollectible effectInList = timedEffectsList.Find(x => x.Effect == newTimedEffect.Effect);
-
-            if (effectInList == null)
-            {
-                timedEffectsList.Add(newTimedEffect);
-            }
-            else
-            {
-                if (effectInList.GetTimeRemaining() < newTimedEffect.EffectDuration)
-                {
-                    effectInList.StopEffect();
-                    timedEffectsList.Add(newTimedEffect);
-                }
-                else
-                {
-                    newTimedEffect.StopEffect();
-                }
-            }
+            timedEffectsList.Add(effect as TimedEffectCollectible);
         }
         else if (effect is PersistentEffectCollectible)
         {
@@ -67,6 +49,11 @@ public class PlayerStatus : MonoBehaviour
                 persitentEffectsList.Remove(persistentEffect);
             }
         }
+    }
+
+    public List<TimedEffectCollectible> GetCurrentTimedEffects(EStatusEffects timedEffect)
+    {
+        return (timedEffectsList.FindAll(x => x.Effect == timedEffect));
     }
 
     public bool HasPersistentEffect(EStatusEffects effect)
