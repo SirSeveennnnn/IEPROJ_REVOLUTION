@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class JackpotBlock : TimedEffectCollectible
 {
     [SerializeField] private int maxSpamNumber;
     [SerializeField] private float pointsPerSpam;
+    [SerializeField] private GameObject spamPanel;
+    [SerializeField] private TMP_Text jackpotText;
     private int currentSpamNumber;
 
 
@@ -29,12 +32,25 @@ public class JackpotBlock : TimedEffectCollectible
         }
 
         currentSpamNumber++;
+        jackpotText.text = "JACKPOT: " + currentSpamNumber + "X";
+
         if (currentSpamNumber >= maxSpamNumber)
         {
             currentSpamNumber = maxSpamNumber;
             StopEffect();
             OnJackpotEnd();
         }
+    }
+
+    protected override void StartEffect()
+    {
+        spamPanel.SetActive(true);
+        jackpotText.gameObject.SetActive(true);
+
+        jackpotText.text = "JACKPOT: 0X";
+
+        effectCoroutine = StartCoroutine(TriggerEffect());
+        playerStatusScript.AddEffect(this);
     }
 
     protected override void OnStackEffect(List<TimedEffectCollectible> effectsList)
@@ -67,6 +83,7 @@ public class JackpotBlock : TimedEffectCollectible
             yield return Time.deltaTime;
         }
 
+        playerStatusScript.RemoveEffect(this);
         OnJackpotEnd();
     }
 
@@ -76,6 +93,12 @@ public class JackpotBlock : TimedEffectCollectible
         // ADD SCORE
         Debug.Log("Jackpot: add score\nSpam:" + currentSpamNumber);
 
+        if (!playerStatusScript.HasTimedEffect(EStatusEffects.Jeopardy))
+        {
+            spamPanel.SetActive(false);
+        }
+
+        jackpotText.gameObject.SetActive(false);
         DisableEffect();
     }
 }

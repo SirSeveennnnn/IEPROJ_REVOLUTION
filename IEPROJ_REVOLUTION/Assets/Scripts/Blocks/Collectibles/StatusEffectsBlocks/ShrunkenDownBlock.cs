@@ -38,6 +38,7 @@ public class ShrunkenDownBlock : TimedEffectCollectible
         //yield return new WaitForSeconds(effectDuration);
 
         playerScript.OnShrukenDown(false);
+        playerStatusScript.RemoveEffect(this);
         DisableEffect();
     }
 }

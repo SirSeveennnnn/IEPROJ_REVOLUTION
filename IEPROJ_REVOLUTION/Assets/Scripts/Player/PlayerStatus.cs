@@ -56,6 +56,11 @@ public class PlayerStatus : MonoBehaviour
         return (timedEffectsList.FindAll(x => x.Effect == timedEffect));
     }
 
+    public bool HasTimedEffect(EStatusEffects effect)
+    {
+        return (timedEffectsList.Find(x => x.Effect == effect) != null);
+    }
+
     public bool HasPersistentEffect(EStatusEffects effect)
     {
         return (persitentEffectsList.Find(x => x.Effect == effect) != null);

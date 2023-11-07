@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSettings: {fileID: 0}
-  triggerDistanceByBlock: 8
+  triggerDistanceByBlock: 9
   jumpHeight: 2.5
   jumpDuration: 0.45
   isFakeCannon: 0

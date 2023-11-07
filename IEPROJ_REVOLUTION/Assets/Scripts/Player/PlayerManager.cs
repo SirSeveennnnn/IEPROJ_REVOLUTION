@@ -9,12 +9,15 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerAnimation))]
 public class PlayerManager : MonoBehaviour
 {
+    // temp gameover panels
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject winPanel;
 
+    // render
     [SerializeField] private CameraFollow playerCamera;
     [SerializeField] private Renderer[] modelRendererList;
 
+    // effects and other ui
     [SerializeField] private ParticleSystem sparkEffect;
     [SerializeField] private ScoreText scoreText;
 

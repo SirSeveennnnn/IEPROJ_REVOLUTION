@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class JeopardyBlock : TimedEffectCollectible
 {
     [SerializeField] private int minSpamNumber;
+    [SerializeField] private GameObject spamPanel;
+    [SerializeField] private TMP_Text jeopardyText;
     private int currentSpamNumber;
 
     private void Start()
@@ -27,13 +30,29 @@ public class JeopardyBlock : TimedEffectCollectible
         }
 
         currentSpamNumber--;
+        jeopardyText.text = "JEOPARDY: " + currentSpamNumber + "X";
+
         if (currentSpamNumber <= 0)
         {
             currentSpamNumber = 0;
 
+            DisableSpamPanel();
+            jeopardyText.gameObject.SetActive(false);
+
             StopEffect();
             DisableEffect();
         }
+    }
+
+    protected override void StartEffect()
+    {
+        spamPanel.SetActive(true);
+        jeopardyText.gameObject.SetActive(true);
+
+        jeopardyText.text = "JEOPARDY: " + currentSpamNumber + "X";
+
+        effectCoroutine = StartCoroutine(TriggerEffect());
+        playerStatusScript.AddEffect(this);
     }
 
     protected override void OnStackEffect(List<TimedEffectCollectible> effectsList)
@@ -59,6 +78,9 @@ public class JeopardyBlock : TimedEffectCollectible
 
     protected override IEnumerator TriggerEffect()
     {
+        spamPanel.SetActive(true);
+        jeopardyText.gameObject.SetActive(true);
+
         while (elapsed < effectDuration)
         {
             elapsed += Time.deltaTime;
@@ -68,6 +90,18 @@ public class JeopardyBlock : TimedEffectCollectible
         PlayerManager playerScript = playerObj.GetComponent<PlayerManager>();
         playerScript.KillPlayer();
 
+        playerStatusScript.RemoveEffect(this);
+
+        DisableSpamPanel();
+        jeopardyText.gameObject.SetActive(false);
         DisableEffect();
+    }
+
+    private void DisableSpamPanel()
+    {
+        if (!playerStatusScript.HasTimedEffect(EStatusEffects.Jackpot))
+        {
+            spamPanel.SetActive(false);
+        }
     }
 }

@@ -58,6 +58,7 @@ public class InvisibleBlock : TimedEffectCollectible
             r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
         }
 
+        playerStatusScript.RemoveEffect(this);
         DisableEffect();
     }
 }

@@ -9,27 +9,47 @@ public class Portal : MonoBehaviour
 
     private void Start()
     {
-        GestureManager.Instance.OnTapEvent += OnTap;
+        //GestureManager.Instance.OnTapEvent += OnTap;
+        GestureManager.Instance.OnSwipeEvent += OnSwipe;
     }
 
     private void OnDisable()
     {
-        GestureManager.Instance.OnTapEvent -= OnTap;
+        //GestureManager.Instance.OnTapEvent -= OnTap;
+        GestureManager.Instance.OnSwipeEvent -= OnSwipe;
     }
 
-    private void OnTap(object send, TapEventArgs args)
+    //private void OnTap(object send, TapEventArgs args)
+    //{
+    //    if (player == null)
+    //    {
+    //        return;
+    //    }
+
+    //    player.ApplyIFrames(0.5f);
+
+    //    PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
+    //    movementScript.Teleport(outPortal.position.x);
+
+    //    this.enabled = false;
+    //}
+
+    private void OnSwipe(object send, SwipeEventArgs args)
     {
         if (player == null)
         {
             return;
         }
 
-        player.ApplyIFrames(0.5f);
+        if (args.SwipeDirection == SwipeEventArgs.SwipeDirections.DOWN)
+        {
+            player.ApplyIFrames(0.5f);
 
-        PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
-        movementScript.Teleport(outPortal.position.x);
+            PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
+            movementScript.Teleport(outPortal.position.x);
 
-        this.enabled = false;
+            this.enabled = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

@@ -28,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Other Properties")]
     [SerializeField] private int currentLane = 3;
     [SerializeField] private LevelSettings levelSettings;
+    [SerializeField] private RectTransform leftPanelTransform;
+    [SerializeField] private RectTransform rightPanelTransform;
+    [SerializeField] private bool isSwipe;
 
     private PlayerManager playerManager;
     private PlayerAnimation playerAnimation;
@@ -46,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         playerManager.OnPlayerDeathEvent += StopPlayer;
         playerManager.OnPlayerWinEvent += StopPlayer;
 
+        GestureManager.Instance.OnTapEvent += OnTap;
         GestureManager.Instance.OnSwipeEvent += OnSwipe;
 
         defaultYPos = transform.position.y;
@@ -64,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         playerManager.OnPlayerDeathEvent -= StopPlayer;
         playerManager.OnPlayerWinEvent -= StopPlayer;
 
+        GestureManager.Instance.OnTapEvent -= OnTap;
         GestureManager.Instance.OnSwipeEvent -= OnSwipe;
     }
 
@@ -96,7 +101,6 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(new Vector3(0f, 0f, translation));
 
         //transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
-
         //transform.Rotate(new Vector3(4 * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
     }
 
@@ -111,9 +115,47 @@ public class PlayerMovement : MonoBehaviour
         playerStart = false;
     }
 
+    private void OnTap(object send, TapEventArgs args)
+    {
+        if (!playerStart)
+        {
+            return;
+        }
+
+        if (isSwipe)
+        {
+            return;
+        }
+
+        Debug.Log("TAP");
+
+        if (RectTransformUtility.RectangleContainsScreenPoint(leftPanelTransform, args.TapPosition))
+        {
+            float nextPos = transform.position.x - levelSettings.laneDistance;
+            PlayerMove(nextPos);
+        }
+        else if (RectTransformUtility.RectangleContainsScreenPoint(rightPanelTransform, args.TapPosition))
+        {
+            float nextPos = transform.position.x + levelSettings.laneDistance;
+            PlayerMove(nextPos);
+        }
+    }
+
     private void OnSwipe(object send, SwipeEventArgs args)
     {
         if (!playerStart)
+        {
+            return;
+        }
+
+        Debug.Log("SWIPE " + args.SwipeDirection);
+
+        if (args.SwipeDirection == SwipeEventArgs.SwipeDirections.UP)
+        {
+            PlayerJump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
+        }
+
+        if (!isSwipe)
         {
             return;
         }
@@ -127,10 +169,6 @@ public class PlayerMovement : MonoBehaviour
         {
             float nextPos = transform.position.x - levelSettings.laneDistance;
             PlayerMove(nextPos);
-        }
-        else if (args.SwipeDirection == SwipeEventArgs.SwipeDirections.UP)
-        {
-            PlayerJump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
         }
     }
     #endregion

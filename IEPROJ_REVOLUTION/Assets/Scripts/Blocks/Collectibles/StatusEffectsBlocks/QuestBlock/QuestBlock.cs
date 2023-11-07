@@ -149,6 +149,7 @@ public class QuestBlock : TimedEffectCollectible
         // reduce score
         Debug.Log("Quest: reduce score");
 
+        playerStatusScript.RemoveEffect(this);
         emptyQuestParent.SetActive(false);
         this.gameObject.SetActive(false);
     }
