@@ -10,11 +10,13 @@ public abstract class TimedEffectCollectible : Collectible
     [SerializeField] protected float effectDuration = 10;
     [SerializeField] protected float elapsed = 0;
 
+    protected PlayerManager playerManagerScript;
     protected PlayerStatus playerStatusScript;
     protected Coroutine effectCoroutine;
 
     protected abstract void OnStackEffect(List<TimedEffectCollectible> effectsList);
     protected abstract IEnumerator TriggerEffect();
+    protected abstract void OnPlayerDeath();
 
 
     public EStatusEffects Effect
@@ -28,11 +30,14 @@ public abstract class TimedEffectCollectible : Collectible
         get { return effectDuration; } 
         private set { effectDuration = value; }
     }
-    
+
     protected override void OnCollect()
     {
         elapsed = 0;
         playerStatusScript = playerObj.GetComponent<PlayerStatus>();
+
+        playerManagerScript = playerObj.GetComponent<PlayerManager>();
+        playerManagerScript.OnPlayerDeathEvent += OnPlayerDeath;
 
         List<TimedEffectCollectible> effectsList = playerStatusScript.GetCurrentTimedEffects(effect);
 
@@ -46,6 +51,15 @@ public abstract class TimedEffectCollectible : Collectible
         }
     }
 
+    public override void OnResetCollectible()
+    {
+        hasBeenCollected = false;
+
+        this.enabled = true;
+        this.gameObject.SetActive(true);
+        EnableAllRenderers();
+    }
+
     protected virtual void StartEffect()
     {
         effectCoroutine = StartCoroutine(TriggerEffect());
@@ -57,6 +71,7 @@ public abstract class TimedEffectCollectible : Collectible
         if (effectCoroutine != null)
         {
             StopCoroutine(effectCoroutine);
+            effectCoroutine = null;
         }
 
         playerStatusScript.RemoveEffect(this);
@@ -71,5 +86,10 @@ public abstract class TimedEffectCollectible : Collectible
     protected float GetTimeRemaining()
     {
         return effectDuration - elapsed;
+    }
+
+    protected void UnsubsribePlayerDeathEvent()
+    {
+        playerManagerScript.OnPlayerDeathEvent -= OnPlayerDeath;
     }
 }

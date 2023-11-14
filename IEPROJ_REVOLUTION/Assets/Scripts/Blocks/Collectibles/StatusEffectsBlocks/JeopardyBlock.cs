@@ -17,7 +17,7 @@ public class JeopardyBlock : TimedEffectCollectible
         GestureManager.Instance.OnTapEvent += OnTap;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         GestureManager.Instance.OnTapEvent -= OnTap;
     }
@@ -87,14 +87,12 @@ public class JeopardyBlock : TimedEffectCollectible
             yield return Time.deltaTime;
         }
 
-        PlayerManager playerScript = playerObj.GetComponent<PlayerManager>();
-        playerScript.KillPlayer();
-
-        playerStatusScript.RemoveEffect(this);
-
         DisableSpamPanel();
         jeopardyText.gameObject.SetActive(false);
         DisableEffect();
+
+        playerManagerScript.KillPlayer();
+        playerStatusScript.RemoveEffect(this);
     }
 
     private void DisableSpamPanel()
@@ -103,5 +101,24 @@ public class JeopardyBlock : TimedEffectCollectible
         {
             spamPanel.SetActive(false);
         }
+    }
+
+    protected override void OnPlayerDeath()
+    {
+        if (!hasBeenCollected)
+        {
+            return;
+        }
+
+        if (effectCoroutine != null)
+        {
+            DisableSpamPanel();
+            jeopardyText.gameObject.SetActive(false);
+            StopEffect();
+        }
+
+        currentSpamNumber = minSpamNumber;
+        OnResetCollectible();
+        UnsubsribePlayerDeathEvent();
     }
 }

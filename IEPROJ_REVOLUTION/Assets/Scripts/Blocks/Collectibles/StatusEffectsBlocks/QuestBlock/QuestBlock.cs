@@ -1,3 +1,4 @@
+using System.Buffers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,7 +34,7 @@ public class QuestBlock : TimedEffectCollectible
         CreateGestureImages();
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         GestureManager.Instance.OnSwipeEvent -= OnSwipe;
     }
@@ -82,12 +83,17 @@ public class QuestBlock : TimedEffectCollectible
         }
         else
         {
-            foreach (Image image in gesturesImageList)
-            {
-                image.color = Color.white;
-            }
-            numCorrectGestures = 0;
+            ResetQuest();
         }
+    }
+
+    private void ResetQuest()
+    {
+        foreach (Image image in gesturesImageList)
+        {
+            image.color = Color.white;
+        }
+        numCorrectGestures = 0;
     }
 
     private bool CheckGesture(SwipeEventArgs.SwipeDirections inputGesture)
@@ -102,22 +108,10 @@ public class QuestBlock : TimedEffectCollectible
     }
     #endregion
 
-    protected override void OnCollect()
+    protected override void StartEffect()
     {
-        elapsed = 0;
-        playerStatusScript = playerObj.GetComponent<PlayerStatus>();
-
-        List<TimedEffectCollectible> effectsList = playerStatusScript.GetCurrentTimedEffects(effect);
-
-        if (effectsList != null && effectsList.Count > 0)
-        {
-            OnStackEffect(effectsList);
-        }
-        else
-        {
-            emptyQuestParent.SetActive(true);
-            StartEffect();
-        }
+        emptyQuestParent.SetActive(true);
+        base.StartEffect();
     }
 
     protected override void OnStackEffect(List<TimedEffectCollectible> effectsList)
@@ -152,5 +146,26 @@ public class QuestBlock : TimedEffectCollectible
         playerStatusScript.RemoveEffect(this);
         emptyQuestParent.SetActive(false);
         this.gameObject.SetActive(false);
+    }
+
+    protected override void OnPlayerDeath()
+    {
+        if (!hasBeenCollected)
+        {
+            return;
+        }
+
+        if (effectCoroutine != null)
+        {
+            // reduce score
+            Debug.Log("Quest: reduce score");
+
+            emptyQuestParent.SetActive(false);
+            StopEffect();
+        }
+
+        ResetQuest();
+        OnResetCollectible();
+        UnsubsribePlayerDeathEvent();
     }
 }

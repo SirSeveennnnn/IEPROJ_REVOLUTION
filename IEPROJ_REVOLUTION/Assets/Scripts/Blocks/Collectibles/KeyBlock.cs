@@ -14,5 +14,17 @@ public class KeyBlock : Collectible
     protected override void OnCollect()
     {
         OnKeyCollectedEvent.Invoke();
+
+        this.enabled = false;
+        this.gameObject.SetActive(false);
+    }
+
+    public override void OnResetCollectible()
+    {
+        hasBeenCollected = false;
+
+        this.enabled = true;
+        this.gameObject.SetActive(true);
+        EnableAllRenderers();
     }
 }

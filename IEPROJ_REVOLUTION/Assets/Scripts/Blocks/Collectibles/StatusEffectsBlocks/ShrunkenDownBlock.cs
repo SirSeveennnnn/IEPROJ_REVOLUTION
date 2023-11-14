@@ -26,8 +26,7 @@ public class ShrunkenDownBlock : TimedEffectCollectible
 
     protected override IEnumerator TriggerEffect()
     {
-        PlayerManager playerScript = playerObj.GetComponent<PlayerManager>();
-        playerScript.OnShrukenDown(true);
+        playerManagerScript.OnShrukenDown(true);
 
         while (elapsed < effectDuration)
         {
@@ -37,8 +36,25 @@ public class ShrunkenDownBlock : TimedEffectCollectible
 
         //yield return new WaitForSeconds(effectDuration);
 
-        playerScript.OnShrukenDown(false);
+        playerManagerScript.OnShrukenDown(false);
         playerStatusScript.RemoveEffect(this);
         DisableEffect();
+    }
+
+    protected override void OnPlayerDeath()
+    {
+        if (!hasBeenCollected)
+        {
+            return;
+        }
+
+        if (effectCoroutine != null)
+        {
+            playerManagerScript.OnShrukenDown(false);
+            StopEffect();
+        }
+
+        OnResetCollectible();
+        UnsubsribePlayerDeathEvent();
     }
 }

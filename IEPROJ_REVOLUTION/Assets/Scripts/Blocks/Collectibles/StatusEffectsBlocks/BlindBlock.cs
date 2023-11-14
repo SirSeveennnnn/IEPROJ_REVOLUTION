@@ -7,17 +7,23 @@ public class BlindBlock : TimedEffectCollectible
     [Space(10)] [Header("Blind Block Properties")]
     [SerializeField] Material origSkybox = null;
     [SerializeField] Material blackSkybox = null;
-    [SerializeField] Renderer blindBoxRenderer = null;
+    [SerializeField] Camera playerCamera = null;
     [SerializeField] List<GameObject> uiObjects = new();
     
     [SerializeField] float blindFadeDuration = 0.5f;
     [SerializeField] float fogDensity = 0.2f;
 
+    private float defaultFarClippingPlane;
+
 
     private void Start()
     {
-        blindBoxRenderer.gameObject.SetActive(true);
-        blindBoxRenderer.enabled = false;
+        if (playerCamera == null)
+        {
+            playerCamera = Camera.main;
+        }
+
+        defaultFarClippingPlane = playerCamera.farClipPlane;
     }
 
     protected override void OnStackEffect(List<TimedEffectCollectible> effectsList)
@@ -91,7 +97,7 @@ public class BlindBlock : TimedEffectCollectible
     {
         RenderSettings.skybox = blackSkybox;
         RenderSettings.fog = true;
-        blindBoxRenderer.enabled = true;
+        playerCamera.farClipPlane = 20f;
 
         // MAKE SOME COLLECTIBLES INVISIBLE
 
@@ -105,7 +111,7 @@ public class BlindBlock : TimedEffectCollectible
     {
         RenderSettings.skybox = origSkybox;
         RenderSettings.fog = false;
-        blindBoxRenderer.enabled = false;
+        playerCamera.farClipPlane = defaultFarClippingPlane;
 
         // REVERT INVISIBLE COLLECTIBLES
 
@@ -113,6 +119,24 @@ public class BlindBlock : TimedEffectCollectible
         {
             uiObjects[i].SetActive(true);
         }
+    }
+
+    protected override void OnPlayerDeath()
+    {
+        if (!hasBeenCollected)
+        {
+            return;
+        }
+
+        if (effectCoroutine != null)
+        {
+            RenderSettings.fogDensity = 0f;
+            RemoveBlindEffect();
+            StopEffect();
+        }
+
+        OnResetCollectible();
+        UnsubsribePlayerDeathEvent();
     }
 }
 

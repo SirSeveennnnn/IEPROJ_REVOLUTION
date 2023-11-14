@@ -4,4 +4,9 @@ public class Coin : Collectible
     {
         // Add coin to level here
     }
+
+    public override void OnResetCollectible()
+    {
+        throw new System.NotImplementedException();
+    }
 }

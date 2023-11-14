@@ -7,6 +7,8 @@ public class InvisibleBlock : TimedEffectCollectible
     [Space(10)] [Header("Invisible Block Properties")]
     [SerializeField] private Material invisibleMat = null;
 
+    private Renderer[] playerRenderers = null;
+    private Material[] origMatList = null;
 
     protected override void OnStackEffect(List<TimedEffectCollectible> effectsList)
     {
@@ -30,17 +32,17 @@ public class InvisibleBlock : TimedEffectCollectible
 
     protected override IEnumerator TriggerEffect()
     {
-        Renderer[] playerRenderers = playerObj.GetComponent<PlayerManager>().GetModelRenderer();
-        Material[] origMatList = new Material[playerRenderers.Length];
-
-        for (int i = 0; i < playerRenderers.Length; i++)
+        if (playerRenderers == null)
         {
-            Renderer r = playerRenderers[i];
-
-            origMatList[i] = r.material;
-            r.material = invisibleMat;
-            r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+            playerRenderers = playerObj.GetComponent<PlayerManager>().GetModelRenderer();
         }
+
+        if (origMatList == null)
+        {
+            origMatList = new Material[playerRenderers.Length];
+        }
+
+        MakePlayerInvisible();
 
         while (elapsed < effectDuration)
         {
@@ -50,6 +52,26 @@ public class InvisibleBlock : TimedEffectCollectible
 
         //yield return new WaitForSeconds(effectDuration);
 
+        MakePlayerVisible();
+
+        playerStatusScript.RemoveEffect(this);
+        DisableEffect();
+    }
+
+    private void MakePlayerInvisible()
+    {
+        for (int i = 0; i < playerRenderers.Length; i++)
+        {
+            Renderer r = playerRenderers[i];
+
+            origMatList[i] = r.material;
+            r.material = invisibleMat;
+            r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        }
+    }
+
+    private void MakePlayerVisible()
+    {
         for (int i = 0; i < playerRenderers.Length; i++)
         {
             Renderer r = playerRenderers[i];
@@ -57,8 +79,22 @@ public class InvisibleBlock : TimedEffectCollectible
             r.material = origMatList[i];
             r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
         }
+    }
 
-        playerStatusScript.RemoveEffect(this);
-        DisableEffect();
+    protected override void OnPlayerDeath()
+    {
+        if (!hasBeenCollected)
+        {
+            return;
+        }
+
+        if (effectCoroutine != null)
+        {
+            MakePlayerVisible();
+            StopEffect();
+        }
+
+        OnResetCollectible();
+        UnsubsribePlayerDeathEvent();
     }
 }

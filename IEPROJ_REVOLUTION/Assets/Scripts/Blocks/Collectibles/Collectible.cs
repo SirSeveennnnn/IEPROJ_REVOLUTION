@@ -16,6 +16,7 @@ public abstract class Collectible : MonoBehaviour
     protected GameObject playerObj = null;
 
     protected abstract void OnCollect();
+    public abstract void OnResetCollectible();
 
 
     private void Awake()
@@ -53,6 +54,14 @@ public abstract class Collectible : MonoBehaviour
             }
 
             OnCollect();
+        }
+    }
+
+    protected void EnableAllRenderers()
+    {
+        foreach (Renderer renderer in modelRenderersList)
+        {
+            renderer.enabled = true;
         }
     }
 }

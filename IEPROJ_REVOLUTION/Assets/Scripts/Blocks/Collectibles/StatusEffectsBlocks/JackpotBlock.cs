@@ -19,7 +19,7 @@ public class JackpotBlock : TimedEffectCollectible
         GestureManager.Instance.OnTapEvent += OnTap;    
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         GestureManager.Instance.OnTapEvent -= OnTap;
     }
@@ -39,6 +39,7 @@ public class JackpotBlock : TimedEffectCollectible
             currentSpamNumber = maxSpamNumber;
             StopEffect();
             OnJackpotEnd();
+            DisableEffect();
         }
     }
 
@@ -100,5 +101,23 @@ public class JackpotBlock : TimedEffectCollectible
 
         jackpotText.gameObject.SetActive(false);
         DisableEffect();
+    }
+
+    protected override void OnPlayerDeath()
+    {
+        if (!hasBeenCollected)
+        {
+            return;
+        }
+
+        if (effectCoroutine != null)
+        {
+            OnJackpotEnd();
+            StopEffect();
+        }
+
+        currentSpamNumber = 0;
+        OnResetCollectible();
+        UnsubsribePlayerDeathEvent();
     }
 }
