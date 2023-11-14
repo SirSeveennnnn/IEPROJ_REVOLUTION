@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class StompableBlock : MonoBehaviour
+public class StompableBlock : MonoBehaviour, IResettable
 {
     [SerializeField] private AnimationCurve curve;
     [SerializeField] private float offset;
@@ -37,6 +37,7 @@ public class StompableBlock : MonoBehaviour
 
                 // Add score
 
+                this.enabled = false;
                 this.gameObject.SetActive(false);
             }
             else
@@ -45,6 +46,11 @@ public class StompableBlock : MonoBehaviour
                 playerScript.KillPlayer();
             }
         }
+    }
 
+    public void OnReset()
+    {
+        this.enabled = true;
+        this.gameObject.SetActive(true);
     }
 }

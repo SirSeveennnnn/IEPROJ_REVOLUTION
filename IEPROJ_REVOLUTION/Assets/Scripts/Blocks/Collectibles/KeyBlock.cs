@@ -13,13 +13,13 @@ public class KeyBlock : Collectible
 
     protected override void OnCollect()
     {
-        OnKeyCollectedEvent.Invoke();
+        OnKeyCollectedEvent?.Invoke();
 
         this.enabled = false;
         this.gameObject.SetActive(false);
     }
 
-    public override void OnResetCollectible()
+    public override void OnReset()
     {
         hasBeenCollected = false;
 

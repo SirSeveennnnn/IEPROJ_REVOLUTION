@@ -2,9 +2,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class MoveBlock : MonoBehaviour
+public class MoveBlock : DistanceBasedBlock, IResettable
 {
-    [SerializeField] private LevelSettings levelSettings;
     [SerializeField] private int triggerDistanceByBlock;
     [SerializeField] private float moveDuration;
     [SerializeField, Range(-1f, 1f)] private int horizontalMovement;
@@ -14,6 +13,7 @@ public class MoveBlock : MonoBehaviour
     private float elapsedTime;
     private Vector3 startPos;
     private Vector3 targetPos;
+    private Vector3 defaultPos;
 
     private GameObject playerObj;
     private Collider col;
@@ -25,6 +25,8 @@ public class MoveBlock : MonoBehaviour
         elapsedTime = 0f;
         startPos = Vector3.zero;
         targetPos = Vector3.zero;
+
+        defaultPos = transform.position;
 
         if (GetComponent<StompableBlock>() == null)
         {
@@ -67,8 +69,12 @@ public class MoveBlock : MonoBehaviour
         }
     }
 
-    public void SetLevelSettings(LevelSettings levelSettings)
+    public void OnReset()
     {
-        this.levelSettings = levelSettings;
+        transform.position = defaultPos;
+        isMovementTriggered = false;
+        elapsedTime = 0f;
+
+        this.enabled = true;
     }
 }

@@ -165,7 +165,7 @@ public class QuestBlock : TimedEffectCollectible
         }
 
         ResetQuest();
-        OnResetCollectible();
+        OnReset();
         UnsubsribePlayerDeathEvent();
     }
 }

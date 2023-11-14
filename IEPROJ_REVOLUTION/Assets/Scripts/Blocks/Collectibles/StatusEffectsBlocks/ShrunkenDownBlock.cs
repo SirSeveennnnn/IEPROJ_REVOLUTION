@@ -54,7 +54,7 @@ public class ShrunkenDownBlock : TimedEffectCollectible
             StopEffect();
         }
 
-        OnResetCollectible();
+        OnReset();
         UnsubsribePlayerDeathEvent();
     }
 }

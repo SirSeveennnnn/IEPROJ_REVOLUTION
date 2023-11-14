@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class GateBlock : MonoBehaviour
+public class GateBlock : MonoBehaviour, IResettable
 {
     [Header("Lock And Key Properties")]
     [SerializeField] private List<KeyBlock> keyList = new();
@@ -15,17 +15,12 @@ public class GateBlock : MonoBehaviour
     [SerializeField] private int keysCollected = 0;
     private float startYPos;
     private float targetYPos;
+    private float defaultYPos;
 
-    private Renderer r;
     private Collider col;
     private Rigidbody rb;
     private Coroutine unlockCoroutine;
 
-
-    private void Awake()
-    {
-        r = GetComponent<Renderer>();
-    }
 
     private void Start()
     {
@@ -33,6 +28,9 @@ public class GateBlock : MonoBehaviour
         {
             key.OnKeyCollectedEvent += CheckToUnlock;
         }
+
+        keysCollected = 0;
+        defaultYPos = transform.position.y;
 
         tag = "Obstacle";
 
@@ -56,20 +54,22 @@ public class GateBlock : MonoBehaviour
     {
         keysCollected++;
 
+        float localMoveDistance = this.moveDistance;
+
         if (keysCollected == keyList.Count)
         {
-            moveDistance *= 2.5f;
+            localMoveDistance *= 2.5f;
         }
 
         if (unlockCoroutine == null)
         {
             startYPos = transform.position.y;
-            targetYPos = startYPos - moveDistance;
+            targetYPos = startYPos - localMoveDistance;
         }
         else
         {
             startYPos = transform.position.y;
-            targetYPos -= moveDistance;
+            targetYPos -= localMoveDistance;
             StopCoroutine(unlockCoroutine);
         }
 
@@ -90,5 +90,18 @@ public class GateBlock : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, targetYPos, transform.position.z);
         this.enabled = false;
+    }
+
+    public void OnReset()
+    {
+        if (unlockCoroutine != null)
+        {
+            StopCoroutine(unlockCoroutine);
+            unlockCoroutine = null;
+        }
+
+        keysCollected = 0;
+        transform.position = new Vector3(transform.position.x, defaultYPos, transform.position.z);
+        this.enabled = true;
     }
 }

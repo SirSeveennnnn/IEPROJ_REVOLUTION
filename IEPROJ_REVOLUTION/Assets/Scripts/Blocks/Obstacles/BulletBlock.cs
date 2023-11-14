@@ -47,4 +47,15 @@ public class BulletBlock : MonoBehaviour
 
         cannonObj.SetActive(false);
     }
+
+    public void OnReset()
+    {
+        if (bulletCoroutine != null)
+        {
+            StopCoroutine(bulletCoroutine);
+            bulletCoroutine = null;
+        }
+
+        this.transform.localPosition = Vector3.zero;
+    }
 }

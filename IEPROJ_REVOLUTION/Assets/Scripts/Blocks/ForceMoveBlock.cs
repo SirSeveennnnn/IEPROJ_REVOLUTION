@@ -2,9 +2,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class ForceMoveBlock : MonoBehaviour
+public class ForceMoveBlock : DistanceBasedBlock
 {
-    [SerializeField] private LevelSettings levelSettings;
     [SerializeField] private bool isGoingRight;
 
     private Collider col;
@@ -19,11 +18,6 @@ public class ForceMoveBlock : MonoBehaviour
         col.isTrigger = true;
         rb.useGravity = false;
         rb.isKinematic = true;
-    }
-
-    public void SetLevelSettings(LevelSettings levelSettings)
-    {
-        this.levelSettings = levelSettings;
     }
 
     private void OnTriggerEnter(Collider other)

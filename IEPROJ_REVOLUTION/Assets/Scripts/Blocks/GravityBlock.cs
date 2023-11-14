@@ -2,12 +2,12 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class GravityBlock : MonoBehaviour
+public class GravityBlock : MonoBehaviour, IResettable
 {
     private bool hasSwiped;
     private Collider col;
     private Rigidbody rb;
-    [SerializeField] private GameObject player;
+    private GameObject player;
 
     private void Start()
     {
@@ -23,7 +23,7 @@ public class GravityBlock : MonoBehaviour
         rb.isKinematic = true;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         GestureManager.Instance.OnSwipeEvent -= OnSwipe;
     }
@@ -65,5 +65,12 @@ public class GravityBlock : MonoBehaviour
             player = null;
             this.enabled = false;
         }
+    }
+
+    public void OnReset()
+    {
+        hasSwiped = false;
+        player = null;
+        this.enabled = true;
     }
 }

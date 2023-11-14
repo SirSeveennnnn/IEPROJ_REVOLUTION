@@ -51,7 +51,7 @@ public abstract class TimedEffectCollectible : Collectible
         }
     }
 
-    public override void OnResetCollectible()
+    public override void OnReset()
     {
         hasBeenCollected = false;
 

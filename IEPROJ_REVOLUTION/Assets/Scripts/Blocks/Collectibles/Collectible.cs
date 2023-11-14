@@ -3,7 +3,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public abstract class Collectible : MonoBehaviour
+public abstract class Collectible : MonoBehaviour, IResettable
 {
     [Header("Collectible Properties")]
     [SerializeField] private bool isVisible = false;
@@ -16,7 +16,7 @@ public abstract class Collectible : MonoBehaviour
     protected GameObject playerObj = null;
 
     protected abstract void OnCollect();
-    public abstract void OnResetCollectible();
+    public abstract void OnReset();
 
 
     private void Awake()
@@ -59,6 +59,11 @@ public abstract class Collectible : MonoBehaviour
 
     protected void EnableAllRenderers()
     {
+        if (!isVisible)
+        {
+            return;
+        }
+
         foreach (Renderer renderer in modelRenderersList)
         {
             renderer.enabled = true;

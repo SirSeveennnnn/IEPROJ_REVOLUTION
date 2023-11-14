@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Renderer))]
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class VanishingInputBlock : MonoBehaviour
+public class VanishingInputBlock : MonoBehaviour, IResettable
 {
     private bool hasGameStarted;
 
@@ -36,7 +36,7 @@ public class VanishingInputBlock : MonoBehaviour
         GestureManager.Instance.OnSwipeEvent += OnSwipe;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         GameManager.GameStartEvent -= OnGameStart;
         GestureManager.Instance.OnTapEvent -= OnTap;
@@ -48,6 +48,7 @@ public class VanishingInputBlock : MonoBehaviour
         if ((transform.position.z - playerObj.transform.position.z) < -5.0f)
         {
             this.enabled = false;
+            this.gameObject.SetActive(false);
         }
     }
 
@@ -76,5 +77,14 @@ public class VanishingInputBlock : MonoBehaviour
 
         r.enabled = !r.enabled;
         col.enabled = !col.enabled;
+    }
+
+    public void OnReset()
+    {
+        r.enabled = true;
+        col.enabled = true;
+
+        this.enabled = true;
+        this.gameObject.SetActive(true);
     }
 }

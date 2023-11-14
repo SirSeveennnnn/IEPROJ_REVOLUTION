@@ -118,7 +118,7 @@ public class JeopardyBlock : TimedEffectCollectible
         }
 
         currentSpamNumber = minSpamNumber;
-        OnResetCollectible();
+        OnReset();
         UnsubsribePlayerDeathEvent();
     }
 }

@@ -94,7 +94,7 @@ public class InvisibleBlock : TimedEffectCollectible
             StopEffect();
         }
 
-        OnResetCollectible();
+        OnReset();
         UnsubsribePlayerDeathEvent();
     }
 }

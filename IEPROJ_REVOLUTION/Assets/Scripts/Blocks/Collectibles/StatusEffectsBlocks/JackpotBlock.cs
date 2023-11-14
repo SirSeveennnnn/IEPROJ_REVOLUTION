@@ -117,7 +117,7 @@ public class JackpotBlock : TimedEffectCollectible
         }
 
         currentSpamNumber = 0;
-        OnResetCollectible();
+        OnReset();
         UnsubsribePlayerDeathEvent();
     }
 }

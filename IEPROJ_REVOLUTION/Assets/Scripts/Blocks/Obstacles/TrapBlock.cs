@@ -3,9 +3,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class TrapBlock : MonoBehaviour
+public class TrapBlock : DistanceBasedBlock, IResettable
 {
-    [SerializeField] private LevelSettings levelSettings;
     [SerializeField] private int triggerDistanceByBlock;
 
     [SerializeField] private float blockTravelDistance;
@@ -85,8 +84,14 @@ public class TrapBlock : MonoBehaviour
         spike.transform.localPosition = new Vector3(spike.transform.localPosition.x, targetYPos, spike.transform.localPosition.z);
     }
 
-    public void SetLevelSettings(LevelSettings levelSettings)
+    public void OnReset()
     {
-        this.levelSettings = levelSettings;
+        isMovementTriggered = false;
+
+        this.transform.position = new Vector3(transform.position.x, transform.position.y - blockTravelDistance, transform.position.z);
+        uprightSpike.transform.localPosition = Vector3.zero;
+        upsideDownSpike.transform.localPosition = Vector3.zero;
+
+        this.enabled = true;
     }
 }

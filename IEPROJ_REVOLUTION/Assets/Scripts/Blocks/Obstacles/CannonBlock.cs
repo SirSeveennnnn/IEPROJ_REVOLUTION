@@ -2,10 +2,9 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Renderer))]
-public class CannonBlock : MonoBehaviour
+public class CannonBlock : DistanceBasedBlock, IResettable
 {
-    [Header("Cannon")]
-    [SerializeField] private LevelSettings levelSettings;
+    [Header("Cannon Properties")]
     [SerializeField] private int triggerDistanceByBlock = 8;
 
     [SerializeField] private float jumpHeight = 2.5f;
@@ -19,6 +18,9 @@ public class CannonBlock : MonoBehaviour
 
     private bool isCannonTriggered;
     private float chargeDuration;
+    private float defaultYPos;
+
+    private Coroutine cannonCoroutine;
     private GameObject playerObj;
     private Renderer r;
 
@@ -31,11 +33,13 @@ public class CannonBlock : MonoBehaviour
             Debug.Log("NO BULLETS " +  gameObject.name);
         }
 
+        defaultYPos = transform.position.y;
+
         isCannonTriggered = false;
         chargeDuration = 0.3f;
 
         playerObj = GameManager.Instance.Player.gameObject;
-        r = GetComponent<Renderer>(); 
+        r = GetComponent<Renderer>();
     }
 
     private void Update()
@@ -44,7 +48,7 @@ public class CannonBlock : MonoBehaviour
         {
             isCannonTriggered = true;
 
-            StartCoroutine(TriggerCannonCoroutine());
+            cannonCoroutine = StartCoroutine(TriggerCannonCoroutine());
         }
     }
 
@@ -65,6 +69,8 @@ public class CannonBlock : MonoBehaviour
             yield return Time.deltaTime;
         }
 
+        transform.position = new Vector3(transform.position.x, targetYPos, transform.position.z);
+
         yield return new WaitForSeconds(chargeDuration);
 
         if (!isFakeCannon)
@@ -76,8 +82,20 @@ public class CannonBlock : MonoBehaviour
         this.enabled = false;
     }
 
-    public void SetLevelSettings(LevelSettings levelSettings)
+    public void OnReset()
     {
-        this.levelSettings = levelSettings;
+        if (cannonCoroutine != null)
+        {
+            StopCoroutine(cannonCoroutine);
+            cannonCoroutine = null;
+        }
+
+        isCannonTriggered = false;
+        transform.position = new Vector3(transform.position.x, defaultYPos, transform.position.z);
+
+        bullet.OnReset();
+        r.enabled = true;
+        this.enabled = true;
+        this.gameObject.SetActive(true);
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class LockedBlock : MonoBehaviour
+public class LockedBlock : MonoBehaviour,  IResettable
 {
     [Header("Lock And Key Properties")]
     [SerializeField] private List<KeyBlock> keyList = new();
@@ -14,6 +14,7 @@ public class LockedBlock : MonoBehaviour
     [SerializeField] private float moveDistance = 2f;
     private float startYPos;
     private float targetYPos;
+    private float defaultYPos;
 
     private Renderer r;
     private Collider col;
@@ -32,6 +33,8 @@ public class LockedBlock : MonoBehaviour
         {
             key.OnKeyCollectedEvent += CheckToUnlock;
         }
+
+        defaultYPos = transform.position.y;
 
         tag = "Obstacle";
 
@@ -90,5 +93,17 @@ public class LockedBlock : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, targetYPos, transform.position.z);
         this.enabled = false;
+    }
+
+    public void OnReset()
+    {
+        if (unlockCoroutine != null)
+        {
+            StopCoroutine(unlockCoroutine);
+            unlockCoroutine = null;
+        }
+
+        transform.position = new Vector3(transform.position.x, defaultYPos, transform.position.z);
+        this.enabled = true;
     }
 }

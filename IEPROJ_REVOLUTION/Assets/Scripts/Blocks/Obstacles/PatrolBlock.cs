@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class PatrolBlock : MonoBehaviour
+public class PatrolBlock : MonoBehaviour, IResettable
 {
     [SerializeField] private float leftPos;
     [SerializeField] private float rightPos;
@@ -13,6 +13,7 @@ public class PatrolBlock : MonoBehaviour
     private float elapsedTime;
     private float startXPos;
     private float targetXPos;
+    private float defaultXPos;
 
     private GameObject playerObj;
     private Collider col;
@@ -20,12 +21,8 @@ public class PatrolBlock : MonoBehaviour
 
     private void Start()
     {
-        startXPos = isGoingRight ? leftPos : rightPos;
-        targetXPos = isGoingRight ? rightPos : leftPos;
-
-        float distance = Mathf.Abs(rightPos - leftPos);
-        elapsedTime = isGoingRight ? Mathf.Abs(leftPos - transform.position.x) / distance : Mathf.Abs(rightPos - transform.position.x) / distance;
-        elapsedTime *= moveDuration;
+        SetInitialMovementValues();
+        defaultXPos = transform.position.x;
 
         if (GetComponent<StompableBlock>() == null)
         {
@@ -41,6 +38,11 @@ public class PatrolBlock : MonoBehaviour
         col.isTrigger = true;
         rb.useGravity = false;
         rb.isKinematic = true;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.GameStartEvent -= StartGame;
     }
 
     private void Update()
@@ -71,8 +73,26 @@ public class PatrolBlock : MonoBehaviour
         }
     }
 
+    private void SetInitialMovementValues()
+    {
+        startXPos = isGoingRight ? leftPos : rightPos;
+        targetXPos = isGoingRight ? rightPos : leftPos;
+
+        float distance = Mathf.Abs(rightPos - leftPos);
+        elapsedTime = isGoingRight ? Mathf.Abs(leftPos - transform.position.x) / distance : Mathf.Abs(rightPos - transform.position.x) / distance;
+        elapsedTime *= moveDuration;
+    }
+
     private void StartGame()
     {
         hasGameStarted = true;
+    }
+
+    public void OnReset()
+    {
+        transform.position = new Vector3(defaultXPos, transform.position.y, transform.position.z);
+        SetInitialMovementValues();
+
+        this.enabled = true;
     }
 }

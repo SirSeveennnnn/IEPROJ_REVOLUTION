@@ -2,15 +2,13 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class MagnetBlock : MonoBehaviour
+public class MagnetBlock : MonoBehaviour, IResettable
 {
-    private Renderer r;
     private Collider col;
     private Rigidbody rb;
 
     private void Start()
-    {
-        r = GetComponent<Renderer>();  
+    {  
         col = GetComponent<Collider>();
         rb = GetComponent<Rigidbody>();
 
@@ -24,13 +22,19 @@ public class MagnetBlock : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerMovement movementScript = other.GetComponent<PlayerMovement>();
-            movementScript.PlayerMove(transform.position.x, 0.08f);
+            movementScript.PlayerMove(transform.position.x, 0.05f);
 
             PlayerManager playerScript = other.GetComponent<PlayerManager>();
             playerScript.ApplyIFrames(0.3f);
 
-            r.enabled = false;
             this.enabled = false;
+            this.gameObject.SetActive(false);
         }
+    }
+
+    public void OnReset()
+    {
+        this.enabled = true;
+        this.gameObject.SetActive(true);
     }
 }

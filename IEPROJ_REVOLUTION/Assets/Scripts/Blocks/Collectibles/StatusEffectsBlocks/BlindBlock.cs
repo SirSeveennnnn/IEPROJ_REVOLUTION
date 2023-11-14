@@ -135,7 +135,7 @@ public class BlindBlock : TimedEffectCollectible
             StopEffect();
         }
 
-        OnResetCollectible();
+        OnReset();
         UnsubsribePlayerDeathEvent();
     }
 }

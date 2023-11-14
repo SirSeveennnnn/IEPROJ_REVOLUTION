@@ -3,18 +3,20 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class MovingInputBlock : MonoBehaviour
+public class MovingInputBlock : MonoBehaviour, IResettable
 {
     [SerializeField] private float leftPos;
     [SerializeField] private float rightPos;
     [SerializeField] private bool isGoingRight;
-
 
     private bool hasGameStarted;
     private float moveDuration;
     private float startXPos;
     private float targetXPos;
     private Coroutine moveCoroutine;
+
+    private float defaultXPos;
+    private bool defaultGoingRight;
 
     private Collider col;
     private Rigidbody rb;
@@ -30,6 +32,9 @@ public class MovingInputBlock : MonoBehaviour
         hasGameStarted = false;
         moveDuration = 0.05f;
         moveCoroutine = null;
+
+        defaultXPos = transform.position.x;
+        defaultGoingRight = isGoingRight;
 
         col = GetComponent<Collider>();
         rb = GetComponent<Rigidbody>();
@@ -63,26 +68,19 @@ public class MovingInputBlock : MonoBehaviour
     private void OnGameStart()
     {
         hasGameStarted = true;
-        isGoingRight = !isGoingRight;
     }
 
     private void OnTap(object send, TapEventArgs args)
     {
-        if (!hasGameStarted)
-        {
-            return;
-        }
-
-        if (moveCoroutine != null)
-        {
-            StopCoroutine(moveCoroutine);
-            moveCoroutine = null;
-        }
-
-        moveCoroutine = StartCoroutine(MoveCoroutine());
+        CheckInput();
     }
 
     private void OnSwipe(object send, SwipeEventArgs args)
+    {
+        CheckInput();
+    }
+
+    private void CheckInput()
     {
         if (!hasGameStarted)
         {
@@ -100,7 +98,6 @@ public class MovingInputBlock : MonoBehaviour
 
     private IEnumerator MoveCoroutine()
     {
-        isGoingRight = !isGoingRight;
         startXPos = isGoingRight ? leftPos : rightPos;
         targetXPos = isGoingRight ? rightPos : leftPos; 
         
@@ -117,6 +114,21 @@ public class MovingInputBlock : MonoBehaviour
         }
 
         transform.position = new Vector3(targetXPos, transform.position.y, transform.position.z);
+        isGoingRight = !isGoingRight;
         moveCoroutine = null;
+    }
+
+    public void OnReset()
+    {
+        if (moveCoroutine != null)
+        {
+            StopCoroutine(moveCoroutine);
+            moveCoroutine = null;
+        }
+
+        isGoingRight = defaultGoingRight;
+        transform.position = new Vector3(defaultXPos, transform.position.y, transform.position.z);
+
+        this.enabled = true;
     }
 }

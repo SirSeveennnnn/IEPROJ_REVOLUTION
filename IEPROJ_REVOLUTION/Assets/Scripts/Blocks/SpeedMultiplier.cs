@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class SpeedMultiplier : MonoBehaviour
+public class SpeedMultiplier : MonoBehaviour, IResettable
 {
     [SerializeField] private float speedMultiplier;
     private Collider col;
@@ -27,5 +27,10 @@ public class SpeedMultiplier : MonoBehaviour
 
             this.enabled = false;
         }
+    }
+
+    public void OnReset()
+    {
+        this.enabled = true;
     }
 }

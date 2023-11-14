@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class Portal : MonoBehaviour
+public class Portal : MonoBehaviour, IResettable
 {
     [SerializeField] private Transform outPortal;
     [SerializeField] private PlayerManager player;
@@ -13,7 +13,7 @@ public class Portal : MonoBehaviour
         GestureManager.Instance.OnSwipeEvent += OnSwipe;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         //GestureManager.Instance.OnTapEvent -= OnTap;
         GestureManager.Instance.OnSwipeEvent -= OnSwipe;
@@ -48,6 +48,7 @@ public class Portal : MonoBehaviour
             PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
             movementScript.Teleport(outPortal.position.x);
 
+            player = null;
             this.enabled = false;
         }
     }
@@ -66,5 +67,11 @@ public class Portal : MonoBehaviour
         {
             player = null;
         }
+    }
+
+    public void OnReset()
+    {
+        player = null;
+        this.enabled = true;
     }
 }
