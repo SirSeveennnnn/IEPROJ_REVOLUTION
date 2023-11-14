@@ -27,6 +27,7 @@ public class LevelSettings : MonoBehaviour
     public GameObject MoveRightBlock;
     public GameObject ForceLeft;
     public GameObject ForceRight;
+    public GameObject portalHandler;
 
     [Header("Neon Path Settings")]
     public GameObject NeonPathPrefab;
@@ -37,6 +38,10 @@ public class LevelSettings : MonoBehaviour
     [Space(10)]
     public List<int> dataList;
     public List<GameObject> objectList;
+
+    //Other Settings
+    private int portalCounter = 0;
+    private PortalHandler tempPortalHandler;
     
 
     
@@ -179,6 +184,29 @@ public class LevelSettings : MonoBehaviour
                 //PrefabUtility.InstantiatePrefab(ObstaclePrefab, position);
                 GameObject clone = Instantiate(ForceRight, position, ForceRight.transform.rotation, this.transform);
                 objectList.Add(clone);
+            }
+            else if (dataList[i] == 8)
+            {
+                Vector3 position = new Vector3(row, 1, col);
+
+                if (portalCounter == 0)
+                {
+                    GameObject clone = Instantiate(portalHandler, position, portalHandler.transform.rotation, this.transform);
+                    objectList.Add(clone);
+
+                    tempPortalHandler = clone.GetComponent<PortalHandler>();
+                    tempPortalHandler.portals[0].transform.position = position;
+
+                    portalCounter++;
+                }
+                else if (portalCounter == 1)
+                {
+                    tempPortalHandler.portals[1].transform.position = position;
+                    tempPortalHandler = null;
+
+                    portalCounter = 0;
+                }
+                
             }
 
             row++;

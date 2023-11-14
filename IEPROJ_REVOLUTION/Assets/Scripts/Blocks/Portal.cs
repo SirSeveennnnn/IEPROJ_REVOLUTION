@@ -4,29 +4,18 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Portal : MonoBehaviour
 {
-    [SerializeField] private Transform outPortal;
-    [SerializeField] private PlayerManager player;
+    public PortalHandler handler;
+    public GameObject otherPortal;
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && handler.isUsed == false)
         {
-            player = other.GetComponent<PlayerManager>();
-            //player.ApplyIFrames(0.5f);
-
-            PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
-            //movementScript.Teleport(outPortal.position.x);
-
-            this.enabled = false;
+            PlayerMovement movementScript = other.GetComponent<PlayerMovement>();
+            movementScript.MovePlayerPosition(otherPortal.transform.position.x);
+            handler.isUsed = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            player = null;
-        }
-    }
 }
