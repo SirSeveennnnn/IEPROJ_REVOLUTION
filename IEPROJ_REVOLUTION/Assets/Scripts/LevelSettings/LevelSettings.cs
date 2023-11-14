@@ -8,10 +8,15 @@ public class LevelSettings : MonoBehaviour
 {
     public AudioClip levelClip;
 
+    [Header("Song BPM")]
     public int beatsPerMinute;
 
     [Header("Level Creator Settings")]
     public int numberOfRows = 5;
+    public float laneDistance = 1;
+
+    [Space(10)]
+    public GameManager gameManager;
     
 
     [Space(10)]
@@ -20,6 +25,8 @@ public class LevelSettings : MonoBehaviour
     public GameObject ObstaclePrefab;
     public GameObject MoveLeftBlock;
     public GameObject MoveRightBlock;
+    public GameObject ForceLeft;
+    public GameObject ForceRight;
 
     [Header("Neon Path Settings")]
     public GameObject NeonPathPrefab;
@@ -155,6 +162,22 @@ public class LevelSettings : MonoBehaviour
                 Vector3 position = new Vector3(row, 1, col);
                 //PrefabUtility.InstantiatePrefab(ObstaclePrefab, position);
                 GameObject clone = Instantiate(MoveRightBlock, position, MoveRightBlock.transform.rotation, this.transform);
+                objectList.Add(clone);
+            }
+            else if (dataList[i] == 6)
+            {
+                //Create Obstacle at Row, Col
+                Vector3 position = new Vector3(row, neonPathY, col);
+                //PrefabUtility.InstantiatePrefab(ObstaclePrefab, position);
+                GameObject clone = Instantiate(ForceLeft, position, ForceLeft.transform.rotation, this.transform);
+                objectList.Add(clone);
+            }
+            else if (dataList[i] == 7)
+            {
+                //Create Obstacle at Row, Col
+                Vector3 position = new Vector3(row, neonPathY, col);
+                //PrefabUtility.InstantiatePrefab(ObstaclePrefab, position);
+                GameObject clone = Instantiate(ForceRight, position, ForceRight.transform.rotation, this.transform);
                 objectList.Add(clone);
             }
 

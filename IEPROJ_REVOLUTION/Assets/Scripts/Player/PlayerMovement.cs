@@ -99,9 +99,6 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
 
-        //playerModel.transform.Rotate(new Vector3(playerSpeed * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
-
-       
     }
 
     private void StartPlayer()
@@ -131,6 +128,15 @@ public class PlayerMovement : MonoBehaviour
         playerAnim.ToggleRoll();
     }
 
+    public void MovePlayer(float distance)
+    {
+        transform.position = new Vector3(transform.position.x + distance, transform.position.y, transform.position.z);
+    }
+
+    public void MovePlayerPosition(float x)
+    {
+        transform.position = new Vector3(x, transform.position.y, transform.position.z);
+    }
 
     
     private void OnCollisionEnter(Collision collision)
