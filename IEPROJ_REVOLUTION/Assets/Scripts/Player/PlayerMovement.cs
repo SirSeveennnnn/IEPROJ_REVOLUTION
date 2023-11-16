@@ -7,8 +7,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Player Settings")]
     //[SerializeField] private float playerSpeed = 0;
     //[SerializeField] private int bpmMultiplier;
-    [SerializeField] private float rotationSpeedMultiplier = 0;
+    //[SerializeField] private float rotationSpeedMultiplier = 0;
     [SerializeField] private float speedMultiplier = 1;
+    public bool disableMovement;
     private float prevSongPos;
     private float currentSongPos;
 
@@ -56,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
         prevSongPos = 0f;
         currentSongPos = 0f;
+        disableMovement = false;
 
         //playerSpeed = levelSettings.beatsPerMinute / bpmMultiplier;
         //jumpDistanceInSeconds = jumpDistance * AudioManager.Instance.GetSecondsPerBeat();
@@ -79,6 +81,18 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
+        prevSongPos = currentSongPos;
+        currentSongPos = AudioManager.Instance.GetPositionInBeats();
+        float translation = (currentSongPos - prevSongPos) * speedMultiplier;
+
+        if (disableMovement)
+        {
+            return;
+        }
+
+        transform.Translate(new Vector3(0f, 0f, translation));
+
+
         //if (SwipeManager.swipeRight)
         //{
         //    float nextPos = transform.position.x + levelSettings.laneDistance;
@@ -94,12 +108,6 @@ public class PlayerMovement : MonoBehaviour
         //    PlayerJump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat());
         //}
 
-        prevSongPos = currentSongPos;
-        currentSongPos = AudioManager.Instance.GetPositionInBeats();
-        float translation = (currentSongPos - prevSongPos) * speedMultiplier;
-
-        transform.Translate(new Vector3(0f, 0f, translation));
-
         //transform.position = new Vector3(transform.position.x, transform.position.y, AudioManager.Instance.GetPositionInBeats());
         //transform.Rotate(new Vector3(4 * Time.deltaTime * rotationSpeedMultiplier, 0, 0));
     }
@@ -112,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void StopPlayer()
     {
-        playerStart = false;
+        disableMovement = true;
     }
 
     private void OnTap(object send, TapEventArgs args)

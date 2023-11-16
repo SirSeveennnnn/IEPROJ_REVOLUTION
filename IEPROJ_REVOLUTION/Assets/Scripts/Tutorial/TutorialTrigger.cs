@@ -1,45 +1,38 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Rigidbody))]
 public class TutorialTrigger : MonoBehaviour
 {
-    [SerializeField] private bool isTriggered = false;
-    [SerializeField] private GameObject textDisplay = null;
-    [SerializeField] private EGestureTypes gestureType = EGestureTypes.Unknown;
+    [TextArea(5, 10)]
+    [SerializeField] protected string tutorialText;
 
+    private Collider col;
+    private Rigidbody rb;
 
-    public bool IsTriggered
-    {
-        get { return isTriggered; }
-        private set { IsTriggered = value; }
-    }
-
-    public EGestureTypes GestureType
-    {
-        get { return gestureType; }
-        private set { gestureType = value; }
-    }
-
-    public void OnCorrectGesture()
-    {
-        textDisplay.SetActive(false);
-        Destroy(this.gameObject);
-    }
 
     private void Start()
     {
-        isTriggered = false;
-        textDisplay.SetActive(false);
+        tag = "Tutorial";
+
+        col = GetComponent<Collider>();
+        rb = GetComponent<Rigidbody>();
+
+        col.isTrigger = true;
+        rb.useGravity = false;
+        rb.isKinematic = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            isTriggered = true;
-            textDisplay.SetActive(true);
-
-            GestureManager.Instance.OnEnableInputs(true);
-            //SwipeManager.isEnabled = true;
+            OnTutorialTrigger();
         }
+    }
+
+    protected virtual void OnTutorialTrigger()
+    {
+        TutorialManager.Instance.UpdateMainText(this, tutorialText);
     }
 }

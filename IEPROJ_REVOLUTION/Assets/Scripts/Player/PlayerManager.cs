@@ -93,6 +93,14 @@ public class PlayerManager : MonoBehaviour
         sparkEffect.Stop();
     }
 
+    public void RespawnPlayer(Vector2 respawnPoint)
+    {
+        this.transform.position = new Vector3(transform.position.x, transform.position.y, respawnPoint.y);
+        playerMovement.Teleport(respawnPoint.x); // this will also reset the currentLane variable
+
+        playerCamera.InstantUpdate();
+    }
+
     public Renderer[] GetModelRenderer()
     {
         return modelRendererList;

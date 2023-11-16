@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TempMainMenu.unity
     guid: 20c9a0e36b02d144c98cc9966eff374f
   - enabled: 0
-    path: Assets/Scenes/TutorialScene.unity
+    path: Assets/Scenes/TutorialScene_old.unity
     guid: 3998aab0ee09df74690887196e7094a0
   - enabled: 0
     path: Assets/Scenes/MOKKA V2.unity
@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SpiralsScene.unity
     guid: 7cdb16c5aaa5f9647b25f58e5a21d578
   - enabled: 0
-    path: Assets/Scenes/TutorialScene.unity
+    path: Assets/Scenes/TutorialScene_old.unity
     guid: 3998aab0ee09df74690887196e7094a0
   m_configObjects: {}

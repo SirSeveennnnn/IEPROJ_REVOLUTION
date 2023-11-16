@@ -1,80 +1,170 @@
-using System.Collections.Generic;
+using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour
 {
-    [SerializeField] private PlayerMovement movementScript;
-    [SerializeField] private List<TutorialTrigger> triggersList = new();
+    #region Singleton
+    public static TutorialManager Instance;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance != null && Instance == this)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    #endregion
+
+    [Header("Fading Properties")]
+    [SerializeField] private float warmupDuration;
+    [SerializeField] private float fadeOutDuration;
+    [SerializeField] private Image darkPanel;
+
+    [Header("UI")]
+    [SerializeField] private GameObject mainPanel;
+    [SerializeField] private GameObject subPanel;
+    [SerializeField] private TMP_Text mainText;
+    [SerializeField] private TMP_Text subText;
+
+    private TutorialTrigger currentTrigger;
+
+    //private PlayerManager playerScript;
+    //private string currentText;
 
 
     private void Start()
     {
-        GestureManager.Instance.OnTapEvent += OnTap;
-        GestureManager.Instance.OnSwipeEvent += OnSwipe;
+        //playerScript = GameManager.Instance.Player;
+        //playerScript.OnPlayerDeathEvent += OnPlayerDeath;
 
-        GestureManager.Instance.OnEnableInputs(false);
-        //SwipeManager.isEnabled = false;
+        GestureManager.Instance.enabled = false;
+
+        warmupDuration = 0.9f;
+
+        darkPanel.gameObject.SetActive(true);
+        darkPanel.color = new Color(0f, 0f, 0f, 1f);
+
+        currentTrigger = null;
+
+        StartCoroutine(WarmUpCoroutine());
     }
 
-    private void OnDisable()
-    {
-        GestureManager.Instance.OnTapEvent -= OnTap;
-        GestureManager.Instance.OnSwipeEvent -= OnSwipe;
-    }
+    //private void OnDisable()
+    //{
+    //    playerScript.OnPlayerDeathEvent -= OnPlayerDeath;
+    //}
 
-    private void Update()
+    private IEnumerator WarmUpCoroutine()
     {
+        yield return new WaitForSeconds(warmupDuration);
+
         if (!GameManager.Instance.IsGameStarted)
         {
             GameManager.Instance.StartGame();
         }
-        
-        if (triggersList.Count == 0 || !triggersList[0].IsTriggered)
+
+        StartCoroutine(FadeOutCoroutine());
+    }
+
+    private IEnumerator FadeOutCoroutine()
+    {
+        float elapsed = 0f;
+
+        while (elapsed < fadeOutDuration)
+        {
+            elapsed += Time.deltaTime;
+
+            float alpha = 1 - Mathf.Pow(elapsed / fadeOutDuration, 3f);
+            darkPanel.color = new Color(0f, 0f, 0f, alpha);
+
+            yield return Time.deltaTime;
+        }
+
+        darkPanel.color = new Color(0f, 0f, 0f, 0f);
+        darkPanel.gameObject.SetActive(false);
+    }
+
+    public void UpdateMainText(TutorialTrigger trigger, string text)
+    {
+        if (currentTrigger != null)
+        {
+            currentTrigger.enabled = false;
+            currentTrigger.gameObject.SetActive(false);
+        }
+
+        currentTrigger = trigger;
+
+        //currentText = text;
+
+        mainText.text = text;
+        mainPanel.SetActive(true);
+
+        subPanel.SetActive(false);
+    }
+
+    public void UpdateSubText(TutorialTrigger trigger, string text)
+    {
+        if (currentTrigger != null && currentTrigger != trigger)
+        {
+            currentTrigger.enabled = false;
+            currentTrigger.gameObject.SetActive(false);
+        }
+
+        currentTrigger = trigger;
+
+        if (!mainText.gameObject.activeSelf)
         {
             return;
         }
 
-        Time.timeScale = 0;
-        //movementScript.enabled = false;
+        mainText.text = "";
+        mainPanel.SetActive(false);
 
-        //if (triggersList[0].GestureType == EGestureTypes.Tap && SwipeManager.tap ||
-        //    triggersList[0].GestureType == EGestureTypes.SwipeLeft && SwipeManager.swipeLeft ||
-        //    triggersList[0].GestureType == EGestureTypes.SwipeRight && SwipeManager.swipeRight)
-        //{
-        //    Time.timeScale = 1;
-        //    SwipeManager.isEnabled = false;
-
-        //    triggersList[0].OnCorrectGesture();
-        //    triggersList.RemoveAt(0);
-        //}
+        subText.text = text;
+        subPanel.SetActive(true);
     }
 
-    private void OnTap(object send, TapEventArgs args)
+    public void DisableText()
     {
-        if (triggersList[0].GestureType == EGestureTypes.Tap)
-        {
-            Time.timeScale = 1;
-            //movementScript.enabled = true;
-            GestureManager.Instance.OnEnableInputs(false);
+        //currentText = "";
 
-            triggersList[0].OnCorrectGesture();
-            triggersList.RemoveAt(0);
-        }
+        mainText.text = "";
+        mainPanel.SetActive(false);
+
+        subText.text = "";
+        subPanel.SetActive(false);
     }
 
-    private void OnSwipe(object send, SwipeEventArgs args)
+    public TutorialTrigger GetCurrentTrigger()
     {
-        Debug.Log(args.SwipeDirection.ToString());
-
-        if (triggersList[0].GestureType == EGestureTypes.SwipeLeft && args.SwipeDirection == SwipeEventArgs.SwipeDirections.LEFT ||
-            triggersList[0].GestureType == EGestureTypes.SwipeRight && args.SwipeDirection == SwipeEventArgs.SwipeDirections.RIGHT)
-        {
-            Time.timeScale = 1;
-            //movementScript.enabled = true;
-            GestureManager.Instance.OnEnableInputs(false);
-
-            triggersList[0].OnCorrectGesture();
-            triggersList.RemoveAt(0);
-        }
+        return currentTrigger;
     }
+
+    //private void OnPlayerDeath()
+    //{
+    //    if (!mainText.gameObject.activeSelf)
+    //    {
+    //        return;
+    //    }
+
+    //    mainText.text = "";
+    //    mainText.gameObject.SetActive(false);
+
+    //    subText.text = currentText;
+    //    subText.gameObject.SetActive(true);
+    //}
 }

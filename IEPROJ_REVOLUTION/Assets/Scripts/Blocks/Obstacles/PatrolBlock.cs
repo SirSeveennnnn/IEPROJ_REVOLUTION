@@ -56,15 +56,15 @@ public class PatrolBlock : MonoBehaviour, IResettable
         {
             transform.position = new Vector3(Mathf.Lerp(startXPos, targetXPos, elapsedTime / moveDuration), transform.position.y, transform.position.z);
             elapsedTime += Time.deltaTime;
+        }
 
-            if (elapsedTime >= moveDuration || Mathf.Abs(startXPos - targetXPos) < 0.001f)
-            {
-                isGoingRight = !isGoingRight;
-                elapsedTime = 0.0f;
+        if (elapsedTime >= moveDuration || Mathf.Abs(startXPos - targetXPos) < 0.001f)
+        {
+            isGoingRight = !isGoingRight;
+            elapsedTime = 0.0f;
 
-                startXPos = transform.position.x;
-                targetXPos = isGoingRight ? rightPos : leftPos;
-            }
+            startXPos = transform.position.x;
+            targetXPos = isGoingRight ? rightPos : leftPos;
         }
 
         if (transform.position.z - playerObj.transform.position.z < -5.0f)
@@ -79,7 +79,7 @@ public class PatrolBlock : MonoBehaviour, IResettable
         targetXPos = isGoingRight ? rightPos : leftPos;
 
         float distance = Mathf.Abs(rightPos - leftPos);
-        elapsedTime = isGoingRight ? Mathf.Abs(leftPos - transform.position.x) / distance : Mathf.Abs(rightPos - transform.position.x) / distance;
+        elapsedTime = 1 - Mathf.Abs(targetXPos - transform.position.x) / distance;
         elapsedTime *= moveDuration;
     }
 
