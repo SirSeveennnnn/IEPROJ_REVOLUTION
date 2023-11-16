@@ -14,7 +14,6 @@ public class LevelSettings : MonoBehaviour
 
     [Header("Level Creator Settings")]
     public int numberOfRows = 5;
-    public float laneDistance = 1;
 
     [Space(10)]
     public GameManager gameManager;

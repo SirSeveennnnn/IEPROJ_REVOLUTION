@@ -149,3 +149,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelSettings: {fileID: 0}
   isGoingRight: 0
+  laneDistance: 1

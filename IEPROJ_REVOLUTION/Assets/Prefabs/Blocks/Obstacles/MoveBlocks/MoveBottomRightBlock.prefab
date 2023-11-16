@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSettings: {fileID: 0}
+  laneDistance: 1
   triggerDistanceByBlock: 5
   moveDuration: 0.2
   horizontalMovement: 1

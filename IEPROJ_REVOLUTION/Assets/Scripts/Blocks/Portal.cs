@@ -2,76 +2,70 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class Portal : MonoBehaviour, IResettable
+public class Portal : MonoBehaviour
 {
-    [SerializeField] private Transform outPortal;
+    public PortalHandler handler;
+    [SerializeField] private Transform otherPortal;
     [SerializeField] private PlayerManager player;
 
-    private void Start()
-    {
-        //GestureManager.Instance.OnTapEvent += OnTap;
-        GestureManager.Instance.OnSwipeEvent += OnSwipe;
-    }
+    //private void Start()
+    //{
+    //    GestureManager.Instance.OnSwipeEvent += OnSwipe;
+    //}
 
-    private void OnDestroy()
-    {
-        //GestureManager.Instance.OnTapEvent -= OnTap;
-        GestureManager.Instance.OnSwipeEvent -= OnSwipe;
-    }
+    //private void OnDestroy()
+    //{
+    //    GestureManager.Instance.OnSwipeEvent -= OnSwipe;
+    //}
 
-    //private void OnTap(object send, TapEventArgs args)
+    //private void OnSwipe(object send, SwipeEventArgs args)
     //{
     //    if (player == null)
     //    {
     //        return;
     //    }
 
-    //    player.ApplyIFrames(0.5f);
+    //    if (args.SwipeDirection == SwipeEventArgs.SwipeDirections.DOWN)
+    //    {
+    //        player.ApplyIFrames(0.5f);
 
-    //    PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
-    //    movementScript.Teleport(outPortal.position.x);
+    //        PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
+    //        movementScript.Teleport(outPortal.position.x);
 
-    //    this.enabled = false;
+    //        player = null;
+    //        this.enabled = false;
+    //    }
     //}
 
-    private void OnSwipe(object send, SwipeEventArgs args)
-    {
-        if (player == null)
-        {
-            return;
-        }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.tag == "Player")
+    //    {
+    //        player = other.GetComponent<PlayerManager>();
+    //    }
+    //}
 
-        if (args.SwipeDirection == SwipeEventArgs.SwipeDirections.DOWN)
-        {
-            player.ApplyIFrames(0.5f);
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (other.tag == "Player")
+    //    {
+    //        player = null;
+    //    }
+    //}
 
-            PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
-            movementScript.Teleport(outPortal.position.x);
-
-            player = null;
-            this.enabled = false;
-        }
-    }
+    //public void OnReset()
+    //{
+    //    player = null;
+    //    this.enabled = true;
+    //}
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && handler.isUsed == false)
         {
-            player = other.GetComponent<PlayerManager>();
+            PlayerMovement movementScript = other.GetComponent<PlayerMovement>();
+            movementScript.PlayerMove(otherPortal.position.x);
+            handler.isUsed = true;
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            player = null;
-        }
-    }
-
-    public void OnReset()
-    {
-        player = null;
-        this.enabled = true;
     }
 }

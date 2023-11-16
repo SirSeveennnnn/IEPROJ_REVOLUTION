@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LevelSettings levelSettings;
     [SerializeField] private RectTransform leftPanelTransform;
     [SerializeField] private RectTransform rightPanelTransform;
+    [SerializeField] private bool enableGestures;
     [SerializeField] private bool isSwipe;
 
     private PlayerManager playerManager;
@@ -93,12 +94,14 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(new Vector3(0f, 0f, translation));
 
 
-        //if (SwipeManager.swipeRight)
+        // vv this doesnt work without getting the position of the touch input vv
+
+        //if (SwipeManager.tap && RectTransformUtility.RectangleContainsScreenPoint(rightPanelTransform, args.TapPosition))
         //{
         //    float nextPos = transform.position.x + levelSettings.laneDistance;
         //    PlayerMove(nextPos);
         //}
-        //else if (SwipeManager.swipeLeft)
+        //else if (SwipeManager.tap && RectTransformUtility.RectangleContainsScreenPoint(leftPanelTransform, args.TapPosition)
         //{
         //    float nextPos = transform.position.x - levelSettings.laneDistance;
         //    PlayerMove(nextPos);

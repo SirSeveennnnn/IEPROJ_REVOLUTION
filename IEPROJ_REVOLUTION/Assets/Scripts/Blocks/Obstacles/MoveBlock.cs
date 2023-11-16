@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class MoveBlock : DistanceBasedBlock, IResettable
 {
+    [SerializeField] private float laneDistance;
     [SerializeField] private int triggerDistanceByBlock;
     [SerializeField] private float moveDuration;
     [SerializeField, Range(-1f, 1f)] private int horizontalMovement;
@@ -45,15 +46,18 @@ public class MoveBlock : DistanceBasedBlock, IResettable
 
     private void Update()
     {
-        if (!isMovementTriggered && (transform.position.z - playerObj.transform.position.z) <= levelSettings.laneDistance * triggerDistanceByBlock)
+        if (!isMovementTriggered && (transform.position.z - playerObj.transform.position.z) <= laneDistance * triggerDistanceByBlock)
         {
             isMovementTriggered = true;
 
             startPos = transform.position;
             targetPos = transform.position;
 
-            targetPos.x += levelSettings.laneDistance * horizontalMovement;
-            targetPos.z += levelSettings.laneDistance * distalMovement;
+            //targetPos.x += levelSettings.laneDistance * horizontalMovement;
+            //targetPos.z += levelSettings.laneDistance * distalMovement;
+
+            targetPos.x += laneDistance * horizontalMovement;
+            targetPos.z += laneDistance * distalMovement;
         }
 
         if (isMovementTriggered && elapsedTime < moveDuration)
