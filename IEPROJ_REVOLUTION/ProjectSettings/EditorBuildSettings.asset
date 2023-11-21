@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MOKKA V2.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/ADScene.unity
+    guid: 90ffaf0a33c82b24ba955c90394c47f8
+  - enabled: 1
+    path: Assets/Scenes/ADScene2.unity
+    guid: 9591084434fbfa0408b37f0a8a39266a
+  - enabled: 1
+    path: Assets/Scenes/ADScene3.unity
+    guid: 4e2e561d399f72841bd502af0529d46f
+  - enabled: 1
+    path: Assets/Scenes/ADScene4.unity
+    guid: 8405d3e557ac4cb4a8c190f36c053e16
   m_configObjects: {}

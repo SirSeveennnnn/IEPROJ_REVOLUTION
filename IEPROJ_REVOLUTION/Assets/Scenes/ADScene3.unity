@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.24188884, g: 0.1958404, b: 0.49073687, a: 1}
+  m_IndirectSpecularColor: {r: 0.2984934, g: 0.24167214, b: 0.60557467, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23275,6 +23275,8 @@ MonoBehaviour:
   levelClip: {fileID: 8300000, guid: 7568acae4cef949499017b53f3bc35e9, type: 3}
   beatsPerMinute: 186
   numberOfRows: 5
+  laneDistance: 1
+  gameManager: {fileID: 0}
   PathToFile: Assets\Beatmaps\SampleBeatMap.csv
   GroundPrefab: {fileID: 872615940693249184, guid: 93047acd122d12944b511331383e8ace,
     type: 3}
@@ -23284,6 +23286,9 @@ MonoBehaviour:
     type: 3}
   MoveRightBlock: {fileID: 5034313570933036595, guid: 3e68bec648d044142b83c20a3a466c0e,
     type: 3}
+  ForceLeft: {fileID: 0}
+  ForceRight: {fileID: 0}
+  portalHandler: {fileID: 0}
   NeonPathPrefab: {fileID: 4429807338580582545, guid: b27957505805c8646963372a5268c790,
     type: 3}
   neonPathY: 0.52
@@ -38381,7 +38386,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163528582}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e611453f16d223241826e8d1daef474a, type: 3}
   m_Name: 

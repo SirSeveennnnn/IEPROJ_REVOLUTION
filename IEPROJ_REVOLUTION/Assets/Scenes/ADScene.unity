@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.009504987, g: 0.11519052, b: 0.24366286, a: 1}
+  m_IndirectSpecularColor: {r: 0.012044266, g: 0.14596201, b: 0.30875355, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5904,7 +5904,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -15119,7 +15119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &458392808
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24340,6 +24340,8 @@ MonoBehaviour:
   levelClip: {fileID: 8300000, guid: 7568acae4cef949499017b53f3bc35e9, type: 3}
   beatsPerMinute: 186
   numberOfRows: 5
+  laneDistance: 1
+  gameManager: {fileID: 0}
   PathToFile: Assets\Beatmaps\SampleBeatMap.csv
   GroundPrefab: {fileID: 872615940693249184, guid: 93047acd122d12944b511331383e8ace,
     type: 3}
@@ -24349,6 +24351,9 @@ MonoBehaviour:
     type: 3}
   MoveRightBlock: {fileID: 5034313570933036595, guid: 3e68bec648d044142b83c20a3a466c0e,
     type: 3}
+  ForceLeft: {fileID: 0}
+  ForceRight: {fileID: 0}
+  portalHandler: {fileID: 0}
   NeonPathPrefab: {fileID: 4429807338580582545, guid: b27957505805c8646963372a5268c790,
     type: 3}
   neonPathY: 0.52
@@ -27179,7 +27184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &794119927
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27198,10 +27203,10 @@ RectTransform:
   m_Father: {fileID: 1001491563}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 562.5, y: -150.82}
-  m_SizeDelta: {x: 960, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &794119928
 MonoBehaviour:
@@ -52529,7 +52534,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
