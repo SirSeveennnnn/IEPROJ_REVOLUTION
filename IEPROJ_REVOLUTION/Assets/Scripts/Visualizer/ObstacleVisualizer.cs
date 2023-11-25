@@ -33,7 +33,7 @@ public class ObstacleVisualizer : VisualizerBase
 
     private void Pulse()
     {
-        Debug.Log("Pulse");
+        //Debug.Log("Pulse");
 
         if (!isText)
         {

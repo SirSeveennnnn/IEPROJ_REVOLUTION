@@ -43,7 +43,7 @@ public class ScoreText : MonoBehaviour
 
         if (ticks >= duration) {
             scoreMultiplier = 1;
-            Debug.Log("MULTIPLIER");
+            //Debug.Log("MULTIPLIER");
         }
         else
         {

@@ -37,7 +37,7 @@ public class SkyboxVisualizer : VisualizerBase
 
     private IEnumerator ChangeExposure(float target)
     {
-        Debug.Log("on beat");
+        //Debug.Log("on beat");
         float currentExposure = skyboxMaterial.GetFloat("_Exposure");
         float initial = currentExposure;
         float timer = 0;

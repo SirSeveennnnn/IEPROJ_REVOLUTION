@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
         if ((SwipeManager.tapRight) && (!isLaneChanging && lane != 4))
         {
-            Debug.Log("Swipe Right");
+            //Debug.Log("Swipe Right");
             lane++;
             startXPos = transform.position.x;
             endXPos = transform.position.x + laneDistance;
@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if ((SwipeManager.tapLeft) && (!isLaneChanging && lane != 0))
         {
-            Debug.Log("Swipe Left");
+            //Debug.Log("Swipe Left");
             lane--;
             startXPos = transform.position.x;
             endXPos = transform.position.x - laneDistance;
@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (SwipeManager.swipeUp)
         {
-            Debug.Log("Jump");
+            //Debug.Log("Jump");
             StartCoroutine(Jump(jumpDistance * AudioManager.Instance.GetSecondsPerBeat()));
         }
 
