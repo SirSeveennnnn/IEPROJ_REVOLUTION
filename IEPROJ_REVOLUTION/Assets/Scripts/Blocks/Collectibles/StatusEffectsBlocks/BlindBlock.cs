@@ -4,18 +4,53 @@ using UnityEngine;
 
 public class BlindBlock : TimedEffectCollectible
 {
-    [Header("Blind Block Properties")]
+    [Space(10)] [Header("Blind Block Properties")]
     [SerializeField] Material origSkybox = null;
     [SerializeField] Material blackSkybox = null;
+    [SerializeField] Camera playerCamera = null;
     [SerializeField] List<GameObject> uiObjects = new();
     
     [SerializeField] float blindFadeDuration = 0.5f;
     [SerializeField] float fogDensity = 0.2f;
 
+    private float defaultFarClippingPlane;
+
+
+    private void Start()
+    {
+        if (playerCamera == null)
+        {
+            playerCamera = Camera.main;
+        }
+
+        defaultFarClippingPlane = playerCamera.farClipPlane;
+    }
+
+    protected override void OnStackEffect(List<TimedEffectCollectible> effectsList)
+    {
+        if (effectsList.Count > 1)
+        {
+            DisableEffect();
+        }
+        else
+        {
+            BlindBlock effectInList = effectsList[0] as BlindBlock;
+
+            if (effectInList.GetTimeRemaining() < this.EffectDuration)
+            {
+                effectInList.StopEffect();
+                effectInList.DisableEffect();
+                StartEffect();
+            }
+            else
+            {
+                DisableEffect();
+            }
+        }
+    }
 
     protected override IEnumerator TriggerEffect()
     {
-        float elapsed = 0f;
         float initialFogDensity = RenderSettings.fogDensity;
 
         PrepareBlindEffect();
@@ -55,13 +90,14 @@ public class BlindBlock : TimedEffectCollectible
 
         RemoveBlindEffect();
         playerStatusScript.RemoveEffect(this);
-        this.enabled = false;
+        DisableEffect();
     }
 
     private void PrepareBlindEffect()
     {
         RenderSettings.skybox = blackSkybox;
         RenderSettings.fog = true;
+        playerCamera.farClipPlane = 20f;
 
         // MAKE SOME COLLECTIBLES INVISIBLE
 
@@ -75,6 +111,7 @@ public class BlindBlock : TimedEffectCollectible
     {
         RenderSettings.skybox = origSkybox;
         RenderSettings.fog = false;
+        playerCamera.farClipPlane = defaultFarClippingPlane;
 
         // REVERT INVISIBLE COLLECTIBLES
 
@@ -82,6 +119,24 @@ public class BlindBlock : TimedEffectCollectible
         {
             uiObjects[i].SetActive(true);
         }
+    }
+
+    protected override void OnPlayerDeath()
+    {
+        if (!hasBeenCollected)
+        {
+            return;
+        }
+
+        if (effectCoroutine != null)
+        {
+            RenderSettings.fogDensity = 0f;
+            RemoveBlindEffect();
+            StopEffect();
+        }
+
+        OnReset();
+        UnsubsribePlayerDeathEvent();
     }
 }
 

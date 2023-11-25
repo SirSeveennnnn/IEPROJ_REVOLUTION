@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
@@ -12,35 +11,21 @@ public class PlayerStatus : MonoBehaviour
     {
         if (effect is TimedEffectCollectible)
         {
-            TimedEffectCollectible timedEffect = effect as TimedEffectCollectible;
-            int i;
-
-            for (i = 0; i < timedEffectsList.Count; i++)
-            {
-                if (timedEffectsList[i].Effect == timedEffect.Effect)
-                {
-                    if (timedEffectsList[i].EffectDuration < timedEffect.EffectDuration)
-                    {
-                        timedEffectsList[i].StopEffect();
-                        timedEffectsList.Add(timedEffect);
-                        break;
-                    }
-                    else
-                    {
-                        timedEffect.StopEffect();
-                        break;
-                    }
-                }
-            }
-
-            if (i == timedEffectsList.Count)
-            {
-                timedEffectsList.Add(timedEffect);
-            }
+            timedEffectsList.Add(effect as TimedEffectCollectible);
         }
         else if (effect is PersistentEffectCollectible)
         {
+            PersistentEffectCollectible newPersistentEffect = effect as PersistentEffectCollectible;
+            PersistentEffectCollectible effectInList = persitentEffectsList.Find(x => x.Effect == newPersistentEffect.Effect);
 
+            if (effectInList == null)
+            {
+                persitentEffectsList.Add(newPersistentEffect);
+            }
+            else
+            {
+                newPersistentEffect.AddExtraPoint();
+            }
         }
     }
 
@@ -57,7 +42,39 @@ public class PlayerStatus : MonoBehaviour
         }
         else if (effect is PersistentEffectCollectible)
         {
+            PersistentEffectCollectible persistentEffect = effect as PersistentEffectCollectible;
 
+            if (persitentEffectsList.Contains(persistentEffect))
+            {
+                persitentEffectsList.Remove(persistentEffect);
+            }
+        }
+    }
+
+    public List<TimedEffectCollectible> GetCurrentTimedEffects(EStatusEffects timedEffect)
+    {
+        return (timedEffectsList.FindAll(x => x.Effect == timedEffect));
+    }
+
+    public bool HasTimedEffect(EStatusEffects effect)
+    {
+        return (timedEffectsList.Find(x => x.Effect == effect) != null);
+    }
+
+    public bool HasPersistentEffect(EStatusEffects effect)
+    {
+        return (persitentEffectsList.Find(x => x.Effect == effect) != null);
+    }
+
+    public void OnEffectTerminalEvent(EEffectTerminalEvents terminalEvent)
+    {
+        for (int i = 0; i < persitentEffectsList.Count; i++)
+        {
+            if (persitentEffectsList[i].TerminalEvent == terminalEvent)
+            {
+                persitentEffectsList.RemoveAt(i);
+                break;
+            }
         }
     }
 }

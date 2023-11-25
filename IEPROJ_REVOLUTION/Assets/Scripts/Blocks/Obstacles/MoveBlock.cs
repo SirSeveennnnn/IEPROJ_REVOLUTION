@@ -1,49 +1,80 @@
 using UnityEngine;
 
-public class MoveBlock : MonoBehaviour
+[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Rigidbody))]
+public class MoveBlock : DistanceBasedBlock, IResettable
 {
-    [SerializeField] private float laneDistance;
     [SerializeField] private int triggerDistanceByBlock;
     [SerializeField] private float moveDuration;
-    [SerializeField] private bool isGoingRight;
+    [SerializeField, Range(-1f, 1f)] private int horizontalMovement;
+    [SerializeField, Range(-1f, 1f)] private int distalMovement;
 
     private bool isMovementTriggered;
     private float elapsedTime;
-    private float startXPos;
-    private float targetXPos;
+    private Vector3 startPos;
+    private Vector3 targetPos;
+    private Vector3 defaultPos;
 
     private GameObject playerObj;
+    private Collider col;
+    private Rigidbody rb;
 
     private void Start()
     {
         isMovementTriggered = false;
         elapsedTime = 0f;
-        startXPos = 0f;
-        targetXPos = 0f;
-        
-        playerObj = GameManager.Instance.Player;
+        startPos = Vector3.zero;
+        targetPos = Vector3.zero;
+
+        defaultPos = transform.position;
+
+        if (GetComponent<StompableBlock>() == null)
+        {
+            tag = "Obstacle";
+        }
+
+        playerObj = GameManager.Instance.Player.gameObject;
+
+        col = GetComponent<Collider>();
+        rb = GetComponent<Rigidbody>();
+
+        col.isTrigger = true;
+        rb.useGravity = false;
+        rb.isKinematic = true;
     }
 
     private void Update()
     {
-        if (!isMovementTriggered && (transform.position.z - playerObj.transform.position.z) <= laneDistance * triggerDistanceByBlock)
+        if (!isMovementTriggered && (transform.position.z - playerObj.transform.position.z) <= levelSettings.laneDistance * triggerDistanceByBlock)
         {
             isMovementTriggered = true;
 
-            startXPos = transform.position.x;
-            targetXPos = isGoingRight ? startXPos + laneDistance : startXPos - laneDistance;
+            startPos = transform.position;
+            targetPos = transform.position;
+
+            targetPos.x += levelSettings.laneDistance * horizontalMovement;
+            targetPos.z += levelSettings.laneDistance * distalMovement;
         }
 
         if (isMovementTriggered && elapsedTime < moveDuration)
         {
-            transform.position = new Vector3(Mathf.Lerp(startXPos, targetXPos, elapsedTime / moveDuration), transform.position.y, transform.position.z);
+            transform.position = Vector3.Lerp(startPos, targetPos, elapsedTime / moveDuration);
             elapsedTime += Time.deltaTime;
 
             if (elapsedTime >= moveDuration)
             {
-                transform.position = new Vector3(targetXPos, transform.position.y, transform.position.z);
+                transform.position = targetPos;
                 this.enabled = false;
             }
         }
+    }
+
+    public void OnReset()
+    {
+        transform.position = defaultPos;
+        isMovementTriggered = false;
+        elapsedTime = 0f;
+
+        this.enabled = true;
     }
 }

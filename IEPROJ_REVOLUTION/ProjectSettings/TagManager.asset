@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Obstacle
   - Collectible
+  - Path
+  - WinTrigger
+  - LevelSettings
+  - Stompable
   layers:
   - Default
   - TransparentFX

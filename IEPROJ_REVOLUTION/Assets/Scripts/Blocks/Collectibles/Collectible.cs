@@ -1,25 +1,32 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public abstract class Collectible : MonoBehaviour
+public abstract class Collectible : MonoBehaviour, IResettable
 {
     [Header("Collectible Properties")]
     [SerializeField] private bool isVisible = false;
+    [SerializeField] protected bool hasBeenCollected;
+    [SerializeField] private List<Renderer> modelRenderersList;
 
-    private Renderer r = null;
     private Collider c = null;
     private Rigidbody rb = null;
 
+    protected GameObject playerObj = null;
+
     protected abstract void OnCollect();
+    public abstract void OnReset();
 
 
     private void Awake()
     {
-        gameObject.tag = "Collectible";
+        tag = "Collectible";
 
-        r = GetComponent<Renderer>();
-        r.enabled = isVisible;
+        foreach (Renderer renderer in modelRenderersList)
+        {
+            renderer.enabled = isVisible;
+        }
 
         c = GetComponent<Collider>();
         c.isTrigger = true;
@@ -31,11 +38,35 @@ public abstract class Collectible : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (hasBeenCollected)
+        {
+            return;
+        }
+
         if (other.tag == "Player")
         {
-            r.enabled = false;
+            hasBeenCollected = true;
+            playerObj = other.gameObject;
+
+            foreach (Renderer renderer in modelRenderersList)
+            {
+                renderer.enabled = false;
+            }
 
             OnCollect();
+        }
+    }
+
+    protected void EnableAllRenderers()
+    {
+        if (!isVisible)
+        {
+            return;
+        }
+
+        foreach (Renderer renderer in modelRenderersList)
+        {
+            renderer.enabled = true;
         }
     }
 }
