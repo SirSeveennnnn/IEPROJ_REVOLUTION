@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class SwipeManager : MonoBehaviour
 {
-    public static bool tap, swipeLeft, swipeRight, swipeUp, swipeDown;
+    public static bool tap, tapLeft, tapRight;
+    public static bool swipeLeft, swipeRight, swipeUp, swipeDown;
     public static bool isEnabled = true;
 
     private bool isDraging = false;
     private Vector2 startTouch, swipeDelta;
 
+    private float duration = 0;
+
     private void Update()
     {
-        tap = swipeDown = swipeUp = swipeLeft = swipeRight = false;
+        duration += Time.deltaTime;
+
+        tap = swipeDown = swipeUp = swipeLeft = swipeRight = tapLeft = tapRight = false;
 
         if (!isEnabled)
         {
@@ -39,6 +44,17 @@ public class SwipeManager : MonoBehaviour
                 tap = true;
                 isDraging = true;
                 startTouch = Input.touches[0].position;
+                Debug.Log(Input.touches[0].position);
+                Debug.Log(Screen.currentResolution.width);
+
+                if (Input.touches[0].position.x < (Screen.currentResolution.width / 2))
+                {
+                    tapLeft = true;
+                }
+                else if (Input.touches[0].position.x > (Screen.currentResolution.width / 2))
+                {
+                    tapRight = true;
+                }
             }
             else if (Input.touches[0].phase == TouchPhase.Ended || Input.touches[0].phase == TouchPhase.Canceled)
             {

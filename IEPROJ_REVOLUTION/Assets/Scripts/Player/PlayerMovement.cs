@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (SwipeManager.swipeRight && !isLaneChanging && lane != 4)
+        if ((SwipeManager.tapRight) && (!isLaneChanging && lane != 4))
         {
             Debug.Log("Swipe Right");
             lane++;
@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
             isLaneChanging = true;
          
         }
-        else if (SwipeManager.swipeLeft && !isLaneChanging && lane != 0)
+        else if ((SwipeManager.tapLeft) && (!isLaneChanging && lane != 0))
         {
             Debug.Log("Swipe Left");
             lane--;
