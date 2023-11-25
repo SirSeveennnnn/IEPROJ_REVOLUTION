@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private bool playerStart = false;
 
     [Header("Player Settings")]
+    [SerializeField] private int lane = 2;
     [SerializeField] private float playerSpeed = 0;
     [SerializeField] private float rotationSpeedMultiplier = 0;
     [SerializeField] private int bpmMultiplier;
@@ -61,17 +62,19 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (SwipeManager.swipeRight && !isLaneChanging)
+        if (SwipeManager.swipeRight && !isLaneChanging && lane != 4)
         {
             Debug.Log("Swipe Right");
+            lane++;
             startXPos = transform.position.x;
             endXPos = transform.position.x + laneDistance;
             isLaneChanging = true;
          
         }
-        else if (SwipeManager.swipeLeft && !isLaneChanging)
+        else if (SwipeManager.swipeLeft && !isLaneChanging && lane != 0)
         {
-            Debug.Log("Swipe Right");
+            Debug.Log("Swipe Left");
+            lane--;
             startXPos = transform.position.x;
             endXPos = transform.position.x - laneDistance;
             isLaneChanging = true;
@@ -108,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator Jump(float duration)
     {
-        playerAnim.ToggleRoll();
+        playerAnim.PlayJumpAnimation();
         
 
         float elapsedTime = 0f;

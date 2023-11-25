@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
         {
             isGameStarted = true;
             GameStart?.Invoke();
+            Debug.Log("Game Started");
         }
     }
 

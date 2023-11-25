@@ -14,12 +14,17 @@ public class PlayerAnimation : MonoBehaviour
 
     void StartAnimation()
     {
-        animator.SetBool("Walking", true);
+        animator.SetBool("Move", true);
     }
 
     public void ToggleRoll()
     {
         animator.SetBool("Rolling", !animator.GetBool("Rolling"));
+    }
+
+    public void PlayJumpAnimation()
+    {
+        animator.SetTrigger("Jump");
     }
 
     private void OnDestroy()
