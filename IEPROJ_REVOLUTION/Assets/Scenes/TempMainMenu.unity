@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5659602, g: 0.17833483, b: 1.7917719, a: 1}
+  m_IndirectSpecularColor: {r: 0.49318373, g: 0.15540108, b: 1.5613885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -755,6 +755,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -361.59003
       objectReference: {fileID: 0}
+    - target: {fileID: 1914349993706354268, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.8941177
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349993706354268, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.8941177
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349993706354268, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.36862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349993706354271, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1914349993706354271, guid: dedf73c0c5000fc458cd63e25eb48c74,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -814,7 +834,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1914349993754222956, guid: dedf73c0c5000fc458cd63e25eb48c74,
         type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349993754222956, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349993754222956, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349993754222956, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349993754222956, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349993754222957, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dd28262a96144e443a38f55a593df50e,
+        type: 3}
+    - target: {fileID: 1914349993754222957, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1914349993949167628, guid: dedf73c0c5000fc458cd63e25eb48c74,
@@ -1088,6 +1139,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349994929350556, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349994929350556, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914349994929350556, guid: dedf73c0c5000fc458cd63e25eb48c74,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35363,7 +35429,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3eb68e2bc94fe034695bf5a03d2375fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3af7871706b85414cab7a5485201cdf8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -42605,7 +42671,7 @@ RectTransform:
   m_GameObject: {fileID: 1029394425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1635715209}
@@ -42636,7 +42702,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b4772a3152341b4386731256230d459, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84723a98949b00d4cb9479a70995480e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
