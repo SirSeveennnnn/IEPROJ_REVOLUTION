@@ -11,7 +11,7 @@ public class SwipeManager : MonoBehaviour
 
     [SerializeField] private float duration = 0;
 
-    [SerializeField] public float tapTime = 0.2f;
+    [SerializeField] public float tapTime = 0.05f;
 
     private void Update()
     {
