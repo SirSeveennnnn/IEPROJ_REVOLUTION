@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.047912583, g: 0.030204888, b: 0.025576128, a: 1}
+  m_IndirectSpecularColor: {r: 0.046323203, g: 0.029202722, b: 0.0247275, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6147,7 +6147,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1977547118}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadGameScene
+        m_MethodName: LoadLevel2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
