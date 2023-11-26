@@ -31,6 +31,12 @@ public class SceneLoader : MonoBehaviour
         // Load the "GameScene" when the button is pressed
         SceneManager.LoadScene("ADScene4", LoadSceneMode.Single);
     }
+
+    public void LoadLevel5()
+    {
+        // Load the "GameScene" when the button is pressed
+        SceneManager.LoadScene("ADScene5", LoadSceneMode.Single);
+    }
     public void TutorialScene()
     {
         // Load the "GameScene" when the button is pressed
