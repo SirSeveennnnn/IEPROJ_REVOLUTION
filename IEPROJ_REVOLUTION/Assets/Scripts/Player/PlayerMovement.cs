@@ -53,6 +53,9 @@ public class PlayerMovement : MonoBehaviour
     public event System.Action PlayerDead;
 
 
+    public GameObject Life1;
+    public GameObject Life2;
+    public GameObject Life3;
 
 
 
@@ -67,6 +70,10 @@ public class PlayerMovement : MonoBehaviour
 
         leftBounds = transform.position.x - 1.5f;
         rightBounds = transform.position.x + 1.5f;
+
+        Life1.SetActive(true);
+        Life2.SetActive(true);
+        Life3.SetActive(true);
 
 
     }
@@ -165,14 +172,34 @@ public class PlayerMovement : MonoBehaviour
         {
             collisionCount++;
 
+            Debug.Log(collisionCount);
+            if (collisionCount == 1)
+            {
+                Life1.SetActive(false);
+            }
+            if (collisionCount == 2)
+            {
+                Life2.SetActive(false);
+            }
+            if(collisionCount == 3)
+            {
+                Debug.Log("Pumasok");
+                Life3.SetActive(false);
+            }
+           
+
             if (collisionCount >= 3)
             {
+
                 PlayerDeath?.Invoke();
                 isPlayerDead = true;
                 sparkEffect.Stop();
+               
+
             }
             else
             {
+
                 // Start invulnerability and set a timer to end it
                 isInvulnerable = true;
                 playerInvulnerability.invul = true;
