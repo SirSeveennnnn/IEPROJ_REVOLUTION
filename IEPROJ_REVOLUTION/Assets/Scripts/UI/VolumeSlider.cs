@@ -9,8 +9,8 @@ public class VolumeSlider : MonoBehaviour
     public Slider volumeSlider;
     void Start()
     {
-        audiosource = GameObject.Find("AudioManager").GetComponent<AudioSource>();     
-        
+        audiosource = GameObject.Find("AudioManager").GetComponent<AudioSource>();
+        volumeSlider.value = audiosource.volume;
     }
 
     // Update is called once per frame

@@ -98,11 +98,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2936dbbcfbef6f4469083448e0a0892f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: 2
   playerSpeed: 5
   rotationSpeedMultiplier: 120
   bpmMultiplier: 60
   isPlayerDead: 0
+  leftBounds: 0
+  rightBounds: 0
   jumpCurve:
     serializedVersion: 2
     m_Curve:
@@ -158,6 +159,7 @@ MonoBehaviour:
   sparkEffect: {fileID: 7902121775086413375}
   laneDistance: 1
   scoreText: {fileID: 0}
+  invulnerabilityDuration: 2
 --- !u!114 &186010679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,11 +292,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2936dbbcfbef6f4469083448e0a0892f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: 2
   playerSpeed: 0
   rotationSpeedMultiplier: 120
   bpmMultiplier: 60
   isPlayerDead: 0
+  leftBounds: 0
+  rightBounds: 0
   jumpCurve:
     serializedVersion: 2
     m_Curve:
@@ -350,6 +353,7 @@ MonoBehaviour:
   sparkEffect: {fileID: 0}
   laneDistance: 1
   scoreText: {fileID: 0}
+  invulnerabilityDuration: 2
 --- !u!54 &7902121775774148699
 Rigidbody:
   m_ObjectHideFlags: 0
