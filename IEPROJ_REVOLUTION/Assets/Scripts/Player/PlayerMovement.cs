@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     //[SerializeField] private GameObject playerModel;
     [SerializeField] private ParticleSystem sparkEffect;
     private PlayerAnimation playerAnim;
+    [SerializeField] private PlayerInvulnerability playerInvulnerability; 
 
 
     [Space(10)]
@@ -174,6 +175,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 // Start invulnerability and set a timer to end it
                 isInvulnerable = true;
+                playerInvulnerability.invul = true;
                 Invoke("EndInvulnerability", invulnerabilityDuration);
             }
         }
@@ -182,6 +184,8 @@ public class PlayerMovement : MonoBehaviour
     private void EndInvulnerability()
     {
         isInvulnerable = false;
+        playerInvulnerability.invul = false;
+        playerInvulnerability.Reset();
     }
 
 
