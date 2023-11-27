@@ -68,6 +68,11 @@ public class AudioManager : MonoBehaviour
         secPerBeat = 60f / currentLevel.beatsPerMinute;
 
         totalBeats = audioSource.clip.length / secPerBeat;
+
+        if (scene.buildIndex == 0)
+        {
+            audioSource.Play();
+        }
     }
 
     public void PlayMusic()

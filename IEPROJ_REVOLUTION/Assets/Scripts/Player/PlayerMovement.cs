@@ -9,11 +9,13 @@ public class PlayerMovement : MonoBehaviour
     private bool playerStart = false;
 
     [Header("Player Settings")]
-    [SerializeField] private int lane = 2;
     [SerializeField] private float playerSpeed = 0;
     [SerializeField] private float rotationSpeedMultiplier = 0;
     [SerializeField] private int bpmMultiplier;
     [SerializeField] private bool isPlayerDead = false;
+
+    [SerializeField] private float leftBounds;
+    [SerializeField] private float rightBounds;
 
     [Header("Jump Settings")]
     [SerializeField] private AnimationCurve jumpCurve;
@@ -62,7 +64,10 @@ public class PlayerMovement : MonoBehaviour
 
         GameManager.GameStart += StartPlayer;
 
-       
+        leftBounds = transform.position.x - 1.5f;
+        rightBounds = transform.position.x + 1.5f;
+
+
     }
 
     // Update is called once per frame
@@ -73,19 +78,19 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if ((SwipeManager.tapRight) && (!isLaneChanging && lane != 4))
+        if ((SwipeManager.tapRight) && (!isLaneChanging && CanGoRight()))
         {
             //Debug.Log("Swipe Right");
-            lane++;
+         
             startXPos = transform.position.x;
             endXPos = transform.position.x + laneDistance;
             isLaneChanging = true;
          
         }
-        else if ((SwipeManager.tapLeft) && (!isLaneChanging && lane != 0))
+        else if ((SwipeManager.tapLeft) && (!isLaneChanging && CanGoLeft()))
         {
             //Debug.Log("Swipe Left");
-            lane--;
+     
             startXPos = transform.position.x;
             endXPos = transform.position.x - laneDistance;
             isLaneChanging = true;
@@ -208,5 +213,25 @@ public class PlayerMovement : MonoBehaviour
             PlayerWin?.Invoke();
         }
 
+    }
+
+    private bool CanGoLeft()
+    {
+        if (transform.position.x >= leftBounds)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    private bool CanGoRight()
+    {
+        if (transform.position.x <= rightBounds)
+        {
+            return true;
+        }
+
+        return false;
     }
 }
