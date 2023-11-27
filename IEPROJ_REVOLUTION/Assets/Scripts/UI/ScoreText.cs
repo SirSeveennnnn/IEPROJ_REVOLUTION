@@ -12,6 +12,10 @@ public class ScoreText : MonoBehaviour
     public TMP_Text Multiplier;
     public TMP_Text HighScore1;
     public TMP_Text HighScore2;
+    public TMP_Text HighScore3;
+    public TMP_Text HighScore4;
+    public TMP_Text HighScore5;
+
 
 
 
@@ -38,6 +42,10 @@ public class ScoreText : MonoBehaviour
 
         HighScore1.text = "High Score: " + PlayerPrefs.GetInt("HighScoreLevel1",0).ToString();
         HighScore2.text = "High Score: " + PlayerPrefs.GetInt("HighScoreLevel2", 0).ToString();
+        HighScore3.text = "High Score: " + PlayerPrefs.GetInt("HighScoreLevel3", 0).ToString();
+        HighScore4.text = "High Score: " + PlayerPrefs.GetInt("HighScoreLevel4", 0).ToString();
+        HighScore5.text = "High Score: " + PlayerPrefs.GetInt("HighScoreLevel5", 0).ToString();
+
 
 
     }
@@ -76,15 +84,30 @@ public class ScoreText : MonoBehaviour
 
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "ADScene" || scoreAmount > PlayerPrefs.GetInt("HighScoreLevel1",0))
+        if (scene.name == "ADScene" && scoreAmount > PlayerPrefs.GetInt("HighScoreLevel1",0))
         {
             PlayerPrefs.SetInt("HighScoreLevel1", (int)scoreAmount);
             HighScore1.text = scoreAmount.ToString();
         }
-        if (scene.name == "ADScene2" || scoreAmount > PlayerPrefs.GetInt("HighScoreLevel2", 0))
+        if (scene.name == "ADScene2" && scoreAmount > PlayerPrefs.GetInt("HighScoreLevel2", 0))
         {
             PlayerPrefs.SetInt("HighScoreLevel2", (int)scoreAmount);
             HighScore1.text = scoreAmount.ToString();
+        }
+        if (scene.name == "ADScene3" && scoreAmount > PlayerPrefs.GetInt("HighScoreLevel3", 0))
+        {
+            PlayerPrefs.SetInt("HighScoreLevel3", (int)scoreAmount);
+            HighScore3.text = scoreAmount.ToString();
+        }
+        if (scene.name == "ADScene4" && scoreAmount > PlayerPrefs.GetInt("HighScoreLevel4", 0))
+        {
+            PlayerPrefs.SetInt("HighScoreLevel4", (int)scoreAmount);
+            HighScore4.text = scoreAmount.ToString();
+        }
+        if (scene.name == "ADScene5" && scoreAmount > PlayerPrefs.GetInt("HighScoreLevel5", 0))
+        {
+            PlayerPrefs.SetInt("HighScoreLevel5", (int)scoreAmount);
+            HighScore5.text = scoreAmount.ToString();
         }
     }
     void playerIsDead() 
