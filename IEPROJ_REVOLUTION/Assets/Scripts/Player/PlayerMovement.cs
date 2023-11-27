@@ -42,6 +42,17 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+    private int collisionCount = 0;
+    private bool isInvulnerable = false;
+
+    public float invulnerabilityDuration = 2f;
+
+    public event System.Action PlayerDead;
+
+
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -141,17 +152,31 @@ public class PlayerMovement : MonoBehaviour
         transform.position = new Vector3(x, transform.position.y, transform.position.z);
     }
 
-    
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Obstacle")
+        if (!isInvulnerable && collision.gameObject.tag == "Obstacle")
         {
-            PlayerDeath?.Invoke();
-            isPlayerDead = true;
-            sparkEffect.Stop();
+            collisionCount++;
 
+            if (collisionCount >= 3)
+            {
+                PlayerDeath?.Invoke();
+                isPlayerDead = true;
+                sparkEffect.Stop();
+            }
+            else
+            {
+                // Start invulnerability and set a timer to end it
+                isInvulnerable = true;
+                Invoke("EndInvulnerability", invulnerabilityDuration);
+            }
         }
-        
+    }
+
+    private void EndInvulnerability()
+    {
+        isInvulnerable = false;
     }
 
 
