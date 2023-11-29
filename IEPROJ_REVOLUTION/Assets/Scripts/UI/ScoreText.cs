@@ -16,6 +16,13 @@ public class ScoreText : MonoBehaviour
     public TMP_Text HighScore4;
     public TMP_Text HighScore5;
 
+    public GameObject Wow;
+    public GameObject Cool;
+    public GameObject Awesome;
+    public GameObject Great;
+    public GameObject Super;
+
+
 
 
 
@@ -45,6 +52,12 @@ public class ScoreText : MonoBehaviour
         HighScore3.text = "High Score: " + PlayerPrefs.GetInt("HighScoreLevel3", 0).ToString();
         HighScore4.text = "High Score: " + PlayerPrefs.GetInt("HighScoreLevel4", 0).ToString();
         HighScore5.text = "High Score: " + PlayerPrefs.GetInt("HighScoreLevel5", 0).ToString();
+
+        Wow.SetActive(false);
+        Cool.SetActive(false);
+        Awesome.SetActive(false);
+        Great.SetActive(false);
+        Super.SetActive(false);
 
 
 
@@ -80,8 +93,64 @@ public class ScoreText : MonoBehaviour
             pointIncreasePerSecond = 0;
             scoreAmount += pointIncreasePerSecond * scoreMultiplier;
         }
+        //Overlay Effects
+
+        //Wow
+        if(scoreMultiplier >= 4 && scoreMultiplier <= 7)
+        {
+            Wow.SetActive(true);
+        }
+        else
+        {
+            Wow.SetActive(false);
+        }
+
+        //Cool
+        if (scoreMultiplier >= 8 && scoreMultiplier <= 11)
+        {
+            Cool.SetActive(true);
+        }
+        else
+        {
+            Cool.SetActive(false);
+        }
+
+        //Awesome
+        if (scoreMultiplier >= 12 && scoreMultiplier <= 15)
+        {
+            Awesome.SetActive(true);
+        }
+        else
+        {
+            Awesome.SetActive(false);
+        }
+
+        //Great
+        if (scoreMultiplier >= 16 && scoreMultiplier <= 20)
+        {
+            Great.SetActive(true);
+        }
+        else
+        {
+            Great.SetActive(false);
+        }
+
+        //Super
+        if (scoreMultiplier >= 21)
+        {
+            Super.SetActive(true);
+        }
+        else
+        {
+            Super.SetActive(false);
+        }
 
 
+
+
+
+
+        //High Score setting
         Scene scene = SceneManager.GetActiveScene();
 
         if (scene.name == "ADScene" && scoreAmount > PlayerPrefs.GetInt("HighScoreLevel1",0))
