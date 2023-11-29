@@ -1,15 +1,30 @@
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 
 public class KeyBlock : Collectible
 {
-    [SerializeField] private List<LockedBlock> lockedBlockRefList;
+    public event Action OnKeyCollectedEvent;
+
+
+    public bool HasBeenCollected
+    {
+        get { return hasBeenCollected; }
+        private set { hasBeenCollected = value; }
+    }
 
     protected override void OnCollect()
     {
-        foreach (var lockedBlock in lockedBlockRefList)
-        {
-            lockedBlock.AddKey(this);
-        }
+        OnKeyCollectedEvent?.Invoke();
+
+        this.enabled = false;
+        this.gameObject.SetActive(false);
+    }
+
+    public override void OnReset()
+    {
+        hasBeenCollected = false;
+
+        this.enabled = true;
+        this.gameObject.SetActive(true);
+        EnableAllRenderers();
     }
 }
