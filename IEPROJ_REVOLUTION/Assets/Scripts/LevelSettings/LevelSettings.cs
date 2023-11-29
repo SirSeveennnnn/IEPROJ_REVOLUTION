@@ -28,6 +28,8 @@ public class LevelSettings : MonoBehaviour
     public GameObject ForceLeft;
     public GameObject ForceRight;
     public GameObject portalHandler;
+    public GameObject keyBlock;
+    public GameObject gateBlock;
 
     [Header("Neon Path Settings")]
     public GameObject NeonPathPrefab;
@@ -42,7 +44,8 @@ public class LevelSettings : MonoBehaviour
     //Other Settings
     private int portalCounter = 0;
     private PortalHandler tempPortalHandler;
-    
+    private KeyBlock[] keyBlockRef = new KeyBlock[3];
+    private int keyCount = 0;
 
     
     public void CreateLevel()
@@ -90,7 +93,7 @@ public class LevelSettings : MonoBehaviour
     {
         
         int row = 0, col = 0;
-      
+        keyCount = 0;
 
         Vector2 neonPathStart = new Vector2();
         Vector2 neonPathEnd = new Vector2();
@@ -207,6 +210,38 @@ public class LevelSettings : MonoBehaviour
                     portalCounter = 0;
                 }
                 
+            }
+            else if (dataList[i] == 9) //keyBlock
+            {
+                //Create Obstacle at Row, Col
+                Vector3 position = new Vector3(row, 1, col);
+                GameObject clone = Instantiate(keyBlock, position, keyBlock.transform.rotation, this.transform);
+                objectList.Add(clone);
+
+                keyBlockRef[keyCount] = clone.GetComponent<KeyBlock>();
+                keyCount++;
+
+                if (keyCount > 2)
+                {
+                    keyCount = 0;
+                }
+            }
+            else if (dataList[i] == 10) //gateblock
+            {
+                //Create Obstacle at Row, Col
+                Vector3 position = new Vector3(row, 2.5f, col);
+                //PrefabUtility.InstantiatePrefab(ObstaclePrefab, position);
+                GameObject clone = Instantiate(gateBlock, position, gateBlock.transform.rotation, this.transform);
+                objectList.Add(clone);
+
+                GateBlock gate = clone.GetComponent<GateBlock>();
+                gate.keyList.Add(keyBlockRef[0]);
+                gate.keyList.Add(keyBlockRef[1]);
+                gate.keyList.Add(keyBlockRef[2]);
+
+                keyBlockRef[0] = null;
+                keyBlockRef[1] = null;
+                keyBlockRef[2] = null;
             }
 
             row++;

@@ -1,30 +1,19 @@
-using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class KeyBlock : Collectible
+public class KeyBlock : MonoBehaviour
 {
-    public event Action OnKeyCollectedEvent;
+    public GateBlock gateBlock;
 
-
-    public bool HasBeenCollected
+    private void OnTriggerEnter(Collider other)
     {
-        get { return hasBeenCollected; }
-        private set { hasBeenCollected = value; }
+        if (other.CompareTag("Player"))
+        {
+            gateBlock.CheckToUnlock();
+            this.gameObject.SetActive(false);
+            
+        }
     }
 
-    protected override void OnCollect()
-    {
-        OnKeyCollectedEvent?.Invoke();
-
-        this.enabled = false;
-        this.gameObject.SetActive(false);
-    }
-
-    public override void OnReset()
-    {
-        hasBeenCollected = false;
-
-        this.enabled = true;
-        this.gameObject.SetActive(true);
-        EnableAllRenderers();
-    }
 }

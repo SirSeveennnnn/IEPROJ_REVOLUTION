@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class NeonPath : MonoBehaviour
 {
-    public Color color;
-    public Color startColor;
+    public Color color = Color.white;
+    public Color startColor = Color.white;
 
     private SpriteRenderer spriteRenderer;
 
