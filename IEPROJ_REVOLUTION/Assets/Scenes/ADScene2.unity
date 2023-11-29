@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04632329, g: 0.029202819, b: 0.024727572, a: 1}
+  m_IndirectSpecularColor: {r: 0.046323147, g: 0.029202744, b: 0.024727482, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -308,6 +308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &5118942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -427,6 +429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &8498127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -546,6 +550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &10925247
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1051,6 +1057,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &15315179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1170,6 +1178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &18374511
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1289,6 +1299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &19457037
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1541,6 +1553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &20403907
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1660,6 +1674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21225180
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2575,6 +2591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &42148481
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2694,6 +2712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &42416979
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2813,6 +2833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &48650140
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3487,6 +3509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &58588374
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3606,6 +3630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &64173600
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3899,6 +3925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &72143803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4018,6 +4046,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &72274466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4474,6 +4504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &79035585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4752,6 +4784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &86968029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5259,6 +5293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &100847652
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5783,6 +5819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &120529664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6275,6 +6313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &131769960
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6968,6 +7008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &144297138
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7419,6 +7461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &153683456
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7950,6 +7994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &165479948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9179,6 +9225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &180796459
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9854,6 +9902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &203451293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10571,6 +10621,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &213842651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10982,6 +11034,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &217957258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11234,6 +11288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &221180567
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12288,6 +12344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &242983557
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14180,6 +14238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &301339466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14432,6 +14492,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &306222619
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14551,6 +14613,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &308735954
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14689,6 +14753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &311799060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14808,6 +14874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &313392642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15671,6 +15739,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &336306067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15790,6 +15860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &338436437
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15909,6 +15981,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &341656361
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16161,6 +16235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &343967773
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16413,6 +16489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &347614063
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16532,6 +16610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &350602574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18305,6 +18385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &377031989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19171,6 +19253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &387609846
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19290,6 +19374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &387865135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19631,6 +19717,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &392833343
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19750,6 +19838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &393064761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20269,6 +20359,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &401422925
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21514,6 +21606,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &419448430
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21766,6 +21860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &425630392
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21885,6 +21981,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &425649298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22339,6 +22437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &435076026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23262,6 +23362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &454634497
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23514,6 +23616,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &457012665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24054,6 +24158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &461629312
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24306,6 +24412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &462313688
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24425,6 +24533,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &466287804
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24769,6 +24879,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &471962211
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25470,6 +25582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &491579696
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26014,6 +26128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &500597742
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26465,6 +26581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &510113530
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26717,6 +26835,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &511437746
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26836,6 +26956,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &512200453
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26981,6 +27103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &516922052
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28080,6 +28204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &531426590
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29471,6 +29597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &564813746
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29749,6 +29877,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &570714974
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30898,6 +31028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &584405504
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31150,6 +31282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &587197378
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31524,6 +31658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &599473287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32777,6 +32913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &626339228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33520,6 +33658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &642575939
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34582,6 +34722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &659526989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35111,6 +35253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &676965790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35547,6 +35691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &692696105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35985,6 +36131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &700605705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36560,6 +36708,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &712790489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36750,6 +36900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &722675293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36869,6 +37021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &727492800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38714,6 +38868,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &730512477
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38833,6 +38989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &730571700
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39373,6 +39531,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &734400482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39723,6 +39883,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &741604622
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40114,6 +40276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &747563193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40499,6 +40663,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &755531191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40618,6 +40784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &757458171
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41547,6 +41715,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &771436402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41985,6 +42155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &776930332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42104,6 +42276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &778463768
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42223,6 +42397,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &780089598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42741,6 +42917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &785740391
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42860,6 +43038,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &786193290
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44192,6 +44372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &822402689
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44598,6 +44780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &834916331
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45434,6 +45618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &860410777
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46066,6 +46252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &878305136
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46318,6 +46506,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &884403039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46692,6 +46882,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &886675365
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46811,6 +47003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &886851965
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47329,6 +47523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &897686620
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47581,6 +47777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &898289227
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47700,6 +47898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &900362612
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47819,6 +48019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &900745261
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47938,6 +48140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &900849070
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48190,6 +48394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &908552546
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48315,6 +48521,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &911629494
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49910,6 +50118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &939881704
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52038,6 +52248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &964953956
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52242,6 +52454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &971927631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52573,6 +52787,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &980904852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52867,6 +53083,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &983777013
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53241,6 +53459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &987585667
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53360,6 +53580,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &995373129
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53638,6 +53860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &996534905
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54883,6 +55107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1028960376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55002,6 +55228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1029789880
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55679,6 +55907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1046962943
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55984,6 +56214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1050281852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56798,6 +57030,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1072801766
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57544,6 +57778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1088808982
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63234,6 +63470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1123223577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63927,6 +64165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1131745121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64065,6 +64305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1141130677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64664,6 +64906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1158607122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64916,6 +65160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1161799068
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65291,6 +65537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1165114100
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65578,6 +65826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1165791033
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65697,6 +65947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1166119237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65949,6 +66201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1168416062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66254,6 +66508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1172661700
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66399,6 +66655,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1173835656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67993,6 +68251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1209672640
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68260,6 +68520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1222099049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69208,6 +69470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1252200229
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69394,6 +69658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1253275250
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69918,6 +70184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1269958281
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70037,6 +70305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1279099964
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70411,6 +70681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1285751976
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70530,6 +70802,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1286164013
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71472,6 +71746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1308283926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71591,6 +71867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1309467029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71710,6 +71988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1311388708
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72327,6 +72607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1327513277
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72452,6 +72734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1330589032
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72571,6 +72855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1334906098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72743,6 +73029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1335627344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72995,6 +73283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1339231904
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73502,6 +73792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1347972816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73621,6 +73913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1351500564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74571,6 +74865,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1362368787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75264,6 +75560,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1368736540
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75383,6 +75681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1369019884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76232,6 +76532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1385783057
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77008,6 +77310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1397348478
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -78351,6 +78655,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1419079942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79125,6 +79431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1442045193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79589,6 +79897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1450550656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80416,6 +80726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1466829706
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80744,6 +81056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1472318545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81218,6 +81532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1475865788
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81629,6 +81945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1490909595
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81748,6 +82066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1491581697
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83165,6 +83485,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1514272200
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83310,6 +83632,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1523273929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83588,6 +83912,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1529235906
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84361,6 +84687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1551709139
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84480,6 +84808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1552675957
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85447,6 +85777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1572322918
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85752,6 +86084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1588494117
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85923,6 +86257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1593409103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86361,6 +86697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1605293210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86746,6 +87084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1609793357
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87763,6 +88103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1634842146
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -88671,6 +89013,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1652174035
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -88790,6 +89134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1653401342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89661,6 +90007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1675223174
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90370,6 +90718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1693383559
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -91022,6 +91372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1710898798
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -91305,6 +91657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1714991570
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -91563,6 +91917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1718972853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92421,6 +92777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1735383667
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92806,6 +93164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1737120951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92925,6 +93285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1737883490
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93455,6 +93817,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1750479631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93574,6 +93938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1751130211
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93826,6 +94192,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1763135441
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94545,6 +94913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1783485634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94664,6 +95034,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1784911017
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95208,6 +95580,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1793391712
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95327,6 +95701,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1795320531
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95605,6 +95981,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1801516123
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95750,6 +96128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1806689196
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95928,6 +96308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1808411922
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96180,6 +96562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1810707020
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96299,6 +96683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1813398090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96976,6 +97362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1834138315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -97544,6 +97932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1846741013
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -97970,6 +98360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1861717698
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98355,6 +98747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1865154844
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98474,6 +98868,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1865380685
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -99655,6 +100051,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1881452027
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -100232,6 +100630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1887111411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -100684,6 +101084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1890635139
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101157,6 +101559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1908132407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -102002,6 +102406,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1925199418
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -103725,6 +104131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1959326734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -104195,6 +104603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1969120998
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -104340,6 +104750,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1971191331
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105340,6 +105752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1992137804
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105645,6 +106059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1995702188
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105764,6 +106180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1996537357
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -106480,6 +106898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2003186373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -106599,6 +107019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2004812605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -107117,6 +107539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2016833135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -107866,6 +108290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2028932607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108277,6 +108703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2039074912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108396,6 +108824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2039645170
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -109170,6 +109600,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2046279944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -109677,6 +110109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2053291562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -110349,6 +110783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2063668439
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -110468,6 +110904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2065244130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -110613,6 +111051,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2067258251
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -111942,6 +112382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2083107554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -112194,6 +112636,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2092958282
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -112512,6 +112956,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2100526605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -112631,6 +113077,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2108070416
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -112750,6 +113198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2110413693
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -113618,6 +114068,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2122649710
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -114162,6 +114614,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2131411462
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -114839,6 +115293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.7924528, g: 0.47206342, b: 0.2878248, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2146769136
 SpriteRenderer:
   m_ObjectHideFlags: 0

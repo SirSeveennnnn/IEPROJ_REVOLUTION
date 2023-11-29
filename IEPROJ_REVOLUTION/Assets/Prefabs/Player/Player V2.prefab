@@ -85,7 +85,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!114 &7902121774700240264
 MonoBehaviour:
@@ -162,6 +162,9 @@ MonoBehaviour:
   laneDistance: 1
   scoreText: {fileID: 0}
   invulnerabilityDuration: 2
+  Life1: {fileID: 0}
+  Life2: {fileID: 0}
+  Life3: {fileID: 0}
 --- !u!114 &186010679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +194,6 @@ MonoBehaviour:
   - {fileID: 6311054708235078074}
   - {fileID: 5500926189934335080}
   - {fileID: 3811356119265378351}
-  - {fileID: 2220492318757471590}
   invul: 0
   interval: 0.25
 --- !u!1 &7902121775243090967
@@ -376,6 +378,9 @@ MonoBehaviour:
   laneDistance: 1
   scoreText: {fileID: 0}
   invulnerabilityDuration: 2
+  Life1: {fileID: 0}
+  Life2: {fileID: 0}
+  Life3: {fileID: 0}
 --- !u!54 &7902121775774148699
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -555,12 +560,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0724ea8295a60074a86e1e29a138cadd, type: 3}
---- !u!1 &2220492318757471590 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1175971686033130367, guid: 0724ea8295a60074a86e1e29a138cadd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1045153952022775321}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2506768418600013067 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3191070142502767378, guid: 0724ea8295a60074a86e1e29a138cadd,
