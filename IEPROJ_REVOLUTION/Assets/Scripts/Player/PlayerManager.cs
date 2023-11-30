@@ -30,7 +30,7 @@ public class PlayerManager : MonoBehaviour
     {
         winPanel.SetActive(true);
         Time.timeScale = 0.0f;
-        Debug.Log("tite");
+
     }
 
 }

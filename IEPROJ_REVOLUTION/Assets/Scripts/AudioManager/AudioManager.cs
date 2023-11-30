@@ -6,10 +6,9 @@ using UnityEngine.SceneManagement;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
-    
+
     private void Awake()
     {
-        
         if (Instance != null && Instance != this)
         {
             Destroy(this.gameObject);
@@ -20,45 +19,43 @@ public class AudioManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(this.gameObject);
-        
-     
     }
 
     public AudioClip[] audioClips;
 
     private AudioSource audioSource;
-    //The number of seconds for each song beat
+    // The number of seconds for each song beat
     public float secPerBeat;
 
-    //Current song position, in seconds
+    // Current song position, in seconds
     public float songPosition;
 
-    //Current song position, in beats
+    // Current song position, in beats
     public float songPositionInBeats;
 
-    //How many seconds have passed since the song started
-    public float dspSongTime;
+    // How many seconds have passed since the song started
+    private float dspSongTime;
+
+    // Store the paused position
+    private float pausedPosition;
 
     public float totalBeats;
 
     public LevelSettings currentLevel;
 
+    private bool isMusicPlayed = false;
+    private bool isPaused = false;
 
-    bool isMusicPlayed = false;
-
-    
     public void Start()
     {
         SceneManager.sceneLoaded += Setup;
         GameManager.GameStart += PlayMusic;
 
         audioSource = GetComponent<AudioSource>();
-
     }
 
     void Setup(Scene scene, LoadSceneMode mode)
     {
-
         audioSource.Stop();
 
         currentLevel = GameObject.FindWithTag("LevelSettings").GetComponent<LevelSettings>();
@@ -77,11 +74,36 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic()
     {
-        audioSource.Play();
-        dspSongTime = (float)AudioSettings.dspTime;
-        isMusicPlayed = true;
+        if (!isPaused)
+        {
+            audioSource.Play();
+            dspSongTime = (float)AudioSettings.dspTime;
+            isMusicPlayed = true;
+        }
+        else
+        {
+            audioSource.UnPause();
+            dspSongTime = (float)AudioSettings.dspTime - pausedPosition;
+            isPaused = false;
+        }
     }
 
+    public void PauseMusic()
+    {
+        if (isMusicPlayed && !isPaused)
+        {
+            audioSource.Pause();
+            pausedPosition = (float)(AudioSettings.dspTime - dspSongTime);
+            isPaused = true;
+        }
+    }
+
+    public void StopMusic()
+    {
+        audioSource.Stop();
+        isMusicPlayed = false;
+        isPaused = false;
+    }
 
     void Update()
     {
@@ -89,13 +111,12 @@ public class AudioManager : MonoBehaviour
         {
             return;
         }
-      
-        //determine how many seconds since the song started
+
+        // Determine how many seconds since the song started
         songPosition = (float)(AudioSettings.dspTime - dspSongTime);
 
-        //determine how many beats since the song started
+        // Determine how many beats since the song started
         songPositionInBeats = songPosition / secPerBeat;
-
     }
 
     public float GetPositionInBeats()
@@ -107,6 +128,4 @@ public class AudioManager : MonoBehaviour
     {
         return secPerBeat;
     }
-
-
 }

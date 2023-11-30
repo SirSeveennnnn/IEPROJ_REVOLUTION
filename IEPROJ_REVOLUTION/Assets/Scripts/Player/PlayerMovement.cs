@@ -57,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject Life2;
     public GameObject Life3;
 
+    private AudioSource audiosource;
+
 
 
 
@@ -193,7 +195,7 @@ public class PlayerMovement : MonoBehaviour
                 PlayerDeath?.Invoke();
                 isPlayerDead = true;
                 sparkEffect.Stop();
-               
+
 
             }
             else

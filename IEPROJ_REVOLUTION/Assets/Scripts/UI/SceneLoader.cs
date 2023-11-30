@@ -46,6 +46,7 @@ public class SceneLoader : MonoBehaviour
     {
         // Load the "GameScene" when the button is pressed
         SceneManager.LoadScene("TempMainMenu");
+        Time.timeScale = 1.0f;
     }
     public void Quit()
     {
