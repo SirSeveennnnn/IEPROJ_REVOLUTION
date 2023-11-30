@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.047105484, g: 0.029695999, b: 0.025145285, a: 1}
+  m_IndirectSpecularColor: {r: 0.04632329, g: 0.029202823, b: 0.024727574, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2245067
 SpriteRenderer:
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2245064}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &12335445
 SpriteRenderer:
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12335442}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -1516,7 +1516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &29814927
 SpriteRenderer:
@@ -1592,7 +1592,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29814924}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -2032,7 +2032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &44068108
 SpriteRenderer:
@@ -2108,7 +2108,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44068105}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -2301,7 +2301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &46172726
 SpriteRenderer:
@@ -2377,7 +2377,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46172723}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -2726,7 +2726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &52416292
 SpriteRenderer:
@@ -2802,7 +2802,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52416289}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -3128,7 +3128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &59087907
 SpriteRenderer:
@@ -3204,7 +3204,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59087904}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -3663,7 +3663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &66749242
 SpriteRenderer:
@@ -3739,7 +3739,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66749239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -3891,7 +3891,6 @@ MonoBehaviour:
   secPerBeat: 0
   songPosition: 0
   songPositionInBeats: 0
-  dspSongTime: 0
   totalBeats: 0
   currentLevel: {fileID: 0}
 --- !u!1 &72001824 stripped
@@ -4336,7 +4335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &91387299
 SpriteRenderer:
@@ -4412,7 +4411,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91387296}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -5797,7 +5796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &117375100
 SpriteRenderer:
@@ -5873,7 +5872,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117375097}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -6572,7 +6571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &132346243
 SpriteRenderer:
@@ -6648,7 +6647,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132346240}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -7747,7 +7746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &150528366
 SpriteRenderer:
@@ -7823,7 +7822,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150528363}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -8980,7 +8979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &171460220
 SpriteRenderer:
@@ -9056,7 +9055,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171460217}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -9116,7 +9115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &175731610
 SpriteRenderer:
@@ -9192,7 +9191,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175731607}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -9252,7 +9251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &176897588
 SpriteRenderer:
@@ -9328,7 +9327,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176897585}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -9769,7 +9768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &185098711
 SpriteRenderer:
@@ -9845,7 +9844,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185098708}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -10038,7 +10037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &186366355
 SpriteRenderer:
@@ -10114,7 +10113,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186366352}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -10652,7 +10651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &190718950
 SpriteRenderer:
@@ -10728,7 +10727,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190718947}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -11242,7 +11241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &209892879
 SpriteRenderer:
@@ -11318,7 +11317,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209892876}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -11404,7 +11403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &216724632
 SpriteRenderer:
@@ -11480,7 +11479,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216724629}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -13140,7 +13139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &243800042
 SpriteRenderer:
@@ -13216,7 +13215,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243800039}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -13542,7 +13541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &248979636
 SpriteRenderer:
@@ -13618,7 +13617,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248979633}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -13975,7 +13974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &260980240
 SpriteRenderer:
@@ -14051,7 +14050,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260980237}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -14111,7 +14110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &262250197
 SpriteRenderer:
@@ -14187,7 +14186,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262250194}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -14714,7 +14713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &271795461
 SpriteRenderer:
@@ -14790,7 +14789,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271795458}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -15035,7 +15034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &276085369
 SpriteRenderer:
@@ -15111,7 +15110,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276085366}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -15304,7 +15303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &281442669
 SpriteRenderer:
@@ -15380,7 +15379,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281442666}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -15599,7 +15598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &292537997
 SpriteRenderer:
@@ -15675,7 +15674,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292537994}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -16001,7 +16000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &296864018
 SpriteRenderer:
@@ -16077,7 +16076,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296864015}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -16289,7 +16288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &311156417
 SpriteRenderer:
@@ -16365,7 +16364,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311156414}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -16425,7 +16424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &313361105
 SpriteRenderer:
@@ -16501,7 +16500,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313361102}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -16561,7 +16560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &314522505
 SpriteRenderer:
@@ -16637,7 +16636,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314522502}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -17521,7 +17520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &331723922
 SpriteRenderer:
@@ -17597,7 +17596,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331723919}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -17976,7 +17975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &336935692
 SpriteRenderer:
@@ -18052,7 +18051,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336935689}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -19724,7 +19723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &370373488
 SpriteRenderer:
@@ -19800,7 +19799,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370373485}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -20393,7 +20392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &378507751
 SpriteRenderer:
@@ -20469,7 +20468,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378507748}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -20529,7 +20528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &381687400
 SpriteRenderer:
@@ -20605,7 +20604,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381687397}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -21010,7 +21009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &390358582
 SpriteRenderer:
@@ -21086,7 +21085,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390358579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -21254,7 +21253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &395212873
 SpriteRenderer:
@@ -21330,7 +21329,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395212870}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -21671,7 +21670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &406022881
 SpriteRenderer:
@@ -21747,7 +21746,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406022878}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -21960,7 +21959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &415348416
 SpriteRenderer:
@@ -22036,7 +22035,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415348413}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -22434,7 +22433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &428347010
 SpriteRenderer:
@@ -22510,7 +22509,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428347007}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -23152,7 +23151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &442147565
 SpriteRenderer:
@@ -23228,7 +23227,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442147562}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -23288,7 +23287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &442304491
 SpriteRenderer:
@@ -23364,7 +23363,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442304488}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -23430,7 +23429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &446845007
 SpriteRenderer:
@@ -23506,7 +23505,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446845004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -23699,7 +23698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &452360253
 SpriteRenderer:
@@ -23775,7 +23774,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452360250}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -23968,7 +23967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &456557816
 SpriteRenderer:
@@ -24044,7 +24043,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456557813}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -24525,7 +24524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &463005489
 SpriteRenderer:
@@ -24601,7 +24600,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463005486}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -26133,7 +26132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &497145415
 SpriteRenderer:
@@ -26209,7 +26208,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497145412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -26494,7 +26493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &508226708
 SpriteRenderer:
@@ -26570,7 +26569,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508226705}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -26630,7 +26629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &508398783
 SpriteRenderer:
@@ -26706,7 +26705,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508398780}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -27446,7 +27445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &519362750
 SpriteRenderer:
@@ -27522,7 +27521,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519362747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -28280,7 +28279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &536641738
 SpriteRenderer:
@@ -28356,7 +28355,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536641735}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -28908,7 +28907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &543951069
 SpriteRenderer:
@@ -28984,7 +28983,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543951066}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -30383,7 +30382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &562039610
 SpriteRenderer:
@@ -30459,7 +30458,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562039607}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -32317,7 +32316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &601017158
 SpriteRenderer:
@@ -32393,7 +32392,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601017155}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -32621,7 +32620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &605237446
 SpriteRenderer:
@@ -32697,7 +32696,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605237443}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -32757,7 +32756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &605257395
 SpriteRenderer:
@@ -32833,7 +32832,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605257392}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -32919,7 +32918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &613060826
 SpriteRenderer:
@@ -32995,7 +32994,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613060823}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -33055,7 +33054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &614788438
 SpriteRenderer:
@@ -33131,7 +33130,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614788435}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -33191,7 +33190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &619253989
 SpriteRenderer:
@@ -33267,7 +33266,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619253986}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -33327,7 +33326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &619565970
 SpriteRenderer:
@@ -33403,7 +33402,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619565967}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -33605,7 +33604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &628972514
 SpriteRenderer:
@@ -33681,7 +33680,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628972511}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -33741,7 +33740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &629774621
 SpriteRenderer:
@@ -33817,7 +33816,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629774618}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -33877,7 +33876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &638450827
 SpriteRenderer:
@@ -33953,7 +33952,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638450824}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -34371,7 +34370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &643422747
 SpriteRenderer:
@@ -34447,7 +34446,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643422744}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -34560,7 +34559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &652694477
 SpriteRenderer:
@@ -34636,7 +34635,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652694474}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -35863,7 +35862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &674798991
 SpriteRenderer:
@@ -35939,7 +35938,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674798988}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -35999,7 +35998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &676750250
 SpriteRenderer:
@@ -36075,7 +36074,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676750247}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -36357,7 +36356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &684035412
 SpriteRenderer:
@@ -36433,7 +36432,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684035409}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -36641,7 +36640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &698188818
 SpriteRenderer:
@@ -36717,7 +36716,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698188815}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -36830,7 +36829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &706350753
 SpriteRenderer:
@@ -36906,7 +36905,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706350750}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -37236,7 +37235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &714012710
 SpriteRenderer:
@@ -37312,7 +37311,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714012707}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -37570,7 +37569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &719626268
 SpriteRenderer:
@@ -37646,7 +37645,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719626265}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -37845,7 +37844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &724851082
 SpriteRenderer:
@@ -37921,7 +37920,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724851079}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -39997,7 +39996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &735011934
 SpriteRenderer:
@@ -40073,7 +40072,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735011931}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -40266,7 +40265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &737649867
 SpriteRenderer:
@@ -40342,7 +40341,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737649864}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -40905,7 +40904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &750425835
 SpriteRenderer:
@@ -40981,7 +40980,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750425832}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -41041,7 +41040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &750842775
 SpriteRenderer:
@@ -41117,7 +41116,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750842772}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -42439,7 +42438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &778715856
 SpriteRenderer:
@@ -42515,7 +42514,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778715853}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -42761,7 +42760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &788142570
 SpriteRenderer:
@@ -42837,7 +42836,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788142567}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -42897,7 +42896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &790482334
 SpriteRenderer:
@@ -42973,7 +42972,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790482331}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -43033,7 +43032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &797918115
 SpriteRenderer:
@@ -43109,7 +43108,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797918112}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -44144,7 +44143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &809839757
 SpriteRenderer:
@@ -44220,7 +44219,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809839754}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -44413,7 +44412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &810133449
 SpriteRenderer:
@@ -44489,7 +44488,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810133446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -44549,7 +44548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &811488427
 SpriteRenderer:
@@ -44625,7 +44624,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811488424}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -44818,7 +44817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &816039617
 SpriteRenderer:
@@ -44894,7 +44893,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816039614}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -45087,7 +45086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &822940355
 SpriteRenderer:
@@ -45163,7 +45162,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822940352}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -45409,7 +45408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &825994083
 SpriteRenderer:
@@ -45485,7 +45484,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825994080}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -45571,7 +45570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &828183594
 SpriteRenderer:
@@ -45647,7 +45646,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828183591}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -45707,7 +45706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &831011959
 SpriteRenderer:
@@ -45783,7 +45782,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831011956}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -45976,7 +45975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &832263286
 SpriteRenderer:
@@ -46052,7 +46051,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832263283}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -46187,7 +46186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &833216910
 SpriteRenderer:
@@ -46263,7 +46262,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833216907}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -47747,7 +47746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &874208684
 SpriteRenderer:
@@ -47823,7 +47822,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874208681}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -48210,7 +48209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &887101026
 SpriteRenderer:
@@ -48286,7 +48285,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887101023}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -48346,7 +48345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &899529359
 SpriteRenderer:
@@ -48422,7 +48421,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899529356}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -48482,7 +48481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &899913078
 SpriteRenderer:
@@ -48558,7 +48557,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899913075}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -48757,7 +48756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &914528561
 SpriteRenderer:
@@ -48833,7 +48832,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914528558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -48893,7 +48892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &920559798
 SpriteRenderer:
@@ -48969,7 +48968,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920559795}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -49162,7 +49161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &923381339
 SpriteRenderer:
@@ -49238,7 +49237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923381336}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -49829,7 +49828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &929710535
 SpriteRenderer:
@@ -49905,7 +49904,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929710532}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -49965,7 +49964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &933819638
 SpriteRenderer:
@@ -50041,7 +50040,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933819635}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -50234,7 +50233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &935477713
 SpriteRenderer:
@@ -50310,7 +50309,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935477710}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -51083,7 +51082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &950544765
 SpriteRenderer:
@@ -51159,7 +51158,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950544762}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -51418,7 +51417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &953734276
 SpriteRenderer:
@@ -51494,7 +51493,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953734273}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -52098,7 +52097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &970704116
 SpriteRenderer:
@@ -52174,7 +52173,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970704113}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -52478,7 +52477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &981300232
 SpriteRenderer:
@@ -52554,7 +52553,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981300229}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -52911,7 +52910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &996221730
 SpriteRenderer:
@@ -52987,7 +52986,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996221727}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -54424,7 +54423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1015331968
 SpriteRenderer:
@@ -54500,7 +54499,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015331965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -54708,7 +54707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1025506552
 SpriteRenderer:
@@ -54784,7 +54783,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025506549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -55613,7 +55612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1041126001
 SpriteRenderer:
@@ -55689,7 +55688,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041125998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -57029,7 +57028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1069637738
 SpriteRenderer:
@@ -57105,7 +57104,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069637735}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -57298,7 +57297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1073014313
 SpriteRenderer:
@@ -57374,7 +57373,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073014310}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -57487,7 +57486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1073508801
 SpriteRenderer:
@@ -57563,7 +57562,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073508798}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -57623,7 +57622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1078648400
 SpriteRenderer:
@@ -57699,7 +57698,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078648397}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -58466,7 +58465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1092040899
 SpriteRenderer:
@@ -58542,7 +58541,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092040896}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -58628,7 +58627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1098036491
 SpriteRenderer:
@@ -58704,7 +58703,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098036488}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -64017,7 +64016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1115681623
 SpriteRenderer:
@@ -64093,7 +64092,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115681620}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -64153,7 +64152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1115849711
 SpriteRenderer:
@@ -64229,7 +64228,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115849708}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -64448,7 +64447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1128368972
 SpriteRenderer:
@@ -64524,7 +64523,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128368969}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -65509,7 +65508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1150238876
 SpriteRenderer:
@@ -65585,7 +65584,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150238873}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -68264,7 +68263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1193397596
 SpriteRenderer:
@@ -68340,7 +68339,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193397593}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -69053,7 +69052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1203139069
 SpriteRenderer:
@@ -69129,7 +69128,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203139066}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -69348,7 +69347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1206358203
 SpriteRenderer:
@@ -69424,7 +69423,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206358200}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -69658,7 +69657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1220683054
 SpriteRenderer:
@@ -69734,7 +69733,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220683051}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -70259,7 +70258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1234459863
 SpriteRenderer:
@@ -70335,7 +70334,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234459860}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -70395,7 +70394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1235270857
 SpriteRenderer:
@@ -70471,7 +70470,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235270854}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -70869,7 +70868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1245209087
 SpriteRenderer:
@@ -70945,7 +70944,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245209084}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -71364,7 +71363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1255378191
 SpriteRenderer:
@@ -71440,7 +71439,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255378188}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -71500,7 +71499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1256792372
 SpriteRenderer:
@@ -71576,7 +71575,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256792369}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -72035,7 +72034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1263896622
 SpriteRenderer:
@@ -72111,7 +72110,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263896619}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -72171,7 +72170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1267633462
 SpriteRenderer:
@@ -72247,7 +72246,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267633459}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -72446,7 +72445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1280524004
 SpriteRenderer:
@@ -72522,7 +72521,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280524001}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -73257,7 +73256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1299271274
 SpriteRenderer:
@@ -73333,7 +73332,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299271271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -74195,7 +74194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1312361345
 SpriteRenderer:
@@ -74271,7 +74270,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312361342}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -74331,7 +74330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1312595095
 SpriteRenderer:
@@ -74407,7 +74406,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312595092}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -74467,7 +74466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1314225333
 SpriteRenderer:
@@ -74543,7 +74542,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314225330}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -74800,7 +74799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1318388222
 SpriteRenderer:
@@ -74876,7 +74875,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318388219}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -74936,7 +74935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1318890815
 SpriteRenderer:
@@ -75012,7 +75011,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318890812}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -75240,7 +75239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1323034462
 SpriteRenderer:
@@ -75316,7 +75315,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323034459}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -75376,7 +75375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1323569396
 SpriteRenderer:
@@ -75452,7 +75451,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323569393}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -75645,7 +75644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1327253227
 SpriteRenderer:
@@ -75721,7 +75720,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327253224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -75920,7 +75919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1331825933
 SpriteRenderer:
@@ -75996,7 +75995,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331825930}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -76242,7 +76241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1338831167
 SpriteRenderer:
@@ -76318,7 +76317,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338831164}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -76633,7 +76632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1349233634
 SpriteRenderer:
@@ -76709,7 +76708,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349233631}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -77908,7 +77907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1371481490
 SpriteRenderer:
@@ -77984,7 +77983,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371481487}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -78044,7 +78043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1373405995
 SpriteRenderer:
@@ -78120,7 +78119,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373405992}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -79307,7 +79306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1407457461
 SpriteRenderer:
@@ -79383,7 +79382,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407457458}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -80370,7 +80369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1435913628
 SpriteRenderer:
@@ -80446,7 +80445,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435913625}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -80628,7 +80627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1438765569
 SpriteRenderer:
@@ -80704,7 +80703,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438765566}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -81268,7 +81267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1445418745
 SpriteRenderer:
@@ -81344,7 +81343,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445418742}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -81563,7 +81562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1451376258
 SpriteRenderer:
@@ -81639,7 +81638,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451376255}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -83503,7 +83502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1487998140
 SpriteRenderer:
@@ -83579,7 +83578,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487998137}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -83639,7 +83638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1490773274
 SpriteRenderer:
@@ -83715,7 +83714,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490773271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -84859,7 +84858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1528271744
 SpriteRenderer:
@@ -84935,7 +84934,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1528271741}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -85261,7 +85260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1535178547
 SpriteRenderer:
@@ -85337,7 +85336,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535178544}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -85918,7 +85917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1540970949
 SpriteRenderer:
@@ -85994,7 +85993,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540970946}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -86187,7 +86186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1543679846
 SpriteRenderer:
@@ -86263,7 +86262,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543679843}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -87304,7 +87303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1571904416
 SpriteRenderer:
@@ -87380,7 +87379,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571904413}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -87839,7 +87838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1582739507
 SpriteRenderer:
@@ -87915,7 +87914,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582739504}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -88187,7 +88186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1591878169
 SpriteRenderer:
@@ -88263,7 +88262,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591878166}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -88349,7 +88348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1595042145
 SpriteRenderer:
@@ -88425,7 +88424,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595042142}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -88937,7 +88936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1605880497
 SpriteRenderer:
@@ -89013,7 +89012,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605880494}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -89073,7 +89072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1606021184
 SpriteRenderer:
@@ -89149,7 +89148,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606021181}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -89209,7 +89208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1607978280
 SpriteRenderer:
@@ -89285,7 +89284,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607978277}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -89531,7 +89530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1612882835
 SpriteRenderer:
@@ -89607,7 +89606,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612882832}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -90246,7 +90245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1631033497
 SpriteRenderer:
@@ -90322,7 +90321,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631033494}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -90648,7 +90647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1639439349
 SpriteRenderer:
@@ -90724,7 +90723,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639439346}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -90917,7 +90916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1642402011
 SpriteRenderer:
@@ -90993,7 +90992,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642402008}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -91655,7 +91654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1667438231
 SpriteRenderer:
@@ -91731,7 +91730,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667438228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -92650,7 +92649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1691896992
 SpriteRenderer:
@@ -92726,7 +92725,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691896989}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -93312,7 +93311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1698004007
 SpriteRenderer:
@@ -93388,7 +93387,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698004004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -93859,7 +93858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1710673262
 SpriteRenderer:
@@ -93935,7 +93934,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710673259}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -94698,7 +94697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1724174078
 SpriteRenderer:
@@ -94774,7 +94773,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724174075}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -95439,7 +95438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1735689604
 SpriteRenderer:
@@ -95515,7 +95514,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735689601}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -96119,7 +96118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1754858607
 SpriteRenderer:
@@ -96195,7 +96194,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754858604}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -96787,7 +96786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1764887246
 SpriteRenderer:
@@ -96863,7 +96862,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764887243}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -96923,7 +96922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1766103288
 SpriteRenderer:
@@ -96999,7 +96998,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766103285}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -97059,7 +97058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1767441430
 SpriteRenderer:
@@ -97135,7 +97134,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767441427}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -97248,7 +97247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1770984510
 SpriteRenderer:
@@ -97324,7 +97323,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770984507}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -97931,7 +97930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1782667191
 SpriteRenderer:
@@ -98007,7 +98006,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782667188}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -98226,7 +98225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1793418635
 SpriteRenderer:
@@ -98302,7 +98301,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793418632}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -98388,7 +98387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1798759284
 SpriteRenderer:
@@ -98464,7 +98463,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798759281}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -98790,7 +98789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1803414194
 SpriteRenderer:
@@ -98866,7 +98865,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803414191}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -98952,7 +98951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1804101631
 SpriteRenderer:
@@ -99028,7 +99027,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804101628}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -99439,7 +99438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1825177517
 SpriteRenderer:
@@ -99515,7 +99514,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825177514}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -99841,7 +99840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1832717371
 SpriteRenderer:
@@ -99917,7 +99916,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832717368}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -100426,7 +100425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1846129102
 SpriteRenderer:
@@ -100502,7 +100501,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846129099}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -100695,7 +100694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1852502441
 SpriteRenderer:
@@ -100771,7 +100770,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852502438}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -101236,7 +101235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1859225153
 SpriteRenderer:
@@ -101312,7 +101311,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859225150}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -101540,7 +101539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1870308465
 SpriteRenderer:
@@ -101616,7 +101615,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870308462}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -101914,7 +101913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1874590009
 SpriteRenderer:
@@ -101990,7 +101989,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874590006}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -102268,7 +102267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1884407087
 SpriteRenderer:
@@ -102344,7 +102343,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884407084}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -103136,7 +103135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1890925637
 SpriteRenderer:
@@ -103212,7 +103211,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890925634}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -103405,7 +103404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1897129386
 SpriteRenderer:
@@ -103481,7 +103480,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897129383}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -103940,7 +103939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1899680846
 SpriteRenderer:
@@ -104016,7 +104015,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899680843}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -104111,7 +104110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1900893608
 SpriteRenderer:
@@ -104187,7 +104186,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900893605}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -104247,7 +104246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1903169900
 SpriteRenderer:
@@ -104323,7 +104322,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903169897}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -104436,7 +104435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1911295962
 SpriteRenderer:
@@ -104512,7 +104511,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911295959}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -104572,7 +104571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1915902000
 SpriteRenderer:
@@ -104648,7 +104647,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915901997}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -105000,7 +104999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1921275990
 SpriteRenderer:
@@ -105076,7 +105075,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921275987}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -105570,7 +105569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1928595430
 SpriteRenderer:
@@ -105646,7 +105645,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928595427}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -105759,7 +105758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1931962164
 SpriteRenderer:
@@ -105835,7 +105834,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931962161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -106390,7 +106389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1938568809
 SpriteRenderer:
@@ -106466,7 +106465,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938568806}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -108332,7 +108331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1968964617
 SpriteRenderer:
@@ -108408,7 +108407,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968964614}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -108468,7 +108467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1969603501
 SpriteRenderer:
@@ -108544,7 +108543,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969603498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -108763,7 +108762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1977101158
 SpriteRenderer:
@@ -108839,7 +108838,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977101155}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -108899,7 +108898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1977267086
 SpriteRenderer:
@@ -108975,7 +108974,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977267083}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -109675,7 +109674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &1986050819
 SpriteRenderer:
@@ -109751,7 +109750,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986050816}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -110702,7 +110701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2006661579
 SpriteRenderer:
@@ -110778,7 +110777,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006661576}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -110838,7 +110837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2014454053
 SpriteRenderer:
@@ -110914,7 +110913,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014454050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -111107,7 +111106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2015127363
 SpriteRenderer:
@@ -111183,7 +111182,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015127360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -112006,7 +112005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2035914787
 SpriteRenderer:
@@ -112082,7 +112081,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035914784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -112567,7 +112566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2038669227
 SpriteRenderer:
@@ -112643,7 +112642,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038669224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -112729,7 +112728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2042319826
 SpriteRenderer:
@@ -112805,7 +112804,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042319823}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -113749,7 +113748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2058852960
 SpriteRenderer:
@@ -113825,7 +113824,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058852957}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -114172,7 +114171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2064372792
 SpriteRenderer:
@@ -114248,7 +114247,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064372789}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -114635,7 +114634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2069723571
 SpriteRenderer:
@@ -114711,7 +114710,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069723568}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -115613,7 +115612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2099228648
 SpriteRenderer:
@@ -115689,7 +115688,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099228645}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -115749,7 +115748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2102150255
 SpriteRenderer:
@@ -115825,7 +115824,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102150252}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -116018,7 +116017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2106402832
 SpriteRenderer:
@@ -116094,7 +116093,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106402829}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -116287,7 +116286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2108783762
 SpriteRenderer:
@@ -116363,7 +116362,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108783759}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -116742,7 +116741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2115400082
 SpriteRenderer:
@@ -116818,7 +116817,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115400079}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -117441,7 +117440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2122415544
 SpriteRenderer:
@@ -117517,7 +117516,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122415541}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -118002,7 +118001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2133033664
 SpriteRenderer:
@@ -118078,7 +118077,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133033661}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -118271,7 +118270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2141591190
 SpriteRenderer:
@@ -118347,7 +118346,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141591187}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -118566,7 +118565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2146271388
 SpriteRenderer:
@@ -118642,7 +118641,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146271385}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
@@ -118835,7 +118834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8773585, g: 0.649832, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &2147049555
 SpriteRenderer:
@@ -118911,7 +118910,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2147049552}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9c058c43ae4bf4592b864db0bd8a9e, type: 3}
   m_Name: 

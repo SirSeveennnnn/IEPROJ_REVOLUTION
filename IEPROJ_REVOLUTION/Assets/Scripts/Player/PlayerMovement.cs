@@ -173,7 +173,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isInvulnerable && collision.gameObject.tag == "Obstacle")
         {
             collisionCount++;
-
+            scoreText.scoreMultiplier = 1;
             Debug.Log(collisionCount);
             if (collisionCount == 1)
             {
