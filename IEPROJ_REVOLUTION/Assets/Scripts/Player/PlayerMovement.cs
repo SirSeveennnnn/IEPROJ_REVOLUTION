@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     private int collisionCount = 0;
-    private bool isInvulnerable = false;
+    public bool isInvulnerable = false;
 
     public float invulnerabilityDuration = 2f;
 
@@ -183,7 +183,6 @@ public class PlayerMovement : MonoBehaviour
             }
             if(collisionCount == 3)
             {
-                Debug.Log("Pumasok");
                 Life3.SetActive(false);
             }
            

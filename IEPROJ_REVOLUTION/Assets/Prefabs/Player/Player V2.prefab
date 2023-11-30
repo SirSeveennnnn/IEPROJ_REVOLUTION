@@ -161,6 +161,7 @@ MonoBehaviour:
   playerInvulnerability: {fileID: 2128070895134762218}
   laneDistance: 1
   scoreText: {fileID: 0}
+  isInvulnerable: 0
   invulnerabilityDuration: 2
   Life1: {fileID: 0}
   Life2: {fileID: 0}
@@ -377,6 +378,7 @@ MonoBehaviour:
   playerInvulnerability: {fileID: 0}
   laneDistance: 1
   scoreText: {fileID: 0}
+  isInvulnerable: 0
   invulnerabilityDuration: 2
   Life1: {fileID: 0}
   Life2: {fileID: 0}

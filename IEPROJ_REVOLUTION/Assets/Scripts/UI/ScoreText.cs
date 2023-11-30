@@ -37,6 +37,7 @@ public class ScoreText : MonoBehaviour
     public float scoreTicks = 0.0f;
     public float scoreDuration = 3.0f;
 
+    public PlayerMovement playerMovement;
 
     // Start is called before the first frame update
     void Start()
@@ -70,8 +71,13 @@ public class ScoreText : MonoBehaviour
         ticks += Time.deltaTime;
 
 
-        if (ticks >= duration) {
-            scoreMultiplier = 1;
+        if (ticks >= duration)
+        {
+            // Reset the scoreMultiplier to 1 if the player is invulnerable
+            if (playerMovement != null && playerMovement.isInvulnerable)
+            {
+                scoreMultiplier = 1;
+            }
             //Debug.Log("MULTIPLIER");
         }
         else
@@ -80,7 +86,7 @@ public class ScoreText : MonoBehaviour
             if (scoreTicks >= scoreDuration)
             {
                 scoreMultiplier++;
-                scoreTicks= 0;
+                scoreTicks = 0;
             }
         }
 
