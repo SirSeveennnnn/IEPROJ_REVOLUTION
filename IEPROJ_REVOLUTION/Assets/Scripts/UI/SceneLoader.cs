@@ -40,7 +40,7 @@ public class SceneLoader : MonoBehaviour
     public void TutorialScene()
     {
         // Load the "GameScene" when the button is pressed
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene("Tutorial");
     }
     public void MainMenuScene()
     {

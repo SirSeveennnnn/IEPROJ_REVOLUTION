@@ -56,6 +56,7 @@ public class AudioManager : MonoBehaviour
 
     void Setup(Scene scene, LoadSceneMode mode)
     {
+
         audioSource.Stop();
 
         currentLevel = GameObject.FindWithTag("LevelSettings").GetComponent<LevelSettings>();
@@ -70,6 +71,7 @@ public class AudioManager : MonoBehaviour
         {
             audioSource.Play();
         }
+
     }
 
     public void PlayMusic()
@@ -107,7 +109,7 @@ public class AudioManager : MonoBehaviour
 
     void Update()
     {
-        if (!isMusicPlayed)
+        if (isPaused)
         {
             return;
         }

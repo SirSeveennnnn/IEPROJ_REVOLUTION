@@ -9,6 +9,7 @@ TagManager:
   - Path
   - WinTrigger
   - LevelSettings
+  - TutorialTrigger
   layers:
   - Default
   - TransparentFX
