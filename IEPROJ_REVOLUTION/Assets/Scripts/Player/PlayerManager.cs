@@ -119,11 +119,11 @@ public class PlayerManager : MonoBehaviour
 
     private IEnumerator ApplyIFramesCoroutine(float duration)
     {
-        col.enabled = false;
+        isInvulnerable = true;
 
         yield return new WaitForSeconds(duration);
 
-        col.enabled = true;
+        isInvulnerable = false;
     }
     #endregion
 
