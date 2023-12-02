@@ -4,6 +4,8 @@ public class TutorialInputTrigger : TutorialTrigger
 {
     [SerializeField] private EGestureTypes gestureToCheck;
     [SerializeField] private RectTransform tapPanelTransform;
+    [SerializeField] private bool isMoveLeft;
+    [SerializeField] private bool isMoveRight;
     [SerializeField] private string afterGestureText = "";
 
     private PlayerMovement movementScript;
@@ -37,6 +39,16 @@ public class TutorialInputTrigger : TutorialTrigger
                 return;
             }
 
+            if (isMoveLeft)
+            {
+                movementScript.PlayerMove(2);
+            }
+
+            if (isMoveRight)
+            {
+                movementScript.PlayerMove(3);   
+            }
+
             OnResume();
         }
     }
@@ -53,6 +65,11 @@ public class TutorialInputTrigger : TutorialTrigger
             gestureToCheck == EGestureTypes.SwipeUp && args.SwipeDirection == SwipeEventArgs.SwipeDirections.UP || 
             gestureToCheck == EGestureTypes.SwipeDown && args.SwipeDirection == SwipeEventArgs.SwipeDirections.DOWN)
         {
+            if (gestureToCheck == EGestureTypes.SwipeUp && args.SwipeDirection == SwipeEventArgs.SwipeDirections.UP)
+            {
+                movementScript.PlayerJump(0.75f);
+            }
+
             OnResume();
         }
     }

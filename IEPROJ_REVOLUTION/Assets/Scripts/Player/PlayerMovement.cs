@@ -133,6 +133,11 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
+        if (Time.timeScale == 0)
+        {
+            return;
+        }
+
         if (isSwipe)
         {
             return;
@@ -155,6 +160,11 @@ public class PlayerMovement : MonoBehaviour
     private void OnSwipe(object send, SwipeEventArgs args)
     {
         if (!playerStart)
+        {
+            return;
+        }
+
+        if (Time.timeScale == 0)
         {
             return;
         }
@@ -349,7 +359,10 @@ public class PlayerMovement : MonoBehaviour
     private void StopPlayerActions()
     {
         isInAction = false;
-        StopCoroutine(actionCoroutine);
+        if (actionCoroutine != null)
+        {
+            StopCoroutine(actionCoroutine);
+        }
     }
 
     public void Teleport(float xPos)

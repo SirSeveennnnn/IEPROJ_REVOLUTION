@@ -65,6 +65,10 @@ public class Portal : MonoBehaviour
         {
             PlayerMovement movementScript = other.GetComponent<PlayerMovement>();
             movementScript.PlayerMove(otherPortal.position.x);
+            
+            PlayerManager managerScript = other.GetComponent<PlayerManager>();
+            managerScript.ApplyIFrames(0.5f);
+
             handler.isUsed = true;
         }
     }
