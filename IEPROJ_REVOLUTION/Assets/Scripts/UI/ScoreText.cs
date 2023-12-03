@@ -97,7 +97,7 @@ public class ScoreText : MonoBehaviour
         //Overlay Effects
 
         //Wow
-        if(scoreMultiplier >= 4 && scoreMultiplier <= 7)
+        if(scoreMultiplier >= 3 && scoreMultiplier <= 5)
         {
             Wow.SetActive(true);
         }
@@ -107,7 +107,7 @@ public class ScoreText : MonoBehaviour
         }
 
         //Cool
-        if (scoreMultiplier >= 8 && scoreMultiplier <= 11)
+        if (scoreMultiplier >= 6 && scoreMultiplier <= 8)
         {
             Cool.SetActive(true);
         }
@@ -117,7 +117,7 @@ public class ScoreText : MonoBehaviour
         }
 
         //Awesome
-        if (scoreMultiplier >= 12 && scoreMultiplier <= 15)
+        if (scoreMultiplier >= 9 && scoreMultiplier <= 12)
         {
             Awesome.SetActive(true);
         }
@@ -127,7 +127,7 @@ public class ScoreText : MonoBehaviour
         }
 
         //Great
-        if (scoreMultiplier >= 16 && scoreMultiplier <= 20)
+        if (scoreMultiplier >= 13 && scoreMultiplier <= 15)
         {
             Great.SetActive(true);
         }
@@ -137,7 +137,7 @@ public class ScoreText : MonoBehaviour
         }
 
         //Super
-        if (scoreMultiplier >= 21)
+        if (scoreMultiplier >= 16)
         {
             Super.SetActive(true);
         }
